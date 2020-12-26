@@ -1,0 +1,385 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- NVD3 -->
+  <!-- Morris.js Charts Plugin -->
+  <!-- <link href="https://firstprofittrading.biz/assets\plugins\morris\morris.css" rel="stylesheet" /> -->
+  <!-- <link href="css/nvd3.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css"> -->
+
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <a href="" class="brand-logo">
+        <img src="img/logo.png" alt="">
+        <h2>FirstProfit</h2>
+      </a>
+      <div class="search-form">
+        <form action="">
+          <div class="input-group">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+        </form>
+      </div>
+      <div class="greeting">
+        <h3>Welcome, <span>John Deo</span></h3>
+      </div>
+      <nav>
+        <ul>
+          <li class="notification">
+            <div class="circle"></div>
+            <i class="fas fa-bell"></i>
+          </li>
+          <li class="user-profile">
+            <img src="img/Max-R_Headshot (1).jpg" alt="">
+            <i class="fas fa-chevron-down"></i>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-footer">
+    <a href="#" class="home">
+      <i class="fas fa-home"></i>
+      <p>Home</p>
+    </a>
+    <a href="#" class="deposit">
+      <i class="fas fa-sign-out-alt"></i>
+      <p>Deposit</p>
+    </a>
+    <a href="" class="invest">
+      <i class="fas fa-download"></i>
+      <p>Invest</p>
+    </a>
+    <a href="#" class="withdraw">
+      <i class="fas fa-sign-out-alt"></i>
+      <p>Withdraw</p>
+    </a>
+  </nav>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-12 mx-auto">
+        <!-- Side Navigation -->
+        <aside>
+          <nav class="side-nav">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="invest.html">
+                  <!-- <i class="material-icons">timeline</i> -->
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>Invest Now</span>
+                </a>
+              </li>
+              <li>
+                <a href="deposit.html">
+                  <i class="fas fa-money-check-alt"></i>
+                  <span>Deposit</span>
+                </a>
+              </li>
+              <li>
+                <a href="withdraw.html">
+                  <i class="fas fa-hand-holding-usd"></i>
+                  <span>Withdraw</span>
+                </a>
+              </li>
+              <li>
+                <a href="tranfer.html">
+                  <i class="fas fa-share-square"></i>
+                  <span>Transfer</span>
+                </a>
+              </li>
+              <li>
+                <a href="transactions.html">
+                  <i class="fas fa-history"></i>
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li>
+                <a href="bills">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Pay bills</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="fas fa-user-cog"></i>
+                  <span>Profile settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="officer.html">
+                  <i class="fas fa-user-tie"></i>
+                  <span>Account officer</span>
+                </a>
+              </li>
+              <li>
+                <a href="account-settings.html">
+                  <i class="fas fa-cog"></i>
+                  <span>Account settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="support.html">
+                  <i class="fas fa-headset"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+              <li>
+                <a href="referral.html">
+                  <i class="fas fa-network-wired"></i>
+                  <span>Referral</span>
+                </a>
+              </li>
+              <li>
+                <a href="/index.html">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>logout</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+      <div class="col-lg-10 col-12 mx-auto">
+        <section class="main-body container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <section class="notice-card row">
+                <div class="col-lg-6 mx-auto">
+                  <div class="notice">
+                    <div class="amount">
+                      <h2><span>$</span>12,789</h2>
+                      <h4>deposit balance</h4>
+                    </div>
+                    <i class="fas fa-money-check-alt"></i>
+                  </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                  <div class="notice">
+                    <div class="amount">
+                      <h2><span>$</span>22,079</h2>
+                      <h4>Total withdraw</h4>
+                    </div>
+                    <i class="fas fa-hand-holding-usd"></i>
+                  </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                  <div class="notice">
+                    <div class="amount">
+                      <h2><span>$</span>19.00</h2>
+                      <h4>Referral earnings</h4>
+                    </div>
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                 
+                </div>
+                <div class="col-lg-6 mx-auto">
+                  <div class="notice">
+                    <div class="amount">
+                      <h2>89</h2>
+                      <h4>FTC balance</h4>
+                    </div>
+                    <i class="fas fa-file-invoice-dollar"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="chart">
+                <div id="nvd3-chart1" style="width: 100%; height: 400px;"> <svg class="nvd3-svg"><g class="nvd3 nv-wrap nv-discreteBarWithAxes"><g transform="translate(60,15)"><defs><clipPath id="nv-x-label-clip-2385"><rect width="142.68292682926833" height="16" x="-71.34146341463416"></rect></clipPath></defs><g class="nv-x nv-axis nvd3-svg" transform="translate(0,335)"><g class="nvd3 nv-wrap nv-axis"><g><g class="tick zero" transform="translate(43.59756088256836,0)" style="opacity: 1;"><line y2="-335" x2="0"></line><text dy=".71em" y="3" transform="translate(0,5)" style="text-anchor: middle;" x="0">Deposit</text></g><g class="tick zero" transform="translate(122.86585235595703,0)" style="opacity: 1;"><line y2="-335" x2="0"></line><text dy=".71em" y="3" transform="translate(0,17)" style="text-anchor: middle;" x="0">Wallet</text></g><g class="tick zero" transform="translate(202.13414001464844,0)" style="opacity: 1;"><line y2="-335" x2="0"></line><text dy=".71em" y="3" transform="translate(0,5)" style="text-anchor: middle;" x="0">Withdrawal</text></g><g class="tick zero" transform="translate(281.4024353027344,0)" style="opacity: 1;"><line y2="-335" x2="0"></line><text dy=".71em" y="3" transform="translate(0,17)" style="text-anchor: middle;" x="0">Referral Bonus</text></g><path class="domain" d="M0,0V0H325V0"></path><text class="nv-axislabel" text-anchor="middle" y="36" x="162.50000000000003" transform="translate(0,17)"></text></g></g></g><g class="nv-y nv-axis nvd3-svg"><g class="nv-zeroLine"><line x1="0" x2="325" y1="335" y2="335"></line></g><g class="nvd3 nv-wrap nv-axis"><g><path class="domain" d="M0,0H0V335H0"></path><text class="nv-axislabel" transform="rotate(-90)" y="-50" x="-167.5" style="text-anchor: middle;"></text></g><g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y" transform="translate(0,335)" style="opacity: 1;"><text dy=".32em" y="0" x="-3" text-anchor="end" style="opacity: 1;">0.0</text></g><g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y" transform="translate(0,0)" style="opacity: 0;"><text dy=".32em" y="0" x="-3" text-anchor="end" style="opacity: 1;">0.0</text></g></g></g><g class="nv-barsWrap nvd3-svg"><g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)"><g><g class="nv-groups"><g class="nv-group nv-series-0" style="stroke-opacity: 1; fill-opacity: 0.75;"><g transform="translate(11.493902206420898,334)" class="nv-bar positive" style="fill: rgb(108, 62, 157); stroke: rgb(108, 62, 157);"><rect height="1" width="64.20731707317074" class="discreteBar"></rect><text text-anchor="middle" y="-4" x="32.10365853658537">0.00</text></g><g transform="translate(90.76219177246094,334)" class="nv-bar positive" style="fill: rgb(69, 170, 242); stroke: rgb(69, 170, 242);"><rect height="1" width="64.20731707317074" class="discreteBar"></rect><text text-anchor="middle" y="-4" x="32.10365853658537">0.00</text></g><g transform="translate(170.03048706054688,334)" class="nv-bar positive" style="fill: rgb(212, 92, 149); stroke: rgb(212, 92, 149);"><rect height="1" width="64.20731707317074" class="discreteBar"></rect><text text-anchor="middle" y="-4" x="32.10365853658537">0.00</text></g><g transform="translate(249.2987823486328,334)" class="nv-bar positive" style="fill: rgb(251, 141, 52); stroke: rgb(251, 141, 52);"><rect height="1" width="64.20731707317074" class="discreteBar"></rect><text text-anchor="middle" y="-4" x="32.10365853658537">0.00</text></g></g></g></g></g></g><g class="nv-legendWrap"></g></g></g></svg></div>                
+              </section>
+              <section class="investors-testimo">
+                <h2 class="cardTitle">Investors Testimonie</h2>
+
+                <div class="investor">
+                  <div class="user-img">
+                    <img src="img/Max-R_Headshot (1).jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h5>John doe</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore expedita cupiditate officiis temporibus! Officia.</p>
+                  </div>
+                  <h5 class="date">22/12/2020 <i class="fas fa-calendar-alt"></i></h5>
+                </div>
+                <div class="investor">
+                  <div class="user-img">
+                    <img src="img/Max-R_Headshot (1).jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h5>John doe</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore expedita cupiditate officiis temporibus! Officia.</p>
+                  </div>
+                  <h5 class="date">22/12/2020 <i class="fas fa-calendar-alt"></i></h5>
+                </div>
+                <div class="investor">
+                  <div class="user-img">
+                    <img src="img/Max-R_Headshot (1).jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h5>John doe</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore expedita cupiditate officiis temporibus! Officia.</p>
+                  </div>
+                  <h5 class="date">22/12/2020 <i class="fas fa-calendar-alt"></i></h5>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <section class="balance">
+                <div class="wallet-balance">
+                  <div>
+                    <span class="total">Total Earning</span>
+                    <h1 class="balance-amount"><span>$</span>23,987</h1>
+                  </div>
+                  <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="btns">
+                  <a href="#" class="core-btn"><i class="fas fa-dollar-sign"></i> Deposit</a>
+                  <a href="#" class="core-btn"><i class="fas fa-money-check-alt"></i> Invest</a>
+                  <a href="#" class="core-btn"><i class="fas fa-hand-holding-usd"></i> Withdraw</a>
+                </div>
+              </section>
+              <section class="recent-trans">
+                <h2 class="cardTitle">Recent transaction</h2>
+
+                <div class="trans deposit">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                  <h4 class="amount">+43,000</h4>
+                  <h4 class="date">10:43:23</h4>
+                  <h4 class="status">completed</h4>
+                </div>
+                <div class="trans withdraw">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                  <h4 class="amount">-43,000</h4>
+                  <h4 class="date">10:43:23</h4>
+                  <h4 class="status">pending</h4>
+                </div>
+                <div class="trans deposit">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                  <h4 class="amount">+43,000</h4>
+                  <h4 class="date">10:43:23</h4>
+                  <h4 class="status">completed</h4>
+                </div>
+                <div class="trans withdraw">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                  <h4 class="amount">-43,000</h4>
+                  <h4 class="date">10:43:23</h4>
+                  <h4 class="status">pending</h4>
+                </div>
+                <a href="#" class="view">view all</a>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- c3.js Charts Plugin -->
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\d3.min.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\stream_layers.js"></script>
+  <!-- Index Scripts -->
+  <!-- <script>
+		/*-----nvd3-chart1-----*/
+historicalBarChart = [{
+	key: "Cumulative Return",
+	values: [{
+		"label": "Deposit",
+		"value": 0,
+		"color": "#6c3e9d"
+	}, {
+		"label": "Wallet",
+		"value": 0,
+		"color": "#45aaf2"
+	}, {
+		"label": "Withdrawal",
+		"value": 0,
+		"color": "#d45c95"
+	}, {
+		"label": "Referral Bonus",
+		"value": 0,
+		"color": "#fb8d34"
+	}, ]
+}];
+nv.addGraph(function() {
+	var chart = nv.models.discreteBarChart().x(function(d) {
+			return d.label
+		}).y(function(d) {
+			return d.value
+		}).staggerLabels(true)
+		//.staggerLabels(historicalBarChart[0].values.length > 8)
+		.showValues(true).duration(250);
+	d3.select('#nvd3-chart1 svg').datum(historicalBarChart).call(chart);
+	nv.utils.windowResize(chart.update);
+	return chart;
+});
+
+</script> -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5893c78a22a7eb0a671e0c75/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>

@@ -1,0 +1,883 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #eb2323;
+  --secondaryColor: #00263F;
+  --greyColor:  #f8f8f8ee;
+  --whiteColor: #fdfdfdee;
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Source Sans Pro', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.2rem;
+  --radius: 10px;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.core-btn {
+  border: none;
+  text-decoration: none;
+  border: solid 1px var(--secondaryColor);
+  color: var(--whiteColor);
+  background: var(--secondaryColor);
+  box-shadow: var(--light-shadow);
+  padding: 6px 10px;
+  width: 100%;
+  text-align: center;
+  margin: 10px 3px; 
+  text-transform: capitalize;
+  font-weight: 900;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-btn:hover {
+  color: var(--secondaryColor);
+  background: var(--whiteColor);
+  text-decoration: none;
+  border: solid 1px var(--secondaryColor);
+}
+
+select {
+  display: none;
+}
+
+html, body {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100vh;
+  background: var(--greyColor);
+  font-family: var(--ff-primary);
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--secondaryColor);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px #ccc;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   /* Header Start */
+   header {
+    background: var(--whiteColor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+   }
+
+   header .container-fluid {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 4px 3rem;
+   }
+
+   header .container-fluid .brand-logo {
+     color: var(--secondaryColor);
+     display: flex;
+     align-items: center;
+   }
+   header .container-fluid .brand-logo h2 {
+     color: var(--secondaryColor);
+     font-weight: 900;
+     font-family: var(--ff-secondary);
+     font-size: 1.5rem;
+     margin-top: 10px;
+     margin-left: 2px;
+   }
+
+   header .container-fluid .brand-logo img {
+     width: 40px;
+   }
+
+   header .container-fluid .greeting h3 {
+     font-size: 1.2rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     text-align: center;
+   }
+
+   header .container-fluid .search-form {
+     display: none;
+   }
+
+   header .container-fluid .search-form .input-group {
+     background: var(--greyColor);
+     width: 100%;
+     display: flex;
+     align-items: center;
+     padding: 4px 10px;
+     border-radius: var(--radius);
+   }
+   header .container-fluid .search-form .input-group input{
+    width: 400px;
+    border: none;
+    background: var(--greyColor);
+    padding:8px;
+  }
+
+   header .container-fluid nav ul {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 150px;
+   }
+
+   header .container-fluid nav ul .user-profile img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+   }
+   .user-profile .fas {
+     font-size: 0.8rem;
+   }
+
+   .notification {
+     position: relative;
+   }
+   .notification .circle {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background: var(--primaryColor);
+     position: absolute;
+     right: -8px;
+     top: -5px;
+   }
+   .notification .fas {
+     font-size: 1.3rem;
+   }
+
+   .mobile-toggle {
+     display: none;
+   }
+
+   .mobile-footer {
+     display: none;
+   }
+
+   @media(max-width: 768px) {
+    header .container-fluid .brand-logo {
+      position: relative;
+      left: -2rem;
+    }
+    header .container-fluid .brand-logo img {
+      width: 30px;
+    }
+    
+    header .container-fluid .brand-logo h2 {
+      font-size: 1rem;
+    }
+     .greeting {
+       display: none;
+     }
+
+     header .container-fluid nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100px;
+      margin-top: 1rem;
+      position: relative;
+      left: -1rem;
+    }
+
+    header .container-fluid nav ul .user-profile img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-left: -2rem;
+    }
+    .user-profile .fas {
+      font-size: 0.6rem;
+      margin-left: -4px;
+    }
+
+    .notification .circle {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primaryColor);
+      position: absolute;
+      right: -2px;
+      top: -2px;
+    }
+    .notification .fas {
+      font-size: 1rem;
+    }
+
+    .mobile-toggle {
+      display: block;
+      position: absolute;
+      right: 20px;
+      margin-top: 5px;
+    }
+    .mobile-toggle .line {
+      width: 30px;
+      height: 3px;
+      background: var(--secondaryColor);
+      margin-bottom: 4px;
+    }
+
+    /* Mobile Footer */
+    .mobile-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 99;
+      background: var(--greyColor);
+    }
+    .mobile-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 4px;
+    }
+    .mobile-footer a{
+      text-align: center;
+      margin-bottom: -0.5rem;
+    }
+   }
+
+   /* Header End */
+
+   /* Main Body */
+   main {
+     padding: 2rem 3rem;
+     margin-top: 4rem;
+   }
+
+   /* Aside Nav */
+   main aside {
+     background: var(--whiteColor);
+     padding: 3rem 0;
+     height: 100%;
+     border-radius: var(--radius);
+     box-shadow: var(--light-shadow); 
+   }
+
+   aside .side-nav ul li a {
+     display: flex;
+     align-items: center;
+     font-weight: 700;
+     font-size: 0.9rem;
+     color: var(--secondaryColor);
+     transition: var(--transition);
+     padding: 15px 1rem;
+     border-bottom: solid 2px var(--greyColor);
+   }
+
+   aside .side-nav ul li a:hover {
+     color: var(--primaryColor);
+     text-decoration: none;
+     background: var(--greyColor);
+   }
+   
+
+   aside .side-nav ul li a i {
+     margin-right: 6px;
+     padding: 4px;
+     border: solid 1px var(--secondaryColor);
+     background: var(--secondaryColor);
+     color: #fff;
+     height: 30px;
+     width: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     transition: var(--transition);
+   }
+
+   aside .side-nav ul li a:hover i{
+     color: var(--primaryColor);
+     text-decoration: none;
+     background: var(--greyColor);
+   }
+   /* Aside Nav end*/
+
+   main .main-body {
+     width: 100%;
+   }
+
+   /* NOtice card */
+   .notice-card .notice {
+     padding: 20px;
+     background: var(--whiteColor);
+     margin-bottom: 1rem;
+     border-radius: var(--radius);
+     box-shadow: var(--light-shadow);
+     border: none;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     text-transform: capitalize;
+   }
+
+   .notice-card .notice h2 {
+      color: var(--secondaryColor);
+      font-family: var(--ff-secondary);     
+   }
+   .notice-card .notice h4 {
+      color: var(--primaryColor);
+      font-weight: 900;
+      font-size: 1rem;    
+   }
+
+   .notice-card .notice i {
+     height: 70px;
+     width: 70px;
+     border: solid 1px var(--primaryColor);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 2rem;
+     border-radius: var(--radius);
+     box-shadow: var(--dark-shadow);
+     color: var(--primaryColor);
+   }
+
+   /* Balance */
+   .balance {
+     padding: 20px;
+     background: var(--whiteColor);
+     height: 190px;
+     border-radius: var(--radius);
+     box-shadow: var(--light-shadow);
+   }
+
+   .balance .wallet-balance {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .balance .wallet-balance i {
+     font-size: 2rem;
+     height: 60px;
+     width: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: solid 1px var(--secondaryColor);
+     color: var(--whiteColor);
+     background: var(--secondaryColor);
+     border-radius: var(--radius);
+     box-shadow: var(--light-shadow);
+   }
+
+   .balance .wallet-balance div {
+     text-align: center;
+   }
+   .balance .wallet-balance div .total {
+     font-weight: 900;
+     color: var(--primaryColor);
+   }
+
+   .balance .wallet-balance div h1 {
+     font-weight: 900;
+     font-family: var(--ff-secondary);
+     font-size: 2.5rem;
+     color: var(--secondaryColor);
+     margin-top: -0.1rem;
+   }
+
+   .balance .btns {
+     margin-top: 1rem;
+     display: flex;
+     justify-content: space-around;
+   }
+
+
+   /* Recent Transaction */
+   .recent-trans {
+    padding: 20px;
+    background: var(--whiteColor);
+    /* height: 100%; */
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+   }
+
+
+
+   .recent-trans .trans {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     box-shadow: var(--light-shadow);
+     border-radius: var(--radius);
+     margin: 1rem 0;
+   }
+   .recent-trans .trans i {
+     height: 30px;
+     width: 30px;
+     border: solid 1px var(--primaryColor);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--secondaryColor);
+   }
+   .recent-trans .deposit i{
+      transform: rotate(-150deg);
+   }
+   .recent-trans .withdraw i{
+      transform: rotate(50deg);
+   }
+   .recent-trans .trans h4{
+     font-size: 0.8rem;
+     font-weight: 900;
+     color: var(--secondaryColor);
+     text-transform: capitalize;
+   }
+
+   .recent-trans .view {
+     /* margin-top: 1.5rem; */
+     text-decoration: none;
+     color: var(--secondaryColor);
+     font-weight: 900;
+     text-transform: capitalize;
+     text-align: center;
+     font-size: 0.9rem;
+   }
+
+
+
+   /* Chart */
+   .chart {
+    padding: 20px;
+    background: var(--whiteColor);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    /* height: 200px; */
+   }
+
+   /*  Investors testimonie */
+  .investors-testimo{
+    padding: 20px;
+    background: var(--whiteColor);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+   }
+
+  .investors-testimo .investor {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    box-shadow: var(--light-shadow);
+    border-radius: var(--radius);
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .investors-testimo .investor .text {
+    padding: 0 20px;
+    font-size: 0.9rem;
+  }
+  .investors-testimo .investor .text h5 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--secondaryColor);
+  }
+  .investors-testimo .investor .date {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--secondaryColor);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .investors-testimo .investor .date i {
+    color: var(--primaryColor);
+  }
+  .investors-testimo .investor .user-img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  
+
+
+  /*  Investment */
+  .invest__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .invest__card {
+    background: var(--whiteColor);
+    box-shadow: var(--dark-shadow);
+    border-radius: var(--radius);
+    padding: 30px;
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+
+  .invest__card .card__head {
+    text-align: center;
+    /* margin: 1rem 0; */
+    text-transform: capitalize;
+  }
+
+  .invest__card .card__head .card__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--secondaryColor);
+  }
+
+  .invest__card .card__head .price {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: var(--ff-secondary);
+    color: var(--secondaryColor);
+  }
+
+  .invest__card .card__head .monthly {
+    font-weight: 900;
+    font-family: var(--ff-secondary);
+    color: var(--secondaryColor);
+  }
+
+  .invest__card .name{
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    transform: rotate(50deg);
+    color: var(--primaryColor);
+    font-family: var(--ff-secondary);
+  }
+
+  .invest__card .stamp {
+    position: absolute;
+    top: 0;
+    right: -1.6rem;
+    width: 150px;
+  }
+
+  .invest__card .card__body {
+    /* width: 90%; */
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--secondaryColor);
+  }
+  /* .invest__card .card__body ul li {
+    font-weight: 900;
+    text-transform: capitalize;
+  } */
+  .invest__card li span {
+    font-weight: 900;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+
+  .invest__card form input, form select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .invest__card form input {
+    padding: 10px;
+    border: solid 1px #eee;
+    border-radius: 8px;
+    font-weight: 400;
+  }
+  .invest__card form .invest__btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 6px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: var(--transition);
+    border: solid 1px var(--primaryColor);
+  }
+
+  .invest__card form .invest__btn:hover {
+    box-shadow: var(--dark-shadow);
+    background: none;
+    color: var(--primaryColor);
+    border: solid 1px var(--primaryColor);
+  }
+
+  .invest__card .card__form h5 {
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  aside {
+    background: red;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

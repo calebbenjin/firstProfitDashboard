@@ -1,0 +1,274 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- NVD3 -->
+  <!-- Morris.js Charts Plugin -->
+  <!-- <link href="https://firstprofittrading.biz/assets\plugins\morris\morris.css" rel="stylesheet" /> -->
+  <!-- <link href="css/nvd3.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
+
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <a href="" class="brand-logo">
+        <img src="img/logo.png" alt="">
+        <h2>FirstProfit</h2>
+      </a>
+      <div class="search-form">
+        <form action="">
+          <div class="input-group">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+        </form>
+      </div>
+      <div class="greeting">
+        <h3>Welcome, <span>John Deo</span></h3>
+      </div>
+      <nav>
+        <ul>
+          <li class="notification">
+            <div class="circle"></div>
+            <i class="fas fa-bell"></i>
+          </li>
+          <li class="user-profile">
+            <img src="img/Max-R_Headshot (1).jpg" alt="">
+            <i class="fas fa-chevron-down"></i>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-footer">
+    <a href="#" class="home">
+      <i class="fas fa-home"></i>
+      <p>Home</p>
+    </a>
+    <a href="#" class="deposit">
+      <i class="fas fa-sign-out-alt"></i>
+      <p>Deposit</p>
+    </a>
+    <a href="" class="invest">
+      <i class="fas fa-download"></i>
+      <p>Invest</p>
+    </a>
+    <a href="#" class="withdraw">
+      <i class="fas fa-sign-out-alt"></i>
+      <p>Withdraw</p>
+    </a>
+  </nav>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-12 mx-auto">
+        <!-- Side Navigation -->
+        <aside>
+          <nav class="side-nav">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="invest.html">
+                  <!-- <i class="material-icons">timeline</i> -->
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>Invest Now</span>
+                </a>
+              </li>
+              <li>
+                <a href="deposit.html">
+                  <i class="fas fa-money-check-alt"></i>
+                  <span>Deposit</span>
+                </a>
+              </li>
+              <li>
+                <a href="withdraw.html">
+                  <i class="fas fa-hand-holding-usd"></i>
+                  <span>Withdraw</span>
+                </a>
+              </li>
+              <li>
+                <a href="tranfer.html">
+                  <i class="fas fa-share-square"></i>
+                  <span>Transfer</span>
+                </a>
+              </li>
+              <li>
+                <a href="transactions.html">
+                  <i class="fas fa-history"></i>
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li>
+                <a href="bills">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Pay bills</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="fas fa-user-cog"></i>
+                  <span>Profile settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="officer.html">
+                  <i class="fas fa-user-tie"></i>
+                  <span>Account officer</span>
+                </a>
+              </li>
+              <li>
+                <a href="account-settings.html">
+                  <i class="fas fa-cog"></i>
+                  <span>Account settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="support.html">
+                  <i class="fas fa-headset"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+              <li>
+                <a href="referral.html">
+                  <i class="fas fa-network-wired"></i>
+                  <span>Referral</span>
+                </a>
+              </li>
+              <li>
+                <a href="/index.html">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>logout</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+      <div class="col-lg-10 col-12 mx-auto">
+        <section class="main-body container">
+          <div class="transaction__nav">
+            <a href="#" class="core-btn">All Transactions</a>
+            <a href="#" class="core-btn">deposit history</a>
+            <a href="#" class="core-btn">withdrawal history</a>
+            <a href="#" class="core-btn">bills history</a>
+            <a href="#" class="core-btn">Transfer history</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              
+            </div>
+            <div class="col-lg-4 mx-auto">
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- c3.js Charts Plugin -->  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\d3.min.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\stream_layers.js"></script> -->
+  <!-- Index Scripts -->
+  <script>
+		/*-----nvd3-chart1-----*/
+historicalBarChart = [{
+	key: "Cumulative Return",
+	values: [{
+		"label": "Deposit",
+		"value": 0,
+		"color": "#6c3e9d"
+	}, {
+		"label": "Wallet",
+		"value": 0,
+		"color": "#45aaf2"
+	}, {
+		"label": "Withdrawal",
+		"value": 0,
+		"color": "#d45c95"
+	}, {
+		"label": "Referral Bonus",
+		"value": 0,
+		"color": "#fb8d34"
+	}, ]
+}];
+nv.addGraph(function() {
+	var chart = nv.models.discreteBarChart().x(function(d) {
+			return d.label
+		}).y(function(d) {
+			return d.value
+		}).staggerLabels(true)
+		//.staggerLabels(historicalBarChart[0].values.length > 8)
+		.showValues(true).duration(250);
+	d3.select('#nvd3-chart1 svg').datum(historicalBarChart).call(chart);
+	nv.utils.windowResize(chart.update);
+	return chart;
+});
+
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5893c78a22a7eb0a671e0c75/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
