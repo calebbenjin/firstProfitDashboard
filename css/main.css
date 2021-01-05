@@ -368,7 +368,7 @@ section {
    }
 
    /* Aside Nav */
-   main aside {
+   aside {
      background: var(--whiteColor);
      padding: 3rem 0;
      height: 100%;
@@ -1066,6 +1066,7 @@ section {
     align-items: center;
     position: relative;
     bottom: -2rem;
+    display: none;
   }
   .nav-logo img {
     width: 30px;
