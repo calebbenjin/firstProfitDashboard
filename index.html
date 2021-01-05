@@ -57,40 +57,66 @@
             <div class="circle"></div>
             <i class="fas fa-bell"></i>
           </li>
-          <li class="user-profile">
-            <img src="img/Max-R_Headshot (1).jpg" alt="">
-            <i class="fas fa-chevron-down"></i>
+          <li class="user-profile dropdown">
+            <div class="dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/Max-R_Headshot (1).jpg" alt="">
+            </div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile__setting.html">
+                <i class="fas fa-user-cog"></i>
+                <span>Profile Settings</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user-tie"></i>
+                <span>Account officer</span>
+              </a>
+              <a class="dropdown-item" href="security__center.html">
+                <i class="fas fa-cog"></i>
+                <span>Security center</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-network-wired"></i>
+                <span>Referrals</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+            </div>
           </li>
         </ul>
       </nav>
       <div class="mobile-toggle">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <ion-icon name="apps-outline"></ion-icon>
       </div>
     </div>
   </header>
   <nav class="mobile-footer">
     <a href="index.html" class="home">
-      <i class="fas fa-home"></i>
+      <ion-icon name="home-outline"></ion-icon>
       <p>Home</p>
     </a>
     <a href="deposit.html" class="deposit">
-      <i class="fas fa-sign-out-alt"></i>
+      <ion-icon name="arrow-undo-outline"></ion-icon>
       <p>Deposit</p>
     </a>
     <a href="invest.html" class="invest">
-      <i class="fas fa-download"></i>
+      <ion-icon name="arrow-down-circle-outline"></ion-icon>
       <p>Invest</p>
     </a>
     <a href="withdraw.html" class="withdraw">
-      <i class="fas fa-sign-out-alt"></i>
+      <ion-icon name="arrow-redo-outline"></ion-icon>
       <p>Withdraw</p>
     </a>
   </nav>
   <main class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 col-12 mx-auto">
+      <div class="col-xl-2 col-lg-3 col-12 mx-auto">
         <!-- Side Navigation -->
         <aside>
           <nav class="side-nav">
@@ -178,30 +204,46 @@
           </nav>
         </aside>
       </div>
-      <div class="col-lg-10 col-12 mx-auto">
+      <div class="col-xl-10 col-lg-9 col-12 mx-auto">
         <section class="main-body container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-7 col-md-7 mx-auto">
               <section class="notice-card row">
-                <div class="col-lg-6 mx-auto">
+                <div class="col-lg-6 mx-auto mobile-display">
+                  <section class="balance">
+                    <div class="wallet-balance">
+                      <div>
+                        <span class="total">Total Earning</span>
+                        <h1 class="balance-amount"><span>$</span>23,987</h1>
+                      </div>
+                      <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="btns">
+                      <a href="#" class="core-btn"><i class="fas fa-dollar-sign"></i> Deposit</a>
+                      <a href="#" class="core-btn"><i class="fas fa-money-check-alt"></i> Invest</a>
+                      <a href="#" class="core-btn"><i class="fas fa-hand-holding-usd"></i> Withdraw</a>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-lg-6 col-md-6 mx-auto">
                   <div class="notice">
                     <div class="amount">
-                      <h2><span>$</span>12,789</h2>
+                      <h2><span>$</span>1289</h2>
                       <h4>deposit balance</h4>
                     </div>
                     <i class="fas fa-money-check-alt"></i>
                   </div>
                 </div>
-                <div class="col-lg-6 mx-auto">
+                <div class="col-lg-6 col-md-6 mx-auto">
                   <div class="notice">
                     <div class="amount">
-                      <h2><span>$</span>22,079</h2>
+                      <h2><span>$</span>2279</h2>
                       <h4>Total withdraw</h4>
                     </div>
                     <i class="fas fa-hand-holding-usd"></i>
                   </div>
                 </div>
-                <div class="col-lg-6 mx-auto">
+                <div class="col-lg-6 col-md-6 mx-auto">
                   <div class="notice">
                     <div class="amount">
                       <h2><span>$</span>19.00</h2>
@@ -211,7 +253,7 @@
                   </div>
                  
                 </div>
-                <div class="col-lg-6 mx-auto">
+                <div class="col-lg-6 col-md-6 mx-auto">
                   <div class="notice">
                     <div class="amount">
                       <h2>89</h2>
@@ -259,8 +301,8 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-4 mx-auto">
-              <section class="balance">
+            <div class="col-lg-5 col-md-5 mx-auto">
+              <section class="balance desktop-display">
                 <div class="wallet-balance">
                   <div>
                     <span class="total">Total Earning</span>
@@ -276,7 +318,6 @@
               </section>
               <section class="recent-trans">
                 <h2 class="cardTitle">Recent transaction</h2>
-
                 <div class="trans deposit">
                   <i class="fas fa-long-arrow-alt-left"></i>
                   <h4 class="amount">+43,000</h4>
@@ -325,11 +366,14 @@
   <!-- c3.js Charts Plugin -->
 
       
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
-  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\d3.min.js"></script>
-  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\nv.d3.js"></script>
-  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\stream_layers.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
   <!-- Index Scripts -->
   <!-- <script>
 		/*-----nvd3-chart1-----*/

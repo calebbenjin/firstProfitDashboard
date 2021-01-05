@@ -141,8 +141,10 @@ input {
   font-weight: 600;
   padding: 10px;
   border-radius: 6px;
+  background-color: #fff;
   border: none;
-  border: solid 1px #eee;
+  border: solid 1px #ccc;
+  outline: none;
 }
 
 .input-group {
@@ -238,6 +240,7 @@ section {
      align-items: center;
      justify-content: space-between;
      width: 150px;
+     margin-top: 1rem;
    }
 
    header .container-fluid nav ul .user-profile img {
@@ -280,7 +283,7 @@ section {
      display: none;
    }
 
-   @media(max-width: 768px) {
+   @media(max-width: 788px) {
     header .container-fluid .brand-logo {
       position: relative;
       left: -2rem;
@@ -307,14 +310,20 @@ section {
     }
 
     header .container-fluid nav ul .user-profile img {
-      width: 25px;
-      height: 25px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       margin-left: -2rem;
     }
     .user-profile .fas {
       font-size: 0.6rem;
       margin-left: -4px;
+    }
+
+    nav ul li .dropdown {
+      background: none !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
 
     .notification .circle {
@@ -336,30 +345,18 @@ section {
       right: 20px;
       margin-top: 5px;
     }
-    .mobile-toggle .line {
+    /* .mobile-toggle .line {
       width: 30px;
       height: 3px;
       background: var(--secondaryColor);
       margin-bottom: 4px;
+    } */
+    .mobile-toggle ion-icon {
+      font-size: 1.7rem;
+      color: var(--secondaryColor);
     }
 
-    /* Mobile Footer */
-    .mobile-footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      z-index: 99;
-      background: var(--greyColor);
-    }
-    .mobile-footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 4px;
-    }
-    .mobile-footer a{
-      text-align: center;
-      margin-bottom: -0.5rem;
-    }
+    
    }
 
    /* Header End */
@@ -467,6 +464,7 @@ section {
      height: 190px;
      border-radius: var(--radius);
      box-shadow: var(--light-shadow);
+     width: 100%;
    }
 
    .balance .wallet-balance {
@@ -862,13 +860,6 @@ section {
     font-family: var(--ff-secondary);
   }
 
-  .security__form .input-group input{
-    padding: 12px;
-    border-radius: 6px;
-    border: none;
-    border: solid 1px #eee;
-  }
-
   .form__footer {
     display: flex;
     align-items: center;
@@ -949,6 +940,14 @@ section {
 
   .form__body {
     padding: 2rem 3rem;
+  }
+
+  /* Wallet balance section */
+  .mobile-display {
+    display: none;
+  }
+  .desktop-display {
+    display: block;
   }
 
 /* ==========================================================================
@@ -1039,7 +1038,7 @@ section {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 788px) {
   /* Style adjustments for viewports that meet the condition */
   aside {
     display: none;
@@ -1055,6 +1054,59 @@ section {
     font-size: 0.7rem;
     white-space: nowrap;
   }
+
+
+  /* Wallet balance section */
+  .mobile-display {
+    display: block;
+  }
+  .desktop-display {
+    display: none;
+  }
+
+  /* Notice Card section */
+
+  .notice-card .notice i {
+    height: 50px;
+    width: 50px;
+    border: solid 1px var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: none;
+    color: var(--primaryColor);
+  }
+
+  /* Mobile Footer */
+  .mobile-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px 5px 25px;
+  }
+  .mobile-footer a{
+    text-align: center;
+    margin-bottom: -0.5rem;
+    color: var(--secondaryColor);
+  }
+  .mobile-footer a:focus {
+    color: var(--primaryColor);
+    text-decoration: none;
+  }
+  .mobile-footer p {
+    font-size: 0.6rem;
+    font-weight: 900;
+  }
+  .mobile-footer ion-icon {
+    font-size: 2rem;
+  }
+  
 }
 
 @media print,
