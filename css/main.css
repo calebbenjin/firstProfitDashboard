@@ -399,8 +399,8 @@ section {
      margin-right: 6px;
      padding: 4px;
      border: solid 1px var(--secondaryColor);
-     background: var(--secondaryColor);
-     color: #fff;
+     /* background: var(--secondaryColor); */
+     color: var(--secondaryColor);
      height: 30px;
      width: 30px;
      display: flex;
@@ -410,10 +410,28 @@ section {
      transition: var(--transition);
    }
 
-   aside .side-nav ul li a:hover i{
+   ul li a ion-icon {
+     transition: var(--transition);
+   }
+
+   aside .side-nav ul li a:hover i, a:hover ion-icon{
      color: var(--primaryColor);
      text-decoration: none;
      background: var(--greyColor);
+   }
+
+   aside .side-nav ul li a .ivon {
+     font-size: 1.2rem;
+     margin-right: 6px;
+     border: solid 1px var(--secondaryColor);
+     color: var(--secondaryColor);
+     border-radius: 50%;
+     height: 30px;
+     width: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: var(--transition);
    }
    /* Aside Nav end*/
 
@@ -462,7 +480,7 @@ section {
    .balance {
      padding: 20px;
      background: var(--whiteColor);
-     height: 190px;
+     /* height: 195px; */
      border-radius: var(--radius);
      box-shadow: var(--light-shadow);
      width: 100%;
@@ -508,6 +526,30 @@ section {
      margin-top: 1rem;
      display: flex;
      justify-content: space-around;
+   }
+   .btns .nav-btn span {
+     font-size: 0.6rem;
+     font-weight: 900;
+   }
+
+   .btns .nav-btn {
+     font-size: 1.8rem;
+     color: var(--secondaryColor);
+     width: 55px;
+     height: 55px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border: solid 1px var(--secondaryColor);
+     border-radius: 6px;
+     transition: var(--transition);
+   }
+
+   .btns .nav-btn:hover {
+     text-decoration: none;
+     color: var(--primaryColor);
+     border: solid 1px var(--primaryColor);
    }
 
 
@@ -1132,6 +1174,35 @@ section {
     color: var(--primaryColor);
   }
 
+  .balance .btns {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .btns .nav-btn span {
+    font-size: 0.6rem;
+    font-weight: 900;
+  }
+
+  .btns .nav-btn {
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    width: 55px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--secondaryColor);
+    border-radius: 6px;
+  }
+
+  .btns .nav-btn:hover {
+    text-decoration: none;
+    color: var(--primaryColor);
+    border: solid 1px var(--primaryColor);
+  }
+
   /* Mobile Footer */
   .mobile-footer {
     position: fixed;
@@ -1158,6 +1229,10 @@ section {
   }
   .mobile-footer ion-icon {
     font-size: 2rem;
+  }
+  .mobile-footer i {
+    font-size: 2rem;
+    margin-bottom: 6px;
   }
   
 }

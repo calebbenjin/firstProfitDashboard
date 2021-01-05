@@ -96,24 +96,26 @@
       </div>
     </div>
   </header>
+  <!-- Mobile nav -->
   <nav class="mobile-footer">
     <a href="index.html" class="home">
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home"></ion-icon>
       <p>Home</p>
     </a>
     <a href="deposit.html" class="deposit">
-      <ion-icon name="arrow-undo-outline"></ion-icon>
+      <ion-icon name="arrow-redo"></ion-icon>
       <p>Deposit</p>
     </a>
     <a href="invest.html" class="invest">
-      <ion-icon name="arrow-down-circle-outline"></ion-icon>
+      <ion-icon name="arrow-down-circle"></ion-icon>
       <p>Invest</p>
     </a>
     <a href="withdraw.html" class="withdraw">
-      <ion-icon name="arrow-redo-outline"></ion-icon>
+      <i class="fas fa-hand-holding-usd"></i>
       <p>Withdraw</p>
     </a>
   </nav>
+
   <main class="container-fluid">
     <div class="row">
       <div class="col-xl-2 col-lg-3 col-12 mx-auto">
@@ -126,20 +128,25 @@
             <ul>
               <li>
                 <a href="index.html">
-                  <i class="material-icons">dashboard</i>
+                  <div class="ivon">
+                    <ion-icon name="home"></ion-icon>
+                  </div>
                   <span>Dashboard</span>
                 </a>
               </li>
               <li>
                 <a href="invest.html">
-                  <!-- <i class="material-icons">timeline</i> -->
-                  <i class="fas fa-dollar-sign"></i>
+                  <div class="ivon">
+                    <ion-icon name="arrow-down"></ion-icon>
+                  </div>
                   <span>Invest Now</span>
                 </a>
               </li>
               <li>
                 <a href="deposit.html">
-                  <i class="fas fa-money-check-alt"></i>
+                  <div class="ivon">
+                    <ion-icon name="arrow-redo"></ion-icon>
+                  </div>
                   <span>Deposit</span>
                 </a>
               </li>
@@ -186,6 +193,7 @@
           <div class="row">
             <div class="col-lg-7 col-md-7 mx-auto">
               <section class="notice-card row">
+                <!-- Mobile Display -->
                 <div class="col-lg-6 mx-auto mobile-display">
                   <section class="balance">
                     <div class="wallet-balance">
@@ -196,9 +204,18 @@
                       <i class="fas fa-balance-scale"></i>
                     </div>
                     <div class="btns">
-                      <a href="#" class="core-btn"><i class="fas fa-dollar-sign"></i> Deposit</a>
-                      <a href="#" class="core-btn"><i class="fas fa-money-check-alt"></i> Invest</a>
-                      <a href="#" class="core-btn"><i class="fas fa-hand-holding-usd"></i> Withdraw</a>
+                      <a href="#" class="nav-btn">
+                        <ion-icon name="arrow-redo"></ion-icon>
+                       <span>Deposit</span>
+                      </a>
+                      <a href="#" class="nav-btn">
+                        <ion-icon name="arrow-down-circle"></ion-icon>
+                        <span>Invest</span>
+                      </a>
+                      <a href="#" class="nav-btn">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Withdraw</span>
+                      </a>
                     </div>
                   </section>
                 </div>
@@ -288,9 +305,18 @@
                   <i class="fas fa-balance-scale"></i>
                 </div>
                 <div class="btns">
-                  <a href="#" class="core-btn"><i class="fas fa-dollar-sign"></i> Deposit</a>
-                  <a href="#" class="core-btn"><i class="fas fa-money-check-alt"></i> Invest</a>
-                  <a href="#" class="core-btn"><i class="fas fa-hand-holding-usd"></i> Withdraw</a>
+                  <a href="#" class="nav-btn">
+                    <ion-icon name="arrow-redo"></ion-icon>
+                   <span>Deposit</span>
+                  </a>
+                  <a href="#" class="nav-btn">
+                    <ion-icon name="arrow-down-circle"></ion-icon>
+                    <span>Invest</span>
+                  </a>
+                  <a href="#" class="nav-btn">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <span>Withdraw</span>
+                  </a>
                 </div>
               </section>
               <section class="recent-trans">
