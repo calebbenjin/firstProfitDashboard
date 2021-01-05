@@ -48,6 +48,24 @@
   border: solid 1px var(--secondaryColor);
 }
 
+.title {
+  padding: 10px 20px;
+  color: var(--secondaryColor);
+  font-size: 1.2rem;
+  font-family: var(--ff-secondary);
+}
+
+.cancle__btn {
+  border: none;
+  background: #eeee;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 1rem;
+  font-weight: 900;
+  color: #a8a8a8;
+  white-space: nowrap;
+}
+
 select {
   display: none;
 }
@@ -74,7 +92,7 @@ html, body {
 
 hr {
   display: block;
-  height: 1px;
+  height: zpx;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
@@ -121,6 +139,21 @@ ul li {
 input {
   outline: none;
   font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  border: solid 1px #eee;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.input-group label{
+  /* margin-bottom: -0.1px; */
+  font-weight: 900;
+  font-size: 0.9rem;
 }
 
 section {
@@ -214,6 +247,13 @@ section {
    }
    .user-profile .fas {
      font-size: 0.8rem;
+   }
+
+   .dropdown-menu a {
+     font-size: 0.8rem;
+   }
+   .dropdown-menu a span{
+     margin-left: 3px;
    }
 
    .notification {
@@ -585,6 +625,9 @@ section {
 
 
   /*  Investment */
+  .invest__section .title, .yieldinvestment__section .title, .myinvestment__section .title {
+    border-bottom: solid 1px #ccc;
+  }
   .invest__nav {
     display: flex;
     justify-content: space-between;
@@ -670,13 +713,19 @@ section {
     width: 100%;
     margin-bottom: 1rem;
   }
+  form .wide {
+    border: solid 1px #ccc;
+    font-weight: 900;
+  }
   .invest__card form input {
     padding: 10px;
-    border: solid 1px #eee;
-    border-radius: 8px;
-    font-weight: 400;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    font-weight: 900;
+    color: #333;
+    
   }
-  .invest__card form .invest__btn {
+  .invest__btn {
     margin-top: 1rem;
     width: 100%;
     padding: 10px;
@@ -691,17 +740,215 @@ section {
     border: solid 1px var(--primaryColor);
   }
 
-  .invest__card form .invest__btn:hover {
+  .invest__btn:hover {
     box-shadow: var(--dark-shadow);
     background: none;
     color: var(--primaryColor);
     border: solid 1px var(--primaryColor);
+    text-decoration: none;
+  }
+  .invest__btn2 {
+    margin-top: 1rem;
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px;
+    background: var(--secondaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 6px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: var(--transition);
+    border: solid 1px var(--secondaryColor);
+  }
+
+  .invest__btn2:hover {
+    box-shadow: var(--dark-shadow);
+    background: none;
+    color: var(--secondaryColor);
+    border: solid 1px var(--secondaryColor);
+    text-decoration: none;
   }
 
   .invest__card .card__form h5 {
     font-size: 0.9rem;
     font-weight: 900;
     text-transform: capitalize;
+  }
+  .invest__card .card__form {
+    box-shadow: var(--dark-shadow);
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  /* Alert Card */
+  .alert__card {
+    box-shadow: var(--dark-shadow);
+    padding: 40px;
+    text-align: center;
+    /* width: 50%; */
+    margin: 2rem auto;
+    border-radius: 6px;
+  }
+  .alert__card .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: solid 1px var(--primaryColor);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--primaryColor);
+  }
+  .alert__card h4 {
+    margin: 2rem 0;
+    font-weight: 900;
+  }
+
+  /* My Investment Section */
+  .myinvestment__section {
+    display: none;
+  }
+
+  /* Security Center */
+  .security__form {
+    background: var(--whiteColor);
+    border-radius: 6px;
+    box-shadow: var(--light-shadow);
+    margin: 2rem auto;
+  }
+
+  .security__form form {
+    padding: 2rem 3rem;
+  }
+
+  .security__form .title {
+    font-weight: 900;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .security__form .input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .security__form .input-group label {
+    font-weight: 900;
+    color: #333;
+    margin-bottom: -0.01rem;
+  }
+  .security__form .input-group span {
+    font-weight: 900;
+    color: #a5a5a5;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  .security__form .notice {
+    margin: 1.5rem 0;
+    font-weight: 900;
+    color: var(--primaryColor);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    background: #f8dddd;
+    border-radius: 6px;
+    font-family: var(--ff-secondary);
+  }
+
+  .security__form .input-group input{
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    border: solid 1px #eee;
+  }
+
+  .form__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .form__footer button{
+    width: 45%;
+  }
+
+  /* User Profile */
+  .user__card {
+    background: var(--whiteColor);
+    box-shadow: var(--dark-shadow);
+    border-radius: 6px;
+  }
+  .profile__settings .title {
+    padding: 10px 20px;
+    color: var(--secondaryColor);
+    font-size: 1.2rem;
+    font-family: var(--ff-secondary);
+    background: var(--greyColor)
+  }
+  .user__card .user__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+  .user__card .user-img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    border-radius: 50%;
+    border: solid 8px var(--secondaryColor);
+    box-shadow: var(--light-shadow);
+  }
+
+  .user__card .profile__body {
+    padding: 30px 10px;
+  }
+  .user__card .profile__body .user__details {
+    text-align: center;
+  }
+  .profile__body .user__details .fullname {
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--secondaryColor);
+    margin-top: -20px;
+  }
+  .profile__body .user__details .username {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--secondaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-secondary);
+    margin: 10px 0;
+  }
+  .profile__body .user__details .joined {
+    font-weight: 900;
+    background: var(--greyColor);
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: var(--light-shadow);
+    color: var(--primaryColor);
+    border: solid 1px var(--primaryColor);
+    font-size: 0.8rem;
+  }
+
+  /* Edit profile */
+  .profile__edit {
+    background: var(--whiteColor);
+    box-shadow: var(--dark-shadow);
+    border-radius: 6px;
+  }
+
+  .form__body {
+    padding: 2rem 3rem;
   }
 
 /* ==========================================================================
@@ -792,10 +1039,21 @@ section {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
   aside {
-    background: red;
+    display: none;
+  }
+
+  /* Core Button */
+  .core-btn {
+    font-size: 0.8rem;
+  }
+
+  /* Invest Nav */
+  .invest__nav .core-btn {
+    font-size: 0.7rem;
+    white-space: nowrap;
   }
 }
 
