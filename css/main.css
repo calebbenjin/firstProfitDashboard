@@ -993,6 +993,146 @@ section {
     display: block;
   }
 
+  /*============================ 
+    Deposit page 
+  ================================*/
+
+  .select__deposit {
+    background: #fff;
+    /* padding: 20px; */
+    box-shadow: var(--light-shadow);
+    border-radius: 6px;
+  }
+  .select__deposit .title {
+    padding: 20px;
+    color: var(--secondaryColor);
+    background: var(--greyColor);
+  }
+  .select__deposit .title ion-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+  .deposit_card {
+    padding: 20px;
+  }
+  .deposit_card .crypto {
+    box-shadow: var(--light-shadow);
+    border-radius: 6px;
+  }
+  .deposit_card .crypto .title{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: var(--ff-secondary);
+  }
+  .crypto .crypto_body {
+    padding: 20px;
+    text-align: center;
+  }
+  .crypto .crypto_body  .alert {
+    padding: 10px;
+    font-size: 0.9rem;
+    background: #f8dddd;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 900;
+    text-align: center;
+    font-family: var(--ff-secondary);
+    color: var(--primaryColor);
+  }
+  .crypto .crypto_body  .alert ion-icon {
+    color: var(--primaryColor);
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .crypto_body .send {
+    font-size: 1.2rem;
+    color: var(--secondaryColor);
+    font-family: var(--ff-secondary);
+  }
+  .crypto_body .address {
+    font-size: 1.1rem;
+    color: var(--secondaryColor);
+    margin: 20px 0;
+    background: #e7f3fa;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: scroll;
+    font-weight: 900;
+  }
+  .crypto_body .or {
+    font-size: 1.5rem;
+    font-family: var(--ff-secondary);
+    color: var(--secondaryColor);
+  }
+  .crypto_body .scaner {
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: var(--light-shadow); */
+    border-radius: 6px;
+  }
+
+  .crypto_body .notice {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: var(--dark-shadow);
+    font-weight: 900;
+    color: var(--secondaryColor);
+  }
+
+  .bank_card {
+    padding: 20px;
+  }
+  .pro_bank {
+    box-shadow: var(--light-shadow);
+    border-radius: 6px;
+  }
+  .pro_bank .title{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: var(--ff-secondary);
+  }
+  .pro_bank .title ion-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+
+  .bank_card h3 {
+    font-size: 1.1rem;
+    color: var(--secondaryColor);
+    /* margin: 20px 0; */
+    background: #e7f3fa;
+    padding: 10px;
+    border-radius: 6px;
+    /* font-weight: 900; */
+  }
+
+  .bank_card h4 {
+    color: var(--secondaryColor);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-family: var(--ff-secondary);
+  }
+
+  .bank_card h5 {
+    font-size: 1rem;
+    color: var(--secondaryColor);
+    margin: 1rem 0;
+  }
+  .bank_card h6 {
+    font-size: 1rem;
+    color: var(--secondaryColor);
+    margin-top: 2rem;
+    box-shadow: var(--dark-shadow);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 900;
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
