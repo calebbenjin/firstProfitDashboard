@@ -735,6 +735,7 @@ section {
   }
 
   .invest__card .card__body {
+    background: #fff;
     /* width: 90%; */
     margin: 0 auto;
     line-height: 1.8;
@@ -1006,7 +1007,7 @@ section {
   .select__deposit .title {
     padding: 20px;
     color: var(--secondaryColor);
-    background: var(--greyColor);
+    /* background: var(--greyColor); */
   }
   .select__deposit .title ion-icon {
     font-size: 1.5rem;
@@ -1014,16 +1015,21 @@ section {
   }
   .deposit_card {
     padding: 20px;
+    /* background: var(--whiteColor); */
   }
   .deposit_card .crypto {
     box-shadow: var(--light-shadow);
     border-radius: 6px;
+    background: var(--whiteColor);
   }
   .deposit_card .crypto .title{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-family: var(--ff-secondary);
+    border-bottom: 1px solid #e2e2e2;
+    background: var(--greyColor);
+    position: relative;
   }
   .crypto .crypto_body {
     padding: 20px;
@@ -1035,7 +1041,7 @@ section {
     background: #f8dddd;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-weight: 900;
     text-align: center;
     font-family: var(--ff-secondary);
@@ -1045,6 +1051,7 @@ section {
     color: var(--primaryColor);
     font-weight: 900;
     font-size: 1.5rem;
+    display: none;
   }
 
   .crypto_body .send {
@@ -1089,12 +1096,15 @@ section {
   .pro_bank {
     box-shadow: var(--light-shadow);
     border-radius: 6px;
+    background: var(--whiteColor);
   }
   .pro_bank .title{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-family: var(--ff-secondary);
+    border-bottom: 1px solid #e2e2e2;
+    background: var(--greyColor);
   }
   .pro_bank .title ion-icon {
     font-size: 1.5rem;
@@ -1130,6 +1140,35 @@ section {
     box-shadow: var(--dark-shadow);
     padding: 10px;
     border-radius: 6px;
+    font-weight: 900;
+  }
+
+  /* ==================================
+    Withdraw page
+  =================================*/
+  .current__balance {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--secondaryColor);
+  }
+  .current__balance span {
+    font-family: var(--ff-secondary);
+    font-size: 1.5rem;
+  }
+  .withdraw__form {
+    /* padding: 30px; */
+    /* box-shadow: var(--light-shadow); */
+    border-radius: 6px;
+  }
+  .withdraw__form .input-group {
+    text-align: left;
+  }
+  .input-group .account__notice {
+    font-size: 0.8rem;
+    background: #e7f3fa;
+    padding: 6px;
+    border-radius: 6px;
+    color: var(--secondaryColor);
     font-weight: 900;
   }
 

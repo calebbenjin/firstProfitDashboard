@@ -1,0 +1,341 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- NVD3 -->
+  <!-- Morris.js Charts Plugin -->
+  <!-- <link href="https://firstprofittrading.biz/assets\plugins\morris\morris.css" rel="stylesheet" /> -->
+  <!-- <link href="css/nvd3.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
+
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"/>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <a href="" class="brand-logo">
+        <img src="img/logo.png" alt="">
+        <h2>FirstProfit</h2>
+      </a>
+      <div class="search-form">
+        <form action="">
+          <div class="input-group">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+        </form>
+      </div>
+      <div class="greeting">
+        <h3>Welcome, <span>John Deo</span></h3>
+      </div>
+      <nav>
+        <ul>
+          <li class="notification">
+            <div class="circle"></div>
+            <i class="fas fa-bell"></i>
+          </li>
+          <li class="user-profile dropdown">
+            <div class="dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/Max-R_Headshot (1).jpg" alt="">
+            </div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user-cog"></i>
+                <span>Profile Settings</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user-tie"></i>
+                <span>Account officer</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cog"></i>
+                <span>Security center</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-network-wired"></i>
+                <span>Referrals</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-toggle">
+        <!-- <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div> -->
+        <ion-icon name="apps-outline"></ion-icon>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile nav -->
+  <nav class="mobile-footer">
+    <a href="index.html" class="home">
+      <ion-icon name="home"></ion-icon>
+      <p>Home</p>
+    </a>
+    <a href="deposit.html" class="deposit">
+      <ion-icon name="arrow-redo"></ion-icon>
+      <p>Deposit</p>
+    </a>
+    <a href="invest.html" class="invest">
+      <ion-icon name="arrow-down-circle"></ion-icon>
+      <p>Invest</p>
+    </a>
+    <a href="withdraw.html" class="withdraw">
+      <i class="fas fa-hand-holding-usd"></i>
+      <p>Withdraw</p>
+    </a>
+  </nav>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-12 mx-auto">
+        <!-- Side Navigation -->
+        <aside>
+          <nav class="side-nav">
+            <div class="close-toggle">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <div class="ivon">
+                    <ion-icon name="home"></ion-icon>
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="invest.html">
+                  <div class="ivon">
+                    <ion-icon name="arrow-down"></ion-icon>
+                  </div>
+                  <span>Invest Now</span>
+                </a>
+              </li>
+              <li>
+                <a href="deposit.html">
+                  <div class="ivon">
+                    <ion-icon name="arrow-redo"></ion-icon>
+                  </div>
+                  <span>Deposit</span>
+                </a>
+              </li>
+              <li>
+                <a href="withdraw.html">
+                  <i class="fas fa-hand-holding-usd"></i>
+                  <span>Withdraw</span>
+                </a>
+              </li>
+              <li>
+                <a href="tranfer.html">
+                  <i class="fas fa-share-square"></i>
+                  <span>Transfer</span>
+                </a>
+              </li>
+              <li>
+                <a href="transactions.html">
+                  <i class="fas fa-history"></i>
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li>
+                <a href="bills">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Pay bills</span>
+                </a>
+              </li>
+              <li>
+                <a href="/index.html">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>logout</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-logo">
+            <img src="img/logo.png" alt="">
+            <h2>FirstProfit</h2>
+          </div>
+        </aside>
+      </div>
+      <div class="col-lg-10 col-12 mx-auto">
+        <section class="main-body container">
+          <div class="deposit__section">
+            <h2 class="title"><ion-icon name="arrow-redo"></ion-icon> Withdraw fund</h2>
+            <hr>
+            <div class="select__deposit">
+              <!-- <h2 class="title">Select payment method</h2> -->
+              <div class="deposit_card">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 mx-auto">
+                    <div class="crypto">
+                      <h2 class="title"><ion-icon name="business-outline"></ion-icon>Bank withdraw</h2>
+                      <div class="crypto_body">
+                        <h5 class="alert"><ion-icon name="power-outline"></ion-icon> Kindly provide a valid personal bank account details bearing the same name on your dashboard else your withdrawal would be declined.</h5>
+                        <h5 class="alert"><ion-icon name="power-outline"></ion-icon>  Profit withdrawals orders are processed in 1-24 working hour (s)</h5>
+                        <h5 class="alert"><ion-icon name="power-outline"></ion-icon> Withdrawal of Capital on(Termination of Contract) are now processed in 14days refer to Investment Memorandium of Agreement 1(D)</h5>
+                        <div class="withdraw__form">
+                          <h3 class="current__balance">Available balance <span>$30,896</span></h3>
+                          <form action="#">
+                            <div class="input-group">
+                              <input type="text" placeholder="Enter Amount">
+                            </div>
+                            <div class="input-group">
+                              <input type="text" placeholder="Enter Account Number">
+                            </div>
+                            <div class="input-group">
+                              <label for="" class="account__notice">Account Name(Must Be The Same As The Name On Your Profile)</label>
+                              <input type="text" placeholder="Enter Account Name">
+                            </div>
+                            <div class="input-group">
+                              <input type="text" placeholder="Enter Bank Name">
+                            </div>
+                            <button class="invest__btn2">procced Withdraw</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 mx-auto">
+                    <div class="crypto">
+                      <h2 class="title"><ion-icon name="logo-bitcoin"></ion-icon> Cryptocurrency</h2>
+                      
+                      <div class="crypto_body">
+                        <h5 class="alert"><ion-icon name="power-outline"></ion-icon>  Kindly provide valid bitcoin address to avoid loss of funds</h5>
+                        <h5 class="alert"><ion-icon name="power-outline"></ion-icon>  Profit withdrawals in Bitcoin are processed within 1-12 working hours (s)</h5>
+                        <h5 class="alert"><ion-icon name="power-outline"></ion-icon> Withdrawal of Capital on(Termination of Contract) are now processed in 14days refer to Investment Memorandium of Agreement 1(D)</h5>
+                        <div class="withdraw__form">
+                          <form action="#">
+                            <div class="input-group">
+                              <input type="text" placeholder="Enter Amount">
+                            </div>
+                            <div class="input-group">
+                              <label for="" class="account__notice">Enter only Bitcoin Wallet Address(This Address Will Be Permanent)</label>
+                              <input type="text" placeholder="Enter bitcoin address">
+                            </div>
+                            <button class="invest__btn2">procced Withdraw</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- c3.js Charts Plugin -->  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\d3.min.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\stream_layers.js"></script> -->
+  <!-- Index Scripts -->
+  <script>
+		/*-----nvd3-chart1-----*/
+historicalBarChart = [{
+	key: "Cumulative Return",
+	values: [{
+		"label": "Deposit",
+		"value": 0,
+		"color": "#6c3e9d"
+	}, {
+		"label": "Wallet",
+		"value": 0,
+		"color": "#45aaf2"
+	}, {
+		"label": "Withdrawal",
+		"value": 0,
+		"color": "#d45c95"
+	}, {
+		"label": "Referral Bonus",
+		"value": 0,
+		"color": "#fb8d34"
+	}, ]
+}];
+nv.addGraph(function() {
+	var chart = nv.models.discreteBarChart().x(function(d) {
+			return d.label
+		}).y(function(d) {
+			return d.value
+		}).staggerLabels(true)
+		//.staggerLabels(historicalBarChart[0].values.length > 8)
+		.showValues(true).duration(250);
+	d3.select('#nvd3-chart1 svg').datum(historicalBarChart).call(chart);
+	nv.utils.windowResize(chart.update);
+	return chart;
+});
+
+</script>
+<!--Start of Tawk.to Script-->
+<!-- <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5893c78a22a7eb0a671e0c75/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
