@@ -79,6 +79,38 @@ html, body {
   font-family: var(--ff-primary);
 }
 
+table thead {
+  background: var(--greyColor);
+  width: 100%;
+}
+
+.table {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.tables {
+  padding: 10px;
+  background: #fff;
+  box-shadow: var(--light-shadow);
+  border-radius: 6px;
+}
+
+table thead tr th {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: var(--secondaryColor);
+  /* white-space: nowrap; */
+  font-family: var(--ff-secondary);
+}
+
+table tbody tr {
+  font-size: 0.9rem;
+  /* white-space: nowrap; */
+  color: var(--secondaryColor);
+}
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -414,7 +446,7 @@ section {
      transition: var(--transition);
    }
 
-   aside .side-nav ul li a:hover i, a:hover ion-icon{
+   aside .side-nav ul li a:hover i, aside .side-nav ul li a:hover ion-icon{
      color: var(--primaryColor);
      text-decoration: none;
      background: var(--greyColor);
@@ -662,17 +694,150 @@ section {
     border-radius: 50%;
   }
 
-  
+
+
+  /* Transaction Page */
+  .transaction__card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: var(--light-shadow);
+  }
+
+  .transaction__card .transaction__nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ccc;
+  }
+
+  .transaction__card .transaction__nav a {
+    color: var(--secondaryColor);
+    padding: 20px;
+    width: 100%;
+    font-weight: 900;
+    /* border-left: solid 1px #ccc; */
+    font-size: 0.9rem;
+  }
+  .transaction__card .transaction__nav a:first-child {
+    border-left: none;
+  }
+  .transaction__card .transaction__nav a:hover {
+    background: var(--greyColor);
+    text-decoration: none;
+  }
+
+  .transaction__card .transaction__body {
+    padding: 20px;
+  }
+  .transaction__card .transaction__body .trans__title {
+    padding: 10px;
+    color: var(--secondaryColor);
+    font-family: var(--ff-secondary);
+    text-transform: capitalize;
+  }
+  .transaction__card .transaction__body .trans {
+    /* box-shadow: var(--light-shadow); */
+    border-radius: 6px;
+  }
+
+  .pagination .page-item .page-link {
+    font-size: 0.7rem !important;
+    color: var(--secondaryColor);
+    font-family: var(--ff-secondary);
+
+  }
+
+  .table tr .amount {
+    font-family: var(--ff-secondary);
+    color: var(--secondaryColor);
+  }
+  .table tr .net-amount {
+    font-family: var(--ff-secondary);
+    color: var(--secondaryColor);
+  }
+  .table tr .fee {
+    font-family: var(--ff-secondary);
+    color: var(--primaryColor);
+  }
 
 
   /*  Investment */
   .invest__section .title, .yieldinvestment__section .title, .myinvestment__section .title {
     border-bottom: solid 1px #ccc;
+    font-family: var(--ff-primary);
+    font-size: 1.2rem;
   }
-  .invest__nav {
+  .invest__section {
+    /* display: none; */
+  }
+  /* .invest__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  } */
+
+  .invest__nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* border-bottom: solid 1px #ccc; */
+  }
+
+  .btn-tab {
+    border: none;
+    background: transparent;
+    /* box-shadow: var(--light-shadow); */
+    margin: 1rem;
+    border-radius: 6px;
+    padding: 10px;
+    border: solid 1px var(--secondaryColor);
+    font-weight: 900;
+    color: var(--secondaryColor);
+  }
+
+  @media(max-width: 788px) {
+    .btn-tab {
+      margin: 3px;
+      padding: 3px;
+      font-size: 0.7rem;
+    }
+  }
+
+  .operations {
+    background: var(--whiteColor);
+    box-shadow: var(--light-shadow);
+    border-radius: 6px;
+  }
+
+  .operation__content {
+    display: none;
+  }
+  .operation__content--active {
+    display: block;
+  }
+
+  .operations__tab--active {
+    /* transform: translateY(-66%); */
+    background: var(--secondaryColor);
+    color: #fff;
+
+  }
+
+  .invest__nav a {
+    color: var(--secondaryColor);
+    padding: 10px;
+    width: 100%;
+    font-weight: 900;
+    border-left: solid 1px #ccc;
+  }
+  .invest__nav a:first-child {
+    border-left: none;
+  }
+
+  .invest__nav a:hover {
+    text-decoration: none;
+    background: var(--greyColor);
   }
 
   .invest__card {
@@ -682,6 +847,57 @@ section {
     padding: 30px;
     position: relative;
     margin: 1rem 0;
+  }
+
+  .running-btn {
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    background: var(--secondaryColor);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .running-btn:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .download-btn {
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    border: solid 1px var(--primaryColor);
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .download-btn:hover {
+    color: var(--secondaryColor);
+    border: solid 1px var(--secondaryColor);
+    text-decoration: none;
+  }
+
+  .topup-btn {
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    border: solid 1px var(--primaryColor);
+    background: var(--primaryColor);
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .topup-btn:hover {
+    color: var(--primaryColor);
+    border: solid 1px var(--primaryColor);
+    background: none;
+    text-decoration: none;
   }
 
   .title {
@@ -827,11 +1043,13 @@ section {
   /* Alert Card */
   .alert__card {
     box-shadow: var(--dark-shadow);
+    background: var(--whiteColor);
     padding: 40px;
     text-align: center;
     /* width: 50%; */
     margin: 2rem auto;
     border-radius: 6px;
+    display: none;
   }
   .alert__card .icon {
     width: 100px;
@@ -852,7 +1070,7 @@ section {
 
   /* My Investment Section */
   .myinvestment__section {
-    display: none;
+    /* display: none; */
   }
 
   /* Security Center */
@@ -998,11 +1216,16 @@ section {
     Deposit page 
   ================================*/
 
+  .deposit__section .title {
+    display: flex;
+    align-items: center;
+  }
+
   .select__deposit {
-    background: #fff;
+    /* background: #fff; */
     /* padding: 20px; */
-    box-shadow: var(--light-shadow);
-    border-radius: 6px;
+    /* box-shadow: var(--light-shadow); */
+    /* border-radius: 6px; */
   }
   .select__deposit .title {
     padding: 20px;
@@ -1171,6 +1394,450 @@ section {
     color: var(--secondaryColor);
     font-weight: 900;
   }
+
+/* Mail Box page */
+
+.mailbox {
+  background: var(--whiteColor);
+  box-shadow: var(--light-shadow);
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.mail__nav .invest__btn2 {
+  margin-bottom: 2rem;
+  display: block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 8px;
+}
+
+.mail__nav .invest__btn2 ion-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.mail__ul li a{
+  color: var(--secondaryColor);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-top: 2rem;
+}
+.mail__nav .invest__btn2:hover ion-icon {
+  color: var(--secondaryColor);
+  background: none;
+}
+.mail__nav li a:hover ion-icon{
+  color: var(--primaryColorColor);
+  background: none
+}
+.mail__nav li a ion-icon{
+  margin-right: 4px;
+}
+.mail__nav li a:hover{
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.mail__nav li .sent {
+  transform: rotate(-50deg);
+}
+
+.inbox__messages .inbox__title {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #dfdfdf;
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
+  font-family: var(--ff-secondary);
+  padding-bottom: 5px;
+}
+
+.inbox__messages {
+  display: none;
+}
+.sent__messages {
+  display: none;
+}
+
+.inbox__messages .inbox__title ion-icon {
+  margin-right: 5px;
+}
+
+.inbox__title ion-icon {
+  margin-right: 5px;
+}
+
+.inbox__title {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #dfdfdf;
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
+  font-family: var(--ff-secondary);
+  padding-bottom: 5px;
+}
+
+.sent__messages .inbox__title {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #dfdfdf;
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
+  font-family: var(--ff-secondary);
+  padding-bottom: 5px;
+}
+
+.sent__messages .inbox__title ion-icon {
+  margin-right: 5px;
+}
+
+/* Read Messages */
+
+.read__messages {
+  background: var(--greyColor);
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.read__messages .ticket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.read__messages .ticket h4 {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--secondaryColor);
+}
+
+.read__messages .subject {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--secondaryColor);
+}
+
+.list__messages .message__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--light-shadow);
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.list__messages .message__card:hover {
+  background: var(--greyColor);
+}
+
+.list__messages a {
+  text-decoration: none;
+}
+
+.message__card .message__title {
+  /* background: #eee; */
+  width: 25%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.message__card .message__title h6 {
+  font-weight: 900;
+  color: var(--secondaryColor);
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+.message__card small {
+  font-size: 0.8rem;
+  color: var(--secondaryColor);
+}
+.message__card .description {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* background: #eee; */
+}
+
+.message__card .status__btn ion-icon {
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+}
+
+.message__card .modal .delete__card {
+  width: 70px;
+  height: 70px;
+  margin: 1rem auto;
+  border: solid 1px var(--primaryColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message__card .modal .delete__card ion-icon {
+  font-size: 2rem;
+}
+
+.message__card .modal {
+  text-align: center;
+}
+.message__card .modal h6{
+  font-weight: 900;
+  color: var(--secondaryColor);
+}
+
+.message__card .modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message__card .modal-footer .invest__btn {
+  width: 40%;
+}
+
+.modal-header .compose__title {
+  font-family: var(--ff-secondary);
+  color: var(--secondaryColor);
+  display: flex;
+  align-items: center;
+}
+.modal-header .compose__close {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+
+.modal-body form input, .modal-body form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.modal-body form input {
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+.modal-body form textarea {
+  border: none;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 900;
+  margin-top: 1.5rem;
+}
+
+
+
+/* ===============================
+  Bills Page
+============================= */
+
+.notice__head {
+  background: #fff;
+  box-shadow: var(--dark-shadow);
+  /* width: 55%;
+  margin: 1rem auto; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  border-radius: 6px;
+}
+.notice__head img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 4px var(--secondaryColor);
+}
+.notice__head .text {
+  font-family: var(--ff-secondary);
+  color: var(--secondaryColor);
+  padding-left: 10px;
+}
+
+.bills__card {
+  margin-top: 3rem;
+}
+
+.bills__card  .bill__card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: var(--dark-shadow);
+  color: var(--secondaryColor);
+  margin-bottom: 1rem;
+}
+
+
+.bill__card h3 {
+  text-transform: capitalize;
+  font-family: var(--ff-secondary);
+  font-size: 1.3rem;
+}
+
+.bill__card .icon {
+  border: solid 1px var(--primaryColor);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--light-shadow);
+}
+.bill__card .icon ion-icon {
+  font-size: 4rem;
+  color: var(--primaryColor);
+}
+
+.bill__card:hover .icon, .bill__card:hover ion-icon {
+  border-color: var(--secondaryColor);
+  color: var(--secondaryColor);
+}
+.bill__card:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.bill__card button {
+  border: none;
+  padding: 10px;
+  /* box-shadow: var(--light-shadow); */
+  border-radius: 6px;
+  background: var(--secondaryColor);
+  text-transform: capitalize;
+  font-family: var(--ff-secondary);
+  color: #fff;
+  border: solid 1px var(--secondaryColor);
+  transition: var(--transition);
+}
+.bill__card button:hover {
+  background: #fff;
+  color: var(--secondaryColor);
+  
+}
+/* ===============================
+  Transfer Page
+============================= */
+.slide__form {
+  position: relative;
+  background: #fff;
+  /* overflow: hidden; */
+  /* height: 100%;
+  width: 100%; */
+}
+
+.conver, .tranfar {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 100%;
+  height: 100%;
+}
+
+.convert__form textarea {
+  width: 100%;
+  border: none;
+  margin-top: 1rem;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+
+.convert__form, .transfer__form {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: var(--light-shadow);
+}
+.convert__form .title, .transfer__form .title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.convert__form form, .transfer__form form {
+  padding: 10px 30px 30px 30px;
+}
+
+.convert__form form input, .transfer__form form input {
+  padding: 15px;
+  color: #333;
+}
+.convert__form form input::placeholder, .transfer__form form input::placeholder {
+  color: #333;
+  font-size: 0.9rem;
+}
+.convert__form form select, .transfer__form form select{
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+.convert__form form select option span, .transfer__form form select option span{
+  font-family: var(--ff-secondary) !important;
+}
+
+.form__footer button {
+  border: none;
+  background: transparent;
+}
+.form__footer .submit-btn {
+  text-transform: capitalize;
+  background: var(--secondaryColor);
+  box-shadow: var(--dark-shadow);
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 900;
+  color: #fff;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__footer .submit-btn:hover {
+  background: #fff;
+  color: var(--secondaryColor);
+  border: solid 1px var(--secondaryColor);
+}
+
+.form__footer .next-btn {
+  text-transform: capitalize;
+  border: solid 1px var(--secondaryColor);
+  box-shadow: var(--dark-shadow);
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 900;
+  color: var(--secondaryColor);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__footer .next-btn:hover {
+  background: var(--secondaryColor);
+  color: #fff;
+  border: solid 1px var(--secondaryColor);
+  
+}
+.form__footer .next-btn ion-icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.form__footer .submit-btn i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
 
 /* ==========================================================================
    Helper classes

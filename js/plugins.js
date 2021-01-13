@@ -26,3 +26,8 @@
 $(document).ready(function() {
   $('select').niceSelect();
 });
+
+// Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

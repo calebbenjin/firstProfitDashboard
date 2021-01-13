@@ -27,6 +27,7 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
   <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -37,7 +38,7 @@
 <body>
   <header>
     <div class="container-fluid">
-      <a href="" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <img src="img/logo.png" alt="">
         <h2>FirstProfit</h2>
       </a>
@@ -58,34 +59,64 @@
             <div class="circle"></div>
             <i class="fas fa-bell"></i>
           </li>
-          <li class="user-profile">
-            <img src="img/Max-R_Headshot (1).jpg" alt="">
-            <i class="fas fa-chevron-down"></i>
+          <li class="user-profile dropdown">
+            <div class="dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/Max-R_Headshot (1).jpg" alt="">
+            </div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile__setting.html">
+                <i class="fas fa-user-cog"></i>
+                <span>Profile Settings</span>
+              </a>
+              <a class="dropdown-item" href="account__officer.html">
+                <i class="fas fa-user-tie"></i>
+                <span>Account officer</span>
+              </a>
+              <a class="dropdown-item" href="security__center.html">
+                <i class="fas fa-cog"></i>
+                <span>Security center</span>
+              </a>
+              <a class="dropdown-item" href="referal.html">
+                <i class="fas fa-network-wired"></i>
+                <span>Referrals</span>
+              </a>
+              <a class="dropdown-item" href="support.html">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+            </div>
           </li>
         </ul>
       </nav>
       <div class="mobile-toggle">
+        <!-- <div class="line"></div>
         <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="line"></div> -->
+        <ion-icon name="apps-outline"></ion-icon>
       </div>
     </div>
   </header>
+  <!-- Mobile nav -->
   <nav class="mobile-footer">
     <a href="index.html" class="home">
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home"></ion-icon>
       <p>Home</p>
     </a>
     <a href="deposit.html" class="deposit">
-      <ion-icon name="arrow-undo-outline"></ion-icon>
+      <ion-icon name="arrow-redo"></ion-icon>
       <p>Deposit</p>
     </a>
     <a href="invest.html" class="invest">
-      <ion-icon name="arrow-down-circle-outline"></ion-icon>
+      <ion-icon name="arrow-down-circle"></ion-icon>
       <p>Invest</p>
     </a>
     <a href="withdraw.html" class="withdraw">
-      <ion-icon name="arrow-redo-outline"></ion-icon>
+      <i class="fas fa-hand-holding-usd"></i>
       <p>Withdraw</p>
     </a>
   </nav>
@@ -95,23 +126,31 @@
         <!-- Side Navigation -->
         <aside>
           <nav class="side-nav">
+            <div class="close-toggle">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
             <ul>
               <li>
                 <a href="index.html">
-                  <i class="material-icons">dashboard</i>
+                  <div class="ivon">
+                    <ion-icon name="home"></ion-icon>
+                  </div>
                   <span>Dashboard</span>
                 </a>
               </li>
               <li>
                 <a href="invest.html">
-                  <!-- <i class="material-icons">timeline</i> -->
-                  <i class="fas fa-dollar-sign"></i>
+                  <div class="ivon">
+                    <ion-icon name="arrow-down"></ion-icon>
+                  </div>
                   <span>Invest Now</span>
                 </a>
               </li>
               <li>
                 <a href="deposit.html">
-                  <i class="fas fa-money-check-alt"></i>
+                  <div class="ivon">
+                    <ion-icon name="arrow-redo"></ion-icon>
+                  </div>
                   <span>Deposit</span>
                 </a>
               </li>
@@ -134,39 +173,9 @@
                 </a>
               </li>
               <li>
-                <a href="bills">
+                <a href="bills.html">
                   <i class="fas fa-file-invoice-dollar"></i>
                   <span>Pay bills</span>
-                </a>
-              </li>
-              <li>
-                <a href="settings.html">
-                  <i class="fas fa-user-cog"></i>
-                  <span>Profile settings</span>
-                </a>
-              </li>
-              <li>
-                <a href="officer.html">
-                  <i class="fas fa-user-tie"></i>
-                  <span>Account officer</span>
-                </a>
-              </li>
-              <li>
-                <a href="account-settings.html">
-                  <i class="fas fa-cog"></i>
-                  <span>Account settings</span>
-                </a>
-              </li>
-              <li>
-                <a href="support.html">
-                  <i class="fas fa-headset"></i>
-                  <span>Support</span>
-                </a>
-              </li>
-              <li>
-                <a href="referral.html">
-                  <i class="fas fa-network-wired"></i>
-                  <span>Referral</span>
                 </a>
               </li>
               <li>
@@ -177,25 +186,278 @@
               </li>
             </ul>
           </nav>
+          <div class="nav-logo">
+            <img src="img/logo.png" alt="">
+            <h2>FirstProfit</h2>
+          </div>
         </aside>
       </div>
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
-          <div class="transaction__nav">
-            <a href="#" class="core-btn">All Transactions</a>
-            <a href="#" class="core-btn">deposit history</a>
-            <a href="#" class="core-btn">withdrawal history</a>
-            <a href="#" class="core-btn">bills history</a>
-            <a href="#" class="core-btn">Transfer history</a>
-          </div>
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              
+          <h2 class="title"><i class="fas fa-history"></i> Transaction Histories</h2>
+          <hr>
+          <div class="transaction__card">
+            <div class="transaction__nav">
+              <a href="#" class="">Send and Receive history</a>
+              <a href="#" class="">Deposit history</a>
+              <a href="#" class="">Withdrawal history</a>
+              <a href="#" class="">Bills history</a>
+              <a href="#" class="">Transfer history</a>
             </div>
-            <div class="col-lg-4 mx-auto">
-              
+            <div class="transaction__body">
+              <!-- Send and Receive-->
+              <div class="transactions trans">
+                <h6 class="trans__title">Send and Receive history</h6>
+                <div class="tables">
+                  <table class="table table-borderless table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="row">Type</th>
+                        <th scope="col">name to</th>
+                        <th scope="col">date</th>
+                        <th scope="col">date</th>
+                        <th scope="col">time</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">fee</th>
+                        <th scope="col">net amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>send to john@gmail.com</td>
+                        <td>head Administrator</td>
+                        <td>2021-01-11</td>
+                        <td>11:27:am</td>
+                        <td>11:27:am</td>
+                        <td class="amount">13.00%</td>
+                        <td class="fee">- $ 2500</td>
+                        <td class="net-amount">+ $ 2500</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Transfer History -->
+              <div class="transfer__history trans">
+                <h6 class="trans__title">Transfer History</h6>
+                <div class="tables">
+                  <table class="table table-borderless table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Reference ID</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">from</th>
+                        <th scope="col">to</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2384nf8nv9</td>
+                        <td>Convert</td>
+                        <td>Earning balance</td>
+                        <td>Deposit balance</td>
+                        <td>$ 300</td>
+                        <td>11:27:am</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Bills History -->
+              <div class="bills__history trans">
+                <h6 class="trans__title">bills History</h6>
+                <div class="tables">
+                  <table class="table table-borderless table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Transaction ID</th>
+                        <th scope="col">Payment gateway</th>
+                        <th scope="col">phone</th>
+                        <th scope="col">meter number</th>
+                        <th scope="col">IUC number</th>
+                        <th scope="col">service</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">time</th>
+                        <th scope="col">status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2384nf8nv9</td>
+                        <td>firstprofit service</td>
+                        <td>0906678896</td>
+                        <td>874893722</td>
+                        <td>874893722</td>
+                        <td>GLO</td>
+                        <td>$ 599</td>
+                        <td>11-21-2020</td>
+                        <td>
+                          <a href="#" class="running-btn">Successful</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Bills History -->
+              <div class="withdraw__history trans">
+                <h6 class="trans__title">Withdrawal History</h6>
+                <div class="tables">
+                  <table class="table table-borderless table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Transaction ID</th>
+                        <th scope="col">Payment gateway</th>
+                        <th scope="col">Account Details</th>
+                        <th scope="col">Amount withdrawn</th>
+                        <th scope="col">charges</th>
+                        <th scope="col">amount paid</th>
+                        <th scope="col">time</th>
+                        <th scope="col">status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2384nf8nv9</td>
+                        <td>firstprofit service</td>
+                        <td>firstbank to gtbbank</td>
+                        <td>$ 874</td>
+                        <td>$ 87</td>
+                        <td>$ 3400</td>
+                        <td>11-21-2020</td>
+                        <td>
+                          <a href="#" class="running-btn">Paid</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2384nf8nv9</td>
+                        <td>firstprofit service</td>
+                        <td>firstbank to gtbbank</td>
+                        <td>$ 874</td>
+                        <td>$ 87</td>
+                        <td>$ 3400</td>
+                        <td>11-21-2020</td>
+                        <td>
+                          <a href="#" class="topup-btn">Failed</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Bills History -->
+              <div class="deposit__history trans">
+                <h6 class="trans__title">deposit History</h6>
+                <div class="tables">
+                  <table class="table table-borderless table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Transaction ID</th>
+                        <th scope="col">Payment gateway</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">time</th>
+                        <th scope="col">status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2384nf8nv9</td>
+                        <td>firstprofit service</td>
+                        <td>$ 3400</td>
+                        <td>11-21-2020</td>
+                        <td>
+                          <a href="#" class="running-btn">Successful</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2384nf8nv9</td>
+                        <td>firstprofit service</td>
+                        <td>$ 3400</td>
+                        <td>11-21-2020</td>
+                        <td>
+                          <a href="#" class="topup-btn">Failed</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
+          
         </section>
       </div>
     </div>
@@ -203,9 +465,14 @@
 
 
   
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -256,7 +523,7 @@ nv.addGraph(function() {
 });
 
 </script>
-<!--Start of Tawk.to Script-->
+<!-- Start of Tawk.to Script
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -267,7 +534,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->
 </body>
 
