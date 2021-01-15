@@ -98,7 +98,7 @@ table thead {
 }
 
 table thead tr th {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: capitalize;
   color: var(--secondaryColor);
   /* white-space: nowrap; */
@@ -107,8 +107,14 @@ table thead tr th {
 
 table tbody tr {
   font-size: 0.9rem;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   color: var(--secondaryColor);
+}
+
+table tbody .userimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 ::-moz-selection {
@@ -508,6 +514,20 @@ section {
      color: var(--primaryColor);
    }
 
+   /* @media(max-width: 768px) {
+     .notice-card .notice h2 {
+       font-size: 1.5rem;
+     }
+     .notice-card .notice h4 {
+       font-size: 0.9rem;
+     }
+     .notice-card .notice i {
+       height: 30px;
+       width: 30px;
+       font-size: 4rem;
+     }
+   } */
+
    /* Balance */
    .balance {
      padding: 20px;
@@ -707,7 +727,7 @@ section {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     border-bottom: solid 1px #ccc;
   }
 
@@ -788,21 +808,29 @@ section {
     border: none;
     background: transparent;
     /* box-shadow: var(--light-shadow); */
-    margin: 1rem;
     border-radius: 6px;
     padding: 10px;
-    border: solid 1px var(--secondaryColor);
+    /* border: solid 1px var(--secondaryColor); */
     font-weight: 900;
     color: var(--secondaryColor);
+    margin-top: 2rem;
+  }
+  .btn-tab:hover {
+    text-decoration: none;
   }
 
   @media(max-width: 788px) {
     .btn-tab {
-      margin: 3px;
-      padding: 3px;
+      margin: 10px 0;
+      padding: 6px;
       font-size: 0.7rem;
+      width: 100%;
     }
   }
+
+  
+
+
 
   .operations {
     background: var(--whiteColor);
@@ -821,7 +849,9 @@ section {
     /* transform: translateY(-66%); */
     background: var(--secondaryColor);
     color: #fff;
-
+  }
+  .operations__tab--active ion-icon {
+    color: #fff;
   }
 
   .invest__nav a {
@@ -874,6 +904,7 @@ section {
     font-weight: 900;
     font-size: 0.7rem;
     white-space: nowrap;
+    background: transparent;
   }
   .download-btn:hover {
     color: var(--secondaryColor);
@@ -1040,17 +1071,21 @@ section {
     border-radius: 6px;
   }
 
+  
+
   /* Alert Card */
   .alert__card {
     box-shadow: var(--dark-shadow);
     background: var(--whiteColor);
     padding: 40px;
     text-align: center;
-    /* width: 50%; */
+    width: 40%;
     margin: 2rem auto;
     border-radius: 6px;
-    display: none;
+    /* display: none; */
   }
+
+
   .alert__card .icon {
     width: 100px;
     height: 100px;
@@ -1066,6 +1101,25 @@ section {
   .alert__card h4 {
     margin: 2rem 0;
     font-weight: 900;
+  }
+
+  @media(max-width: 788px) {
+    .alert__card {
+      padding: 20px;
+      text-align: center;
+      width: 80%;
+    }
+    .alert__card .icon {
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+    .alert__card h4 {
+      margin: 2rem 0;
+      font-weight: 900;
+      font-size: 1rem;
+    }
   }
 
   /* My Investment Section */
@@ -1420,29 +1474,13 @@ section {
   margin-right: 1rem;
 }
 .mail__ul li a{
-  color: var(--secondaryColor);
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-  padding-top: 2rem;
+  
 }
 .mail__nav .invest__btn2:hover ion-icon {
   color: var(--secondaryColor);
   background: none;
 }
-.mail__nav li a:hover ion-icon{
-  color: var(--primaryColorColor);
-  background: none
-}
-.mail__nav li a ion-icon{
-  margin-right: 4px;
-}
-.mail__nav li a:hover{
-  color: var(--primaryColor);
-  text-decoration: none;
-}
+
 
 .mail__nav li .sent {
   transform: rotate(-50deg);
@@ -1458,12 +1496,7 @@ section {
   padding-bottom: 5px;
 }
 
-.inbox__messages {
-  display: none;
-}
-.sent__messages {
-  display: none;
-}
+
 
 .inbox__messages .inbox__title ion-icon {
   margin-right: 5px;
@@ -1500,9 +1533,10 @@ section {
 /* Read Messages */
 
 .read__messages {
-  background: var(--greyColor);
+  /* background: var(--greyColor); */
   padding: 30px;
   border-radius: 6px;
+  /* display: none; */
 }
 
 .read__messages .ticket {
@@ -1518,10 +1552,84 @@ section {
 
 .read__messages .subject {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 1.5rem 0;
   color: var(--secondaryColor);
 }
+
+
+.reply__message textarea{
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  outline: none;
+  height: 3rem;
+}
+
+.chat__flow {
+  position: relative;
+}
+
+.chat__flow img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px; 
+}
+.chat__flow .user-img {
+  margin-bottom: 10px;
+}
+.chat__flow .user-img span {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.read__messages .chat {
+  margin: 2rem;
+  font-size: 0.9rem;
+  width: 60%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: var(--light-shadow);
+}
+
+.read__messages .reply__chat {
+  margin: 2rem 0;
+  padding: 10px;
+  background: var(--whiteColor);
+  box-shadow: var(--light-shadow);
+  border-radius: 6px;
+  width: 70%;
+  /* margin-left: 9rem; */
+  position: relative;
+  left: 10rem;
+  /* 07034205704 */
+}
+
+@media(max-width: 788px) {
+  .read__messages {
+    padding: 0px;
+    border-radius: 6px;
+  }
+  .read__messages .chat {
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    width: 60%;
+    right: 0;
+    width: 100%;
+  }
+
+  .read__messages .reply__chat {
+    position: relative;
+    left: 0rem;
+    width: 100%;
+  }
+}
+
+
 
 .list__messages .message__card {
   display: flex;
@@ -1727,21 +1835,39 @@ section {
 ============================= */
 .slide__form {
   position: relative;
-  background: #fff;
-  /* overflow: hidden; */
+  /* background: #fff; */
+  overflow: hidden;
   /* height: 100%;
   width: 100%; */
 }
 
 .conver, .tranfar {
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
+  transition: var(--transition); */
+  
+}
+
+
+.form__content {
+  display: none;
+  transition: transform 1s;
+  box-shadow: var(--dark-shadow);
+}
+.form__content--active {
+  display: block;
+}
+
+.active__form {
+  /* transform: translateY(-0%); */
+}
+
+.transfer__form {
+  /* display: none; */
 }
 
 .convert__form textarea {
@@ -1763,7 +1889,7 @@ section {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  text-align: center;
+  /* text-align: center; */
   border-bottom: 1px solid #ccc;
 }
 
@@ -1804,11 +1930,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.form__footer .submit-btn:hover {
-  background: #fff;
-  color: var(--secondaryColor);
-  border: solid 1px var(--secondaryColor);
-}
+
 
 .form__footer .next-btn {
   text-transform: capitalize;
@@ -1824,8 +1946,8 @@ section {
   justify-content: center;
 }
 .form__footer .next-btn:hover {
-  background: var(--secondaryColor);
-  color: #fff;
+  /* background: var(--secondaryColor); */
+  color: var(--secondaryColor);
   border: solid 1px var(--secondaryColor);
   
 }
@@ -1836,6 +1958,25 @@ section {
 .form__footer .submit-btn i {
   font-size: 1.2rem;
   margin-right: 5px;
+}
+
+@media(max-width: 788px) {
+  .form__footer button ion-icon, .form__footer button i {
+    display: none;
+  }
+  .form__footer button {
+    font-size: 0.7rem;
+    padding: 6px;
+    white-space: nowrap;
+  }
+
+  .convert__form .title, .transfer__form .title {
+    font-size: 1rem;
+  }
+
+  .convert__form form select, .transfer__form form select{
+    font-size: 0.6rem;
+  }
 }
 
 
@@ -2008,16 +2149,24 @@ section {
   /* Notice Card section */
 
   .notice-card .notice i {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border: solid 1px var(--primaryColor);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    border-radius: var(--radius);
+    font-size: 1.1rem;
+    padding: 6px;
+    border-radius: 6px;
     box-shadow: none;
     color: var(--primaryColor);
+  }
+
+  .notice-card .notice h2 {
+    font-size: 1.4rem;
+  }
+  .notice-card .notice h4 {
+    font-size: 0.9rem;
   }
 
   .balance .btns {
@@ -2079,6 +2228,25 @@ section {
   .mobile-footer i {
     font-size: 2rem;
     margin-bottom: 6px;
+  }
+
+  .investors-testimo .investor .text {
+    padding: 0 20px;
+    font-size: 0.8rem;
+  }
+  .investors-testimo .investor .text h5 {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--secondaryColor);
+  }
+  .investors-testimo .investor .date {
+    font-size: 0.6rem;
+    font-weight: 900;
+    color: var(--secondaryColor);
+    position: absolute;
+    top: 10px;
+    right: 20px;
   }
   
 }

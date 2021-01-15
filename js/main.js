@@ -30,9 +30,35 @@ tabsContainer.addEventListener('click', (e) => {
   clicked.classList.add('operations__tab--active')
 
   // Active Content
-  console.log(clicked.dataset.tab)
+  // console.log(clicked.dataset.tab)
   tabsContent.forEach(t => t.classList.remove('operation__content--active'))
   document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operation__content--active')
 
   // console.log(clicked)
+})
+
+
+const transNext = document.querySelector('.trans-next')
+const formContent = document.querySelectorAll('.form__content')
+const nextBtn = document.querySelector('.next__btn')
+const formContainer = document.querySelector('.slide__form')
+
+
+// transNext.addEventListener('click', function() {
+//   console.log("Hello world")
+// })
+// convertNext.addEventListener('click', function() {
+//   console.log("Hello world")
+// })
+
+formContainer.addEventListener('click', (e) => {
+  const cliks = e.target.closest('.next__btn')
+  console.log(cliks)
+
+  if(!cliks) return
+  
+console.log(formContent)
+  formContent.forEach(t => t.classList.remove('form__content--active'))
+  const activeCotent = document.querySelector(`.forms__content--${cliks.dataset.tab}`).classList.add('form__content--active')
+  console.log(activeCotent)
 })

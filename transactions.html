@@ -197,17 +197,17 @@
           <h2 class="title"><i class="fas fa-history"></i> Transaction Histories</h2>
           <hr>
           <div class="transaction__card">
-            <div class="transaction__nav">
-              <a href="#" class="">Send and Receive history</a>
-              <a href="#" class="">Deposit history</a>
-              <a href="#" class="">Withdrawal history</a>
-              <a href="#" class="">Bills history</a>
-              <a href="#" class="">Transfer history</a>
+            <div class="transaction__nav tabs__container">
+              <button class="btn-tab operations_tab operations__tab--active" data-tab="1"><ion-icon name="repeat-outline"></ion-icon> Send/Receive</button>
+              <button class="btn-tab operations_tab" data-tab="2"><i class="fas fa-share-square"></i> Transfer</button>
+              <button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-file-invoice-dollar"></i> Bills</button>
+              <button class="btn-tab operations_tab" data-tab="4"><i class="fas fa-hand-holding-usd"></i> Withdrawal</button>
+              <button class="btn-tab operations_tab" data-tab="5"><ion-icon name="arrow-redo"></ion-icon> Deposit</button>
             </div>
             <div class="transaction__body">
               <!-- Send and Receive-->
-              <div class="transactions trans">
-                <h6 class="trans__title">Send and Receive history</h6>
+              <section class="transactions  invest__section operation__content operations__content--1 operation__content--active">
+                <h6 class="trans__title"><ion-icon name="repeat-outline"></ion-icon> Send and Receive history</h6>
                 <div class="tables">
                   <table class="table table-borderless table-responsive-sm">
                     <thead>
@@ -240,9 +240,9 @@
                   <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-end">
                       <li class="page-item">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
                       </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><button class="page-link" href="#">1</button></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item">
@@ -251,10 +251,10 @@
                     </ul>
                   </nav>
                 </div>
-              </div>
+              </section>
               <!-- Transfer History -->
-              <div class="transfer__history trans">
-                <h6 class="trans__title">Transfer History</h6>
+              <section class="transfer__history trans invest__section operation__content operations__content--2">
+                <h6 class="trans__title"><i class="fas fa-share-square"></i> Transfer History</h6>
                 <div class="tables">
                   <table class="table table-borderless table-responsive-sm">
                     <thead>
@@ -293,10 +293,10 @@
                     </ul>
                   </nav>
                 </div>
-              </div>
+              </section>
               <!-- Bills History -->
-              <div class="bills__history trans">
-                <h6 class="trans__title">bills History</h6>
+              <section class="bills__history trans invest__section operation__content operations__content--3">
+                <h6 class="trans__title"><i class="fas fa-file-invoice-dollar"></i> bills History</h6>
                 <div class="tables">
                   <table class="table table-borderless table-responsive-sm">
                     <thead>
@@ -343,10 +343,10 @@
                     </ul>
                   </nav>
                 </div>
-              </div>
-              <!-- Bills History -->
-              <div class="withdraw__history trans">
-                <h6 class="trans__title">Withdrawal History</h6>
+              </section>
+              <!-- Withdraw History -->
+              <section class="withdraw__history trans invest__section operation__content operations__content--4">
+                <h6 class="trans__title"><i class="fas fa-hand-holding-usd"></i> Withdrawal History</h6>
                 <div class="tables">
                   <table class="table table-borderless table-responsive-sm">
                     <thead>
@@ -403,10 +403,10 @@
                     </ul>
                   </nav>
                 </div>
-              </div>
-              <!-- Bills History -->
-              <div class="deposit__history trans">
-                <h6 class="trans__title">deposit History</h6>
+              </section>
+              <!-- Deposit History -->
+              <section class="deposit__history trans invest__section operation__content operations__content--5">
+                <h6 class="trans__title"><ion-icon name="arrow-redo"></ion-icon> deposit History</h6>
                 <div class="tables">
                   <table class="table table-borderless table-responsive-sm">
                     <thead>
@@ -454,7 +454,7 @@
                     </ul>
                   </nav>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
           

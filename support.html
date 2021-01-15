@@ -224,19 +224,21 @@
                       </div>
                     </div>
                   </div>
-                  <ul class="mail__ul">
+                  <ul class="mail__ul tabs__container">
                     <li>
-                      <a href="inbox.html"><ion-icon name="mail-outline"></ion-icon> Inbox</a>
+                      <button class="btn-tab operations_tab operations__tab--active" data-tab="1"><ion-icon name="mail-outline"></ion-icon> Opened ticket</button>
                     </li>
-                    <li><a href="#"><ion-icon name="send-outline" class="sent"></ion-icon> Sent</a></li>
+                    <li>
+                      <button class="btn-tab operations_tab" data-tab="2" ><ion-icon name="send-outline" class="sent"></ion-icon> Closed ticket</button>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-9 col-md-9 mx-auto">
-                <div class="inbox__messages">
-                  <h2 class="inbox__title"><ion-icon name="mail-outline"></ion-icon> Inbox</h2>
+                <div class="inbox__messages operation__content operations__content--1 operation__content--active">
+                  <h2 class="inbox__title"><ion-icon name="mail-outline"></ion-icon> Opened ticket</h2>
                   <ul class="list__messages">
-                    <a href="#">
+                    <a href="read.html">
                       <li class="message__card" data-toggle="tooltip" data-target="#messageModal" data-placement="bottom" title="click to read full message">
                         <div class="message__title">
                           <h6>Message title sit amet consectetur</h6>
@@ -245,7 +247,8 @@
                           <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel iste alias sapiente dolor illo libero minus eligendi, eum debitis repellat.</small>
                         </div>
                         <div class="status__btn">
-                          <ion-icon name="trash-outline" data-toggle="modal" data-target="#deleteModal"></ion-icon>
+                          <!-- <ion-icon name="trash-outline" data-toggle="modal" data-target="#deleteModal"></ion-icon> -->
+                          <button class="download-btn">Close</button>
                           <!--Delete Modal -->
                           <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -273,7 +276,8 @@
                           <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel iste alias sapiente dolor illo libero minus eligendi, eum debitis repellat.</small>
                         </div>
                         <div class="status__btn">
-                          <ion-icon name="trash-outline" data-toggle="modal" data-target="#deleteModal"></ion-icon>
+                          <!-- <ion-icon name="trash-outline" data-toggle="modal" data-target="#deleteModal"></ion-icon> -->
+                          <button class="download-btn">Close</button>
                           <!--Delete Modal -->
                           <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -302,10 +306,10 @@
                     </a>
                   </ul>
                 </div>
-                <div class="sent__messages">
-                  <h2 class="inbox__title"><ion-icon name="mail-open-outline"></ion-icon> Sent messages</h2>
+                <div class="sent__messages operation__content operations__content--2">
+                  <h2 class="inbox__title"><ion-icon name="mail-open-outline"></ion-icon> Closed ticket</h2>
                   <ul class="list__messages">
-                    <a href="#">
+                    <a href="read.html">
                       <li class="message__card" data-toggle="tooltip" data-target="#messageModal" data-placement="bottom" title="click to read full message">
                         <div class="message__title">
                           <h6>Message title sit amet consectetur</h6>
@@ -314,24 +318,7 @@
                           <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel iste alias sapiente dolor illo libero minus eligendi, eum debitis repellat.</small>
                         </div>
                         <div class="status__btn">
-                          <ion-icon name="trash-outline" data-toggle="modal" data-target="#deleteModal"></ion-icon>
-                          <!--Delete Modal -->
-                          <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-body">
-                                  <div class="delete__card">
-                                    <ion-icon name="trash-outline"></ion-icon>
-                                  </div>
-                                  <h6>Are you sure you want to delete this message?</h6>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="cancle__btn" data-dismiss="modal">No I don't</button>
-                                  <button type="button" class="invest__btn">Yes delete</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <button class="running-btn">Open</button>
                         </div>
                       </li>
                       <li class="message__card" data-toggle="tooltip" data-target="#messageModal" data-placement="bottom" title="click to read full message">
@@ -342,7 +329,7 @@
                           <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel iste alias sapiente dolor illo libero minus eligendi, eum debitis repellat.</small>
                         </div>
                         <div class="status__btn">
-                          <ion-icon name="trash-outline" data-toggle="modal" data-target="#deleteModal"></ion-icon>
+                          <button class="running-btn">Open</button>
                           <!--Delete Modal -->
                           <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -364,14 +351,6 @@
                       </li>
                     </a>
                   </ul>
-                </div>
-                <div class="read__messages">
-                  <div class="ticket">
-                    <h4>Ticket ID: <span>23470984</span></h4>
-                    <h4>Date: <span>Jan 4, 2021, 11:18 PM (4 days ago)</span></h4>
-                  </div>
-                  <h4 class="subject">Final reminder: Hiring application deadline</h4>
-                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius, quam eligendi ut at velit tempora animi commodi, tenetur reiciendis voluptates deleniti sequi accusamus maiores? Ipsum repellat cum cumque distinctio, deserunt ratione officiis sed modi suscipit tenetur optio necessitatibus cupiditate, dignissimos numquam, natus pariatur aliquam obcaecati ad possimus ullam? Consectetur facilis provident distinctio recusandae quidem nesciunt dolorem repellendus velit non perspiciatis et aperiam itaque animi illo praesentium explicabo, illum soluta natus sit odit ad aspernatur fugiat totam! Tempore vel sit ea quod eius earum sint, dignissimos unde minima aliquid vero possimus nulla quos harum. Expedita, iste ipsam incidunt fuga vitae tempora maxime nesciunt in laborum dicta doloribus! Modi aut nulla natus ad provident tempore eveniet qui fugiat.</p>
                 </div>
               </div>
             </div>

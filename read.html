@@ -84,6 +84,10 @@
                 <i class="fas fa-headset"></i>
                 <span>Support</span>
               </a>
+              <a class="dropdown-item" href="testimony.html">
+                <ion-icon name="chatbox-ellipses"></ion-icon>
+                <span>Post testimony</span>
+              </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/">
                 <i class="fas fa-sign-out-alt"></i>
@@ -101,22 +105,21 @@
       </div>
     </div>
   </header>
-  <!-- Mobile nav -->
   <nav class="mobile-footer">
     <a href="index.html" class="home">
-      <ion-icon name="home"></ion-icon>
+      <ion-icon name="home-outline"></ion-icon>
       <p>Home</p>
     </a>
     <a href="deposit.html" class="deposit">
-      <ion-icon name="arrow-redo"></ion-icon>
+      <ion-icon name="arrow-undo-outline"></ion-icon>
       <p>Deposit</p>
     </a>
     <a href="invest.html" class="invest">
-      <ion-icon name="arrow-down-circle"></ion-icon>
+      <ion-icon name="arrow-down-circle-outline"></ion-icon>
       <p>Invest</p>
     </a>
     <a href="withdraw.html" class="withdraw">
-      <i class="fas fa-hand-holding-usd"></i>
+      <ion-icon name="arrow-redo-outline"></ion-icon>
       <p>Withdraw</p>
     </a>
   </nav>
@@ -194,80 +197,83 @@
       </div>
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
-          <div class="deposit__section">
-            <h2 class="title"><i class="fas fa-share-square"></i> Transfer fund</h2>
-            <hr>
-            <div class="select__deposit">
-              <!-- <h2 class="title">Select payment method</h2> -->
-              <div class="deposit_card">
-                <div class="row">
-                  <div class="col-md-8 col-lg-8 mx-auto">
-                    <div class="slide__form">
-                      <div class="slider">
-                        <div class="convert__form form__content forms__content--2 ">
-                          <h2 class="title"><ion-icon name="logo-bitcoin"></ion-icon> Convert Bonus & Earnings</h2>
-                          <form action="">
-                            <div class="input-group">
-                              <!-- <label for="">Select Wallet To Transfer From</label> -->
-                              <select name="" id="" class="wide">
-                                <option data-display="Select Wallet To Transfer From"></option>
-                                <option value="2">Earning balance: <span>$0.00</span></option>
-                                <option value="1">Referral Balance: <span>$0.00</span></option>
-                                
-                              </select>
-                            </div>
-                            <div class="input-group">
-                              <!-- <label for="">Amount</label> -->
-                              <input type="text" placeholder="Enter Amount">
-                            </div>
-                            <div class="input-group">
-                              <input type="email" placeholder="Enter Receiver's Email ">
-                            <div class="form__footer tabs__container">
-                              <button type="button" class=" submit-btn"><ion-icon name="shuffle-outline"></ion-icon> Covert fund</button>
-                              <button type="button" class="next-btn convert-next next__btn" data-tab="1"><i class="fas fa-share-square"></i>  transfer fund <ion-icon name="chevron-forward-outline"></ion-icon></button>
-                            </div>
-                          </form>
+          <h2 class="title"><i class="fas fa-headset"></i> Support center</h2>
+          <hr>
+
+          <div class="mailbox">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 mx-auto">
+                <div class="mail__nav">
+                  <a href="#" class="invest__btn2" data-toggle="modal" data-target="#composeModal"><ion-icon name="add-circle-outline"></ion-icon>Compoose</a>
+                  <!--Compose Message Modal -->
+                  <div class="modal fade" id="composeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="compose__title" id="exampleModalLabel"><ion-icon name="mail-unread-outline"></ion-icon> New Message</h5>
+                          <ion-icon name="close-circle-outline" class="compose__close" data-dismiss="modal" aria-label="Close"></ion-icon>
                         </div>
-                      </div>
-  
-                      <div class="slider">
-                        <div class="transfer__form form__content forms__content--1 form__content--active">
-                          <h2 class="title"><ion-icon name="business-outline"></ion-icon> Transfer Earnings To Users</h2>
+                        <div class="modal-body">
                           <form action="">
-                            <div class="input-group">
-                              <!-- <label for="">Select Wallet To Transfer From</label> -->
-                              <select name="" id="" class="wide">
-                                <option data-display="Select Wallet"></option>
-                                <option value="2">Main balance: <span>$0.00</span></option>
-                                <option value="1">Deposit Balance: <span>$0.00</span></option>
-                              </select>
-                            </div>
-                            <div class="input-group">
-                              <!-- <label for="">Amount</label> -->
-                              <input type="text" placeholder="Enter Amount">
-                            </div>
-                            <div class="input-group">
-                              <!-- <label for="">Select Receiving Wallet</label> -->
-                              <select name="" id="" class="wide">
-                                <option data-display="Select Receiving Wallet"></option>
-                                <option value="1">3 Months</option>
-                                <option value="2">5 Months</option>
-                              </select>
-                            </div>
-                            <div class="form__footer tabs__container">
-                              <button type="button" class="submit-btn"><i class="fas fa-share-square"></i>  transfer fund</button>
-                              <button type="button" class="next-btn trans-next next__btn" data-tab="2"><ion-icon name="shuffle-outline"></ion-icon>  Covert fund <ion-icon name="chevron-forward-outline"></ion-icon></button>
-                            </div>
+                            <input type="email" placeholder="To">
+                            <input type="text" placeholder="Subject">
+                            <textarea name="" id="" placeholder="Type your message" cols="30" rows="10"></textarea>
+                            <button type="submit" class="invest__btn2">Send</button>
                           </form>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <ul class="mail__ul tabs__container">
+                    <li>
+                      <a href="support.html">
+                        <button class="btn-tab operations_tab operations__tab--active" data-tab="1"><ion-icon name="mail-outline"></ion-icon> Opened ticket</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="support.html">
+                        <button class="btn-tab operations_tab" data-tab="2" ><ion-icon name="send-outline" class="sent"></ion-icon> Closed ticket</button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-12 mx-auto">
+                
+                <div class="read__messages">
+                  <div class="ticket">
+                    <h4>Ticket ID: <span>23470984</span></h4>
+                    <h4><ion-icon name="calendar-outline"></ion-icon> Date: <span>Jan 4, 2021, 11:18 PM (4 days ago)</span></h4>
+                  </div>
+                  <h4 class="subject">Final reminder: Hiring application deadline</h4>
+                  <ul class="chat__flow">
+                    <li class="chat">
+                      <div class="user-img">
+                        <img src="img/Max-R_Headshot (1).jpg" alt="">
+                        <span class="user__name">john doe</span>
+                        <span class="time">12:10am <ion-icon name="time-outline"></ion-icon></span>
+                      </div>
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius.</p>
+                    </li>
+                    <li class="reply__chat">
+                      <div class="user-img">
+                        <img src="img/Max-R_Headshot (1).jpg" alt="">
+                        <span class="user__name">john doe</span>
+                        <span class="time">12:10am <ion-icon name="time-outline"></ion-icon></span>
+                      </div>
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius.</p>
+                    </li>
+                    </li>
+                  </ul>
+                </div>
+                <div class="reply__message">
+                  <form action="">
+                    <textarea name="" placeholder="Replay message"></textarea>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-          
         </section>
       </div>
     </div>
