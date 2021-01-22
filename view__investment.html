@@ -27,10 +27,10 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
   <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"/>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -210,77 +210,108 @@
       </div>
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
-          <div class="deposit__section">
-            <h2 class="title"><i class="fas fa-share-square"></i> Transfer fund</h2>
-            <hr>
-            <div class="select__deposit">
-              <!-- <h2 class="title">Select payment method</h2> -->
-              <div class="deposit_card">
-                <div class="row">
-                  <div class="col-md-8 col-lg-8 mx-auto">
-                    <div class="slide__form">
-                      <div class="slider">
-                        <div class="convert__form form__content forms__content--2 ">
-                          <h2 class="title"><ion-icon name="logo-bitcoin"></ion-icon> Convert Bonus & Earnings</h2>
-                          <form action="">
-                            <div class="input-group">
-                              <!-- <label for="">Select Wallet To Transfer From</label> -->
-                              <select name="" id="" class="wide">
-                                <option data-display="Select Wallet To Transfer From"></option>
-                                <option value="2">Earning balance: <span>$0.00</span></option>
-                                <option value="1">Referral Balance: <span>$0.00</span></option>
-                                
-                              </select>
+          <h2 class="title"><i class="fas fa-history"></i> Investment History</h2>
+          <hr>
+            <div class="transaction__body">
+              <!-- Send and Receive-->
+              <section class="transactions  invest__section operation__content operations__content--1 operation__content--active">
+                <div class="tables">
+                  <table class="table table-borderless table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="row">Reference ID</th>
+                        <th scope="col">Invest type</th>
+                        <th scope="col">interest rate</th>
+                        <th scope="col">interest system</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">start time</th>
+                        <th scope="col">status</th>
+                        <th scope="col">details</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>n8RvxWnPjw0b</td>
+                        <td>Weekly</td>
+                        <td>6.00%</td>
+                        <td>168 Hours Later 8 Times</td>
+                        <td>$ 239</td>
+                        <td>2020-12-29 5:16:pm</td>
+                        <td> <a href="#" class="running-btn" disabled>
+                          <span
+                            class="spinner-border spinner-border-sm"
+                            role="status"
+                            aria-hidden="true"
+                          ></span>
+                          running
+                        </a></td>
+                        <td><a href="#" class="running-btn" data-toggle="modal" data-target="#userModal">view details</a></td>
+                        <!-- User Details Modal -->
+                        <div class="modal fade " id="userModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user"></i> User Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="profile__body">
+                                  <ul class="userModal">
+                                    <li>Resference ID:.............<span>n8RvxWnPjw0b</span></li>
+                                    <li>Investment Type:.......<span>Weekly</span></li>
+                                    <li>Interest rate:...................<span>6.00%</span></li>
+                                    <li>Next interest:.................<span>2020-12-29</span></li>
+                                    <li>Created Date:................<span>2020-12-29</span></li>
+                                    <li>End Date:..........................<span>2020-12-29</span></li>
+                                    <li>Invested Amount:.....<span class="amount"> $239</span></li>
+                                    <li>Total Profit:......................<span class="profit">$1245.89</span></li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
-                            <div class="input-group">
-                              <!-- <label for="">Amount</label> -->
-                              <input type="text" placeholder="Enter Amount">
-                            </div>
-                            <div class="input-group">
-                              <input type="email" placeholder="Enter Receiver's Email ">
-                            <div class="form__footer tabs__container">
-                              <button type="button" class=" submit-btn"><ion-icon name="shuffle-outline"></ion-icon> Covert fund</button>
-                              <button type="button" class="next-btn convert-next next__btn" data-tab="1"><i class="fas fa-share-square"></i>  transfer fund <ion-icon name="chevron-forward-outline"></ion-icon></button>
-                            </div>
-                          </form>
+                          </div>
                         </div>
-                      </div>
-  
-                      <div class="slider">
-                        <div class="transfer__form form__content forms__content--1 form__content--active">
-                          <h2 class="title"><ion-icon name="business-outline"></ion-icon> Transfer Earnings To Users</h2>
-                          <form action="">
-                            <div class="input-group">
-                              <!-- <label for="">Select Wallet To Transfer From</label> -->
-                              <select name="" id="" class="wide">
-                                <option data-display="Select Wallet"></option>
-                                <option value="2">Main balance: <span>$0.00</span></option>
-                                <option value="1">Deposit Balance: <span>$0.00</span></option>
-                              </select>
+                        <td><a href="#" class="download-btn" data-toggle="modal" data-target="#confirmModal">Push Investment</a></td>
+                        <!-- comfirmation modal Modal -->
+                        <div class="modal fade " id="confirmModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="alert__card">
+                              <div class="icon">
+                                <ion-icon name="power-outline"></ion-icon>
+                              </div>
+                              <h4>Are u sure you want to push the investment?</h4>
+                              <a href="invest.html" class="cancle__btn"
+                                >cancle</a
+                              >
+                              <a href="invest.html" class="invest__btn2"
+                                >Proceed</a
+                              >
                             </div>
-                            <div class="input-group">
-                              <!-- <label for="">Amount</label> -->
-                              <input type="text" placeholder="Enter Amount">
-                            </div>
-                            <div class="input-group">
-                              <!-- <label for="">Select Receiving Wallet</label> -->
-                              <select name="" id="" class="wide">
-                                <option data-display="Select Receiving Wallet"></option>
-                                <option value="1">3 Months</option>
-                                <option value="2">5 Months</option>
-                              </select>
-                            </div>
-                            <div class="form__footer tabs__container">
-                              <button type="button" class="submit-btn"><i class="fas fa-share-square"></i>  transfer fund</button>
-                              <button type="button" class="next-btn trans-next next__btn" data-tab="2"><ion-icon name="shuffle-outline"></ion-icon>  Covert fund <ion-icon name="chevron-forward-outline"></ion-icon></button>
-                            </div>
-                          </form>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
+                      </li>
+                      <li class="page-item"><button class="page-link" href="#">1</button></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
           
@@ -290,6 +321,7 @@
   </main>
 
 
+  
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -298,7 +330,6 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -349,8 +380,8 @@ nv.addGraph(function() {
 });
 
 </script>
-<!--Start of Tawk.to Script-->
-<!-- <script type="text/javascript">
+<!-- Start of Tawk.to Script
+<script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];

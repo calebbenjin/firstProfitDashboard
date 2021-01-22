@@ -64,12 +64,12 @@
 
 .cancle__btn {
   border: none;
-  background: #eeee;
+  background: #b3b3b3ee;
   border-radius: 6px;
   padding: 10px;
   margin-top: 1rem;
   font-weight: 900;
-  color: #a8a8a8;
+  color: #585858;
   white-space: nowrap;
 }
 
@@ -100,8 +100,9 @@ table thead {
 .tables {
   padding: 10px;
   background: #fff;
-  box-shadow: var(--light-shadow);
+  /* box-shadow: var(--light-shadow); */
   border-radius: 6px;
+  width: 100%;
 }
 
 table thead tr th {
@@ -419,7 +420,7 @@ section {
    /* Aside Nav */
    aside {
      background: var(--whiteColor);
-     padding: 3rem 0;
+     padding: 2rem 0;
      height: 100%;
      border-radius: var(--radius);
      box-shadow: var(--light-shadow); 
@@ -429,10 +430,10 @@ section {
      display: flex;
      align-items: center;
      font-weight: 700;
-     font-size: 0.9rem;
+     font-size: 0.8rem;
      color: var(--secondaryColor);
      transition: var(--transition);
-     padding: 15px 1rem;
+     padding: 10px 1rem;
      border-bottom: solid 2px var(--greyColor);
    }
 
@@ -523,6 +524,17 @@ section {
      box-shadow: var(--dark-shadow);
      color: var(--primaryColor);
    }
+
+   .notice-card .notice a {
+     font-size: 0.7rem;
+     font-weight: 900;
+     color: #929292;
+     border: solid 1px #ccc;
+     padding: 5px;
+     border-radius: 6px;
+   }
+
+   
 
    /* @media(max-width: 768px) {
      .notice-card .notice h2 {
@@ -1080,11 +1092,11 @@ section {
 
   /* Alert Card */
   .alert__card {
-    box-shadow: var(--dark-shadow);
+    /* box-shadow: var(--dark-shadow); */
     background: var(--whiteColor);
     padding: 40px;
     text-align: center;
-    width: 40%;
+    width: 80%;
     margin: 2rem auto;
     border-radius: 6px;
     /* display: none; */
@@ -1227,16 +1239,45 @@ section {
   }
 
   .user__card .profile__body {
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
   .user__card .profile__body .user__details {
     text-align: center;
   }
+
+  .profile__body .user__details-1 h5{
+    font-size: 0.8rem;
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+    border-bottom: solid 1px #d6d6d6;
+    padding: 5px 0;
+  }
+
+  .profile__body .userModal li span {
+    /* margin-left: 2rem;  */
+    font-weight: 900;
+  }
+  .profile__body .userModal li {
+    margin-top: 1rem;
+    padding: 8px;
+    box-shadow: var(--dark-shadow);
+    border-radius: 6px;
+    color: var(--secondaryColor);
+  }
+  .profile__body .userModal li .profit, .amount {
+    color: var(--primaryColor);
+  }
+
+  .modal-header h5 {
+    font-family: var(--ff-secondary);
+  }
+  
   .profile__body .user__details .fullname {
     font-weight: 900;
     text-transform: capitalize;
     color: var(--secondaryColor);
     margin-top: -20px;
+    font-size: 1rem;
   }
   .profile__body .user__details .username {
     font-weight: 800;
@@ -1248,6 +1289,10 @@ section {
     font-family: var(--ff-secondary);
     margin: 10px 0;
   }
+  .profile__body .user__details .username span {
+    color: var(--primaryColor);
+    margin-left: 5px;
+  }
   .profile__body .user__details .joined {
     font-weight: 900;
     background: var(--greyColor);
@@ -1257,6 +1302,35 @@ section {
     color: var(--primaryColor);
     border: solid 1px var(--primaryColor);
     font-size: 0.8rem;
+  }
+
+  .edit__btn {
+    display: none;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    padding: 8px;
+  }
+  .active__edit {
+    display: block;
+  }
+
+  .user_dashboard {
+    background: var(--whiteColor);
+    padding: 30px;
+    box-shadow: var(--dark-shadow);
+    border-radius: 6px;
+  }
+
+  .user_dashboard .modal-title {
+    font-family: var(--ff-secondary);
+    color: var(--secondaryColor);
+  }
+
+  .viewuser__state {
+    display: none;
+  }
+  .active__state {
+    display: block;
   }
 
   /* Edit profile */
@@ -2006,6 +2080,116 @@ section {
   .convert__form form select, .transfer__form form select{
     font-size: 0.6rem;
   }
+}
+
+
+/* ISSUE PAGE */
+.search__issue {
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+.search__display {
+  padding: 10px;
+  background: #fff;
+  margin-top: 10px;
+  box-shadow: var(--dark-shadow);
+  border-radius: 6px;
+  overflow-y: scroll;
+  height: 350px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.search__display span {
+  font-weight: 900;
+}
+.search__display ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-top: 1rem;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--secondaryColor);
+}
+
+
+.search__input input {
+  width: 100%;
+}
+
+.small__nav {
+  background: var(--whiteColor);
+  box-shadow: var(--light-shadow);
+  padding: 5px;
+  margin-top: 2rem;
+  border-radius: 6px;
+}
+.small__nav ul li button {
+  background: none;
+  width: 100%;
+  font-size: 0.8rem;
+  border: none;
+  text-align: left;
+  margin-top: 6px;
+  transition: var(--transition);
+  padding: 10px;
+  color: var(--secondaryColor);
+  border-radius: 6px;
+}
+.small__nav ul li button:hover {
+  box-shadow: var(--dark-shadow);
+}
+.content__area {
+  background: var(--whiteColor);
+  box-shadow: var(--light-shadow);
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 6px;
+}
+.pending__withdraw {
+  /* overflow-x: scroll; */
+}
+
+.open__ticket {
+  font-family: var(--ff-secondary);
+}
+.unread__ticket {
+  font-family: var(--ff-secondary);
+  color: var(--primaryColor);
+}
+
+.report__issues form {
+  width: 60%;
+  margin: auto;
+  background: var(--whiteColor);
+  padding: 20px;
+  box-shadow: var(--dark-shadow);
+  border-radius: 6px;
+}
+@media(max-width: 768px) {
+  .report__issues form {
+    width: 100%;
+  }
+}
+.report__issues form .form-group input{
+  width: 100%;
+}
+.report__issues form .form-group input::placeholder {
+  font-weight: 400;
+}
+.report__issues form textarea {
+  width: 100%;
+  margin: 1rem 0;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  padding: 20px;
 }
 
 

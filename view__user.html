@@ -1,0 +1,936 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- NVD3 -->
+  <!-- Morris.js Charts Plugin -->
+  <!-- <link href="https://firstprofittrading.biz/assets\plugins\morris\morris.css" rel="stylesheet" /> -->
+  <!-- <link href="css/nvd3.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
+
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"/>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <a href="index.html" class="brand-logo">
+        <img src="img/logo.png" alt="">
+        <h2>FirstProfit</h2>
+      </a>
+      <div class="search-form">
+        <form action="">
+          <div class="input-group">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+        </form>
+      </div>
+      <div class="greeting">
+        <h3>Welcome, <span>John Deo</span></h3>
+      </div>
+      <nav>
+        <ul>
+          <li class="notification">
+            <div class="circle"></div>
+            <i class="fas fa-bell"></i>
+          </li>
+          <li class="user-profile dropdown">
+            <div class="dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/Max-R_Headshot (1).jpg" alt="">
+            </div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile__setting.html">
+                <i class="fas fa-user-cog"></i>
+                <span>Profile Settings</span>
+              </a>
+              <a class="dropdown-item" href="account__officer.html">
+                <i class="fas fa-user-tie"></i>
+                <span>Account officer</span>
+              </a>
+              <a class="dropdown-item" href="security__center.html">
+                <i class="fas fa-cog"></i>
+                <span>Security center</span>
+              </a>
+              <a class="dropdown-item" href="referal.html">
+                <i class="fas fa-network-wired"></i>
+                <span>Referrals</span>
+              </a>
+              <a class="dropdown-item" href="support.html">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+              </a>
+              <a class="dropdown-item" href="testimony.html">
+                <ion-icon name="chatbox-ellipses"></ion-icon>
+                <span>Post testimony</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-toggle">
+        <!-- <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div> -->
+        <ion-icon name="apps-outline"></ion-icon>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile nav -->
+  <nav class="mobile-footer">
+    <a href="index.html" class="home">
+      <ion-icon name="home"></ion-icon>
+      <p>Home</p>
+    </a>
+    <a href="deposit.html" class="deposit">
+      <ion-icon name="arrow-redo"></ion-icon>
+      <p>Deposit</p>
+    </a>
+    <a href="invest.html" class="invest">
+      <ion-icon name="arrow-down-circle"></ion-icon>
+      <p>Invest</p>
+    </a>
+    <a href="withdraw.html" class="withdraw">
+      <i class="fas fa-hand-holding-usd"></i>
+      <p>Withdraw</p>
+    </a>
+  </nav>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-12 mx-auto">
+        <!-- Side Navigation -->
+        <aside>
+          <nav class="side-nav">
+            <div class="close-toggle">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <div class="ivon">
+                    <ion-icon name="home"></ion-icon>
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="invest.html">
+                  <div class="ivon">
+                    <ion-icon name="arrow-down"></ion-icon>
+                  </div>
+                  <span>Invest Now</span>
+                </a>
+              </li>
+              <li>
+                <a href="deposit.html">
+                  <div class="ivon">
+                    <ion-icon name="arrow-redo"></ion-icon>
+                  </div>
+                  <span>Deposit</span>
+                </a>
+              </li>
+              <li>
+                <a href="withdraw.html">
+                  <i class="fas fa-hand-holding-usd"></i>
+                  <span>Withdraw</span>
+                </a>
+              </li>
+              <li>
+                <a href="tranfer.html">
+                  <i class="fas fa-share-square"></i>
+                  <span>Transfer</span>
+                </a>
+              </li>
+              <li>
+                <a href="transactions.html">
+                  <i class="fas fa-history"></i>
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li>
+                <a href="bills.html">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Pay bills</span>
+                </a>
+              </li>
+              <li>
+                <a href="customer__support.html">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Customer Support</span>
+                </a>
+              </li>
+              <li>
+                <a href="issue_report.html">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Issue reporting</span>
+                </a>
+              </li>
+              <li>
+                <a href="/index.html">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>logout</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-logo">
+            <img src="img/logo.png" alt="">
+            <h2>FirstProfit</h2>
+          </div>
+        </aside>
+      </div>
+      <div class="col-lg-10 col-12 mx-auto">
+        <section class="main-body container">
+          <div class="profile__settings">
+            <h2 class="title"><i class="fas fa-user-cog"></i> Profile Settings</h2>
+            <hr>
+            <div class="user__profile">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 mx-auto">
+                  <div class="user__card">
+                    <h3 class="title"><i class="fas fa-user"></i> User profile</h3>
+                    <div class="user__img">
+                      <img src="img/Max-R_Headshot (1).jpg" alt="" class="user-img">
+                    </div>
+                    <div class="profile__body">
+                      <div class="user__details">
+                        <h5 class="fullname">ogechukwu Geraldine ibenero</h5>
+                        <h5 class="username">Earnings: <span>$50.36</span></h5>
+                        <span class="joined"><ion-icon name="calendar-outline"></ion-icon> joined 2 weeks ago</span>
+                      </div>
+                      <button class="edit__btn active__edit invest__btn2"> <i class="fas fa-pen"></i> Edit Account</button>
+                      <button class="edit__btn invest__btn"> </i> go back</button>
+                    </div>
+                  </div>
+                  <div class="user__card mt-4">
+                    <h3 class="title"><i class="fas fa-user"></i> User Details</h3>
+                    <div class="profile__body">
+                      <div class="user__details-1">
+                        <h5> <b><i class="fas fa-network-wired"></i> Downlines:</b> 0</h5>
+                        <h5> <b><i class="fas fa-network-wired"></i> Sponsor:</b> Geraldine ibenero</h5>
+                        <h5> <b><i class="fas fa-user-tie"></i> Account Officer:</b> Geraldine</h5>
+                        <h5> <b><i class="fas fa-address-card"></i> Address:</b>  No 39 odaranwere </h5>
+                        <h5> <b><i class="fas fa-map-marked"></i> Country:</b> Nigeria</h5>
+                        <h5> <b><i class="fas fa-map-marked"></i> State:</b> Rivers</h5>
+                        <h5> <b><i class="fas fa-map-marked"></i> City:</b> Port Harcourt</h5>
+                        <h5> <b><i class="fas fa-phone"></i> phone:</b> 090887657682</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9 col-lg-9 mx-auto">
+                  <div class="viewuser__state  profile__edit">
+                    <h3 class="title"><i class="fas fa-cog"></i> Edit Profile</h3>
+
+                    <div class="form__body">
+                      <form action="">
+                        <div class="form-row">
+                          <div class="input-group col-md-6">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" placeholder="Full Name">
+                          </div>
+                          <div class="input-group col-md-6">
+                            <label for="username">User Name</label>
+                            <input type="text" id="username" placeholder="User Name">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="input-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@mail.com">
+                          </div>
+                          <div class="input-group col-md-6">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" placeholder="(+234)">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <h3 class="title"><i class="fas fa-user-cog"></i> Personal Info</h3>
+
+                    <div class="form__body">
+                      <form action="">
+                        <div class="form-row">
+                          <div class="input-group col-md-6">
+                            <label for="country">Country</label>
+                            <input type="text" id="state" placeholder="Country" disabled>
+                          </div>
+                          <div class="input-group col-md-6">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="Rivers" disabled>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="input-group col-md-6">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="London" disabled>
+                          </div>
+                          <div class="input-group col-md-6">
+                            <label for="zipcode">Zip Code</label>
+                            <input type="text" id="zipcode" placeholder="243232" disabled>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="input-group col-md-12">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="lacfog plaza" disabled>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="input-group col-md-12">
+                            <label for="password">Enter password to update profile.</label>
+                            <input type="text" id="password" placeholder="Enter password">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <h3 class="title"><ion-icon name="key-outline"></ion-icon> Reset password</h3>
+                    <div class="form__body">
+                      <form action="">
+                        <div class="form-row">
+                          <div class="input-group col-md-6">
+                            <label for="passord">Old passowrd</label>
+                            <input type="password" id="password" placeholder="Old Password">
+                          </div>
+                          <div class="input-group col-md-6">
+                            <label for="passord">New passowrd</label>
+                            <input type="password" id="password" placeholder="New Password">
+                          </div>
+                        </div>
+                        <div class="form__footer">
+                          <button class="invest__btn">Cancle</button>
+                          <button class="invest__btn2">Save</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="viewuser__state active__state user_dashboard">
+                    <section class="notice-card row">
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2>$89</h2>
+                            <h4>Total Investment</h4>
+                            <a href="view__investment.html"><span class="fas fa-eye"></span> View investment</a>
+                          </div>
+                          <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2>$89</h2>
+                            <h4>Investment Earning</h4>
+                            <a href="#" data-toggle="modal" data-target="#investmentModal"><span class="fas fa-eye"></span> View earnings</a>
+                          </div>
+                          <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <!-- Total Investment Modal -->
+                        <div class="modal fade bd-example-modal-lg" id="investmentModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Investment Earnings</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="tables">
+                                  <table class="table table-borderless table-responsive-sm">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Reference ID</th>
+                                        <th scope="col">invest type</th>
+                                        <th scope="col">interest rate</th>
+                                        <th scope="col">amount</th>
+                                        <th scope="col">date</th>
+                                        <th scope="col">time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>rpj3PFK4gdTC</td>
+                                        <td>weekly</td>
+                                        <td>6.00%</td>
+                                        <td>$14.98</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>rpj3PFK4gdTC</td>
+                                        <td>weekly</td>
+                                        <td>6.00%</td>
+                                        <td>$14.98</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>rpj3PFK4gdTC</td>
+                                        <td>weekly</td>
+                                        <td>6.00%</td>
+                                        <td>$14.98</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>rpj3PFK4gdTC</td>
+                                        <td>weekly</td>
+                                        <td>6.00%</td>
+                                        <td>$14.98</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2><span>$</span>1289</h2>
+                            <h4>deposit balance</h4>
+                            <a href="#" data-toggle="modal" data-target="#depositModal"><span class="fas fa-eye"></span> View balance</a>
+                          </div>
+                          <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <!-- Deposit Modal -->
+                        <div class="modal fade " id="depositModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Deposit Balance</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="tables">
+                                  <table class="table table-borderless table-responsive-sm">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">TRX ID</th>
+                                        <th scope="col">Gateway</th>
+                                        <th scope="col">amount</th>
+                                        <th scope="col">fee</th>
+                                        <th scope="col">net amount</th>
+                                        <th scope="col">date</th>
+                                        <th scope="col">time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>MNFY|33|20201222171449|004748</td>
+                                        <td>First Profit - Providus</td>
+                                        <td class="amount">$14.98</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>MNFY|33|20201222171449|004748</td>
+                                        <td>First Profit - Providus</td>
+                                        <td class="amount">$14.98</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>MNFY|33|20201222171449|004748</td>
+                                        <td>First Profit - Providus</td>
+                                        <td class="amount">$14.98</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>MNFY|33|20201222171449|004748</td>
+                                        <td>First Profit - Providus</td>
+                                        <td class="amount">$14.98</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2><span>$</span>2279</h2>
+                            <h4>Transfers</h4>
+                            <a href="#" data-toggle="modal" data-target="#transferModal"><span class="fas fa-eye"></span> View transfer</a>
+                          </div>
+                          <i ><ion-icon name="arrow-redo"></ion-icon></i>
+                        </div>
+
+                        <!-- Transfer Modal -->
+                        <div class="modal fade " id="transferModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Transfer History</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="tables">
+                                  <table class="table table-borderless table-responsive-sm">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">name/to</th>
+                                        <th scope="col">email/from</th>
+                                        <th scope="col">amount</th>
+                                        <th scope="col">fee</th>
+                                        <th scope="col">net amount</th>
+                                        <th scope="col">date</th>
+                                        <th scope="col">time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td >ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2><span>$</span>2279</h2>
+                            <h4>Out Gone Transfer</h4>
+                            <a href="#" data-toggle="modal" data-target="#gonetransferModal"><span class="fas fa-eye"></span> View gone transfer</a>
+                          </div>
+                          <i ><ion-icon name="arrow-redo"></ion-icon></i>
+                        </div>
+
+                         <!-- Transfer Modal -->
+                         <div class="modal fade " id="gonetransferModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Out Gone Transfer History</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="tables">
+                                  <table class="table table-borderless table-responsive-sm">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">name/to</th>
+                                        <th scope="col">amount</th>
+                                        <th scope="col">fee</th>
+                                        <th scope="col">net amount</th>
+                                        <th scope="col">date</th>
+                                        <th scope="col">time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2><span>$</span>2279</h2>
+                            <h4>Recieve Transfer</h4>
+                            <a href="#" data-toggle="modal" data-target="#recieveModal"><span class="fas fa-eye"></span> View recieve transfer</a>
+                          </div>
+                          <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+
+                        <!-- Recieve Modal -->
+                        <div class="modal fade " id="recieveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Recieve History</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="tables">
+                                  <table class="table table-borderless table-responsive-sm">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">name/to</th>
+                                        <th scope="col">email/from</th>
+                                        <th scope="col">amount</th>
+                                        <th scope="col">fee</th>
+                                        <th scope="col">net amount</th>
+                                        <th scope="col">date</th>
+                                        <th scope="col">time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td >ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2><span>$</span>19.00</h2>
+                            <h4>Withdrawals</h4>
+                            <a href="#" data-toggle="modal" data-target="#withdrawModal"><span class="fas fa-eye"></span> View withdrawals</a>
+                          </div>
+                          <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+
+                        <!-- Withdrawals Modal -->
+                        <div class="modal fade " id="withdrawModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Withdrawals History</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="tables">
+                                  <table class="table table-borderless table-responsive-sm">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">name/to</th>
+                                        <th scope="col">email/from</th>
+                                        <th scope="col">amount</th>
+                                        <th scope="col">fee</th>
+                                        <th scope="col">net amount</th>
+                                        <th scope="col">date</th>
+                                        <th scope="col">time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td>ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Send To</td>
+                                        <td>reginald Chidi ibenero</td>
+                                        <td >ogeybaby4life@gmail.com</td>
+                                        <td class="amount">+$687</td>
+                                        <td class="fee">-$0</td>
+                                        <td class="net-amount">+$687</td>
+                                        <td>	2021-01-19</td>
+                                        <td>11:27:am</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-6 mx-auto">
+                        <div class="notice">
+                          <div class="amount">
+                            <h2><span>$</span>19.00</h2>
+                            <h4>Top up</h4>
+                            <a href="profile__setting.html"><span class="fas fa-eye"></span> View topup</a>
+                          </div>
+                          <i class="fas fa-network-wired"></i>
+                        </div>
+                      </div>
+                      
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- c3.js Charts Plugin -->  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\d3.min.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\nv.d3.js"></script>
+  <script src="https://firstprofittrading.biz/assets\plugins\charts-nvd3\stream_layers.js"></script> -->
+  <!-- Index Scripts -->
+  <script>
+		/*-----nvd3-chart1-----*/
+historicalBarChart = [{
+	key: "Cumulative Return",
+	values: [{
+		"label": "Deposit",
+		"value": 0,
+		"color": "#6c3e9d"
+	}, {
+		"label": "Wallet",
+		"value": 0,
+		"color": "#45aaf2"
+	}, {
+		"label": "Withdrawal",
+		"value": 0,
+		"color": "#d45c95"
+	}, {
+		"label": "Referral Bonus",
+		"value": 0,
+		"color": "#fb8d34"
+	}, ]
+}];
+nv.addGraph(function() {
+	var chart = nv.models.discreteBarChart().x(function(d) {
+			return d.label
+		}).y(function(d) {
+			return d.value
+		}).staggerLabels(true)
+		//.staggerLabels(historicalBarChart[0].values.length > 8)
+		.showValues(true).duration(250);
+	d3.select('#nvd3-chart1 svg').datum(historicalBarChart).call(chart);
+	nv.utils.windowResize(chart.update);
+	return chart;
+});
+
+</script>
+<!--Start of Tawk.to Script-->
+<!-- <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5893c78a22a7eb0a671e0c75/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
