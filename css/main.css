@@ -449,7 +449,7 @@ section {
    main {
      padding: 2rem 3rem;
      margin-top: 4rem;
-     position: relative;
+     /* position: relative; */
    }
 
    /* Aside Nav */
@@ -521,7 +521,7 @@ section {
 
    main .main-body {
      width: 100%;
-     position: relative;
+     /* position: relative; */
    }
 
    /* NOtice card */
