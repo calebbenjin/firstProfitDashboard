@@ -48,8 +48,9 @@
     color: #8a8a8a;
     z-index: -1;
     position: fixed;
-    top: 20rem;
-    left: 1rem
+    top: 18rem;
+    left: 1rem;
+    display: none;
   }
 }
 
