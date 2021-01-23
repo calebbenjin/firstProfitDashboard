@@ -31,7 +31,8 @@
   z-index: -1;
   position: fixed;
   top: 15rem;
-  left: 15rem
+  left: 15rem;
+  /* display: none; */
 }
 .firstprofit h1{
   line-height: 0.1
@@ -50,7 +51,7 @@
     position: fixed;
     top: 18rem;
     left: 1rem;
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -673,6 +674,7 @@ section {
    }
 
 
+  
 
    .recent-trans .trans {
      display: flex;
@@ -775,19 +777,9 @@ section {
 
 
   /* Transaction Page */
-  .transaction__card {
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: var(--light-shadow);
-  }
 
-  .transaction__card .transaction__nav {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    border-bottom: solid 1px #ccc;
-  }
+
+
 
   .transaction__card .transaction__nav a {
     color: var(--secondaryColor);
@@ -807,6 +799,8 @@ section {
 
   .transaction__card .transaction__body {
     padding: 20px;
+    background: #fff;
+    margin-top: 1rem;
   }
   .transaction__card .transaction__body .trans__title {
     padding: 10px;
@@ -847,14 +841,7 @@ section {
     font-size: 1.2rem;
     padding: 10px;
   }
-  .invest__section {
-    /* display: none; */
-  }
-  /* .invest__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
+
 
   .invest__nav {
     text-align: center;
@@ -1176,9 +1163,6 @@ section {
   }
 
   /* My Investment Section */
-  .myinvestment__section {
-    /* display: none; */
-  }
 
   /* Security Center */
   .security__form {
@@ -1395,18 +1379,14 @@ section {
   .deposit__section .title {
     display: flex;
     align-items: center;
+    
   }
 
-  .select__deposit {
-    /* background: #fff; */
-    /* padding: 20px; */
-    /* box-shadow: var(--light-shadow); */
-    /* border-radius: 6px; */
-  }
+  
   .select__deposit .title {
     padding: 20px;
     color: var(--secondaryColor);
-    /* background: var(--greyColor); */
+    background: var(--whiteColor);
   }
   .select__deposit .title ion-icon {
     font-size: 1.5rem;
@@ -1427,8 +1407,9 @@ section {
     font-size: 1.2rem;
     font-family: var(--ff-secondary);
     border-bottom: 1px solid #e2e2e2;
-    background: var(--greyColor);
+    background: var(--whiteColor);
     position: relative;
+    border-radius: 6px;
   }
   .crypto .crypto_body {
     padding: 20px;
@@ -1504,7 +1485,8 @@ section {
     font-size: 1.2rem;
     font-family: var(--ff-secondary);
     border-bottom: 1px solid #e2e2e2;
-    background: var(--greyColor);
+    background: var(--whiteColor);
+    border-radius: 6px;
   }
   .pro_bank .title ion-icon {
     font-size: 1.5rem;
@@ -1979,16 +1961,6 @@ section {
   width: 100%; */
 }
 
-.conver, .tranfar {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  transition: var(--transition); */
-  
-}
 
 
 .form__content {
@@ -2000,13 +1972,6 @@ section {
   display: block;
 }
 
-.active__form {
-  /* transform: translateY(-0%); */
-}
-
-.transfer__form {
-  /* display: none; */
-}
 
 .convert__form textarea {
   width: 100%;
@@ -2198,9 +2163,7 @@ section {
   margin-top: 2rem;
   border-radius: 6px;
 }
-.pending__withdraw {
-  /* overflow-x: scroll; */
-}
+
 
 .open__ticket {
   font-family: var(--ff-secondary);

@@ -233,82 +233,32 @@
                     <ul class="tabs__container">
                       <li><button class="btn-tab operations_tab operations__tab--active" data-tab="1"><i class="fab fa-creative-commons-nc"></i> Active Issues</button></li>
                       <li><button class="btn-tab operations_tab" data-tab="2"><i class="fab fa-creative-commons-nc"></i> Closed Issues</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-cogs"></i> report Issues</button></li>
+                      <li><button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-cogs"></i> Report Issues</button></li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-md-9 col-lg-9 mx-auto">
                   <div class="content__area">
                     <section class="pending__withdraw operation__content operations__content--1 operation__content--active">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Pending Withdrawals</h3>
+                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Active Issues</h3>
 
                       <div class="tables">
                         <table class="table table-borderless table-responsive">
                           <thead>
                             <tr>
-                              <th scope="row">Gateway</th>
-                              <th scope="col">Amount</th>
-                              <th scope="col">(NGN) Amount</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Need to send</th>
-                              <th scope="col">Account</th>
-                              <th scope="col">Requested</th>
-                              <th scope="col">details</th>
-                              <th scope="col">Approve</th>
-                              <th scope="col">Reject & refund</th>
+                              <th scope="row">S/N</th>
+                              <th scope="col">Subject</th>
+                              <th scope="col">Details</th>
                               <th scope="col">Status</th>
+                              <th scope="col">View user</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Bank Deposit</td>
-                              <td>$ 343.00</td>
-                              <td>₦ 144060</td>
+                              <td>1</td>
+                              <td>Active user testing</td>
+                              <td>Ndidi Umeh ,Guaranty Trust Bank</td>
                               <td>ESTHER Ndidi UMEH</td>
-                              <td>$ 343.00</td>
-                              <td>0127528655 ,Esther Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>2021-01-22 6:44:am</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="#" class="running-btn" data-toggle="modal" data-target="#approveModal"><i class="fas fa-check"></i> approve</a></td>
-                              <!-- Approve Confirmation Modal -->
-                              <div class="modal fade " id="approveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Approve?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >Yes Approve</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <td><a href="#" class="topup-btn" data-toggle="modal" data-target="#rejectModal"><i class="fas fa-times"></i> reject</a></td>
-                              <!-- Reject Confirmation Modal -->
-                              <div class="modal fade " id="rejectModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Reject?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >yes reject</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
                               <td><a href="#" class="download-btn">
                                 <span
                                   class="spinner-border spinner-border-sm"
@@ -317,66 +267,6 @@
                                 ></span>
                                 Pending...
                               </a></td>
-                              
-                            </tr>
-                            <tr>
-                              <td>Bank Deposit</td>
-                              <td>$ 343.00</td>
-                              <td>₦ 144060</td>
-                              <td>ESTHER Ndidi UMEH</td>
-                              <td>$ 343.00</td>
-                              <td>0127528655 ,Esther Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>2021-01-22 6:44:am</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="#" class="running-btn" data-toggle="modal" data-target="#approveModal"><i class="fas fa-check"></i> approve</a></td>
-                              <!-- Approve Confirmation Modal -->
-                              <div class="modal fade " id="approveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Approve?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >Yes Approve</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <td><a href="#" class="topup-btn" data-toggle="modal" data-target="#rejectModal"><i class="fas fa-times"></i> reject</a></td>
-                              <!-- Reject Confirmation Modal -->
-                              <div class="modal fade " id="rejectModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Reject?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >yes reject</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <td><a href="#" class="download-btn">
-                                <span
-                                  class="spinner-border spinner-border-sm"
-                                  role="status"
-                                  aria-hidden="true"
-                                ></span>
-                                Pending...
-                              </a></td>
-                              
                             </tr>
                           </tbody>
                         </table>
@@ -398,75 +288,25 @@
                       </div>
                     </section>
                     <section class="pending__withdraw operation__content operations__content--2">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Pending Deposit</h3>
+                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Closed Issues</h3>
 
                       <div class="tables">
                         <table class="table table-borderless table-responsive">
                           <thead>
                             <tr>
-                              <th scope="row">Gateway</th>
-                              <th scope="col">Amount</th>
-                              <th scope="col">(NGN) Amount</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Need to send</th>
-                              <th scope="col">Account</th>
-                              <th scope="col">Requested</th>
-                              <th scope="col">details</th>
-                              <th scope="col">Approve</th>
-                              <th scope="col">Reject & refund</th>
+                              <th scope="row">S/N</th>
+                              <th scope="col">Subject</th>
+                              <th scope="col">Details</th>
                               <th scope="col">Status</th>
+                              <th scope="col">View user</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Bank Deposit</td>
-                              <td>$ 343.00</td>
-                              <td>₦ 144060</td>
+                              <td>1</td>
+                              <td>Active user testing</td>
+                              <td>Ndidi Umeh ,Guaranty Trust Bank</td>
                               <td>ESTHER Ndidi UMEH</td>
-                              <td>$ 343.00</td>
-                              <td>0127528655 ,Esther Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>2021-01-22 6:44:am</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="#" class="running-btn" data-toggle="modal" data-target="#approveModal"><i class="fas fa-check"></i> approve</a></td>
-                              <!-- Approve Confirmation Modal -->
-                              <div class="modal fade " id="approveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Approve?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >Yes Approve</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <td><a href="#" class="topup-btn" data-toggle="modal" data-target="#rejectModal"><i class="fas fa-times"></i> reject</a></td>
-                              <!-- Reject Confirmation Modal -->
-                              <div class="modal fade " id="rejectModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Reject?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >yes reject</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
                               <td><a href="#" class="download-btn">
                                 <span
                                   class="spinner-border spinner-border-sm"
@@ -475,66 +315,6 @@
                                 ></span>
                                 Pending...
                               </a></td>
-                              
-                            </tr>
-                            <tr>
-                              <td>Bank Deposit</td>
-                              <td>$ 343.00</td>
-                              <td>₦ 144060</td>
-                              <td>ESTHER Ndidi UMEH</td>
-                              <td>$ 343.00</td>
-                              <td>0127528655 ,Esther Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>2021-01-22 6:44:am</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="#" class="running-btn" data-toggle="modal" data-target="#approveModal"><i class="fas fa-check"></i> approve</a></td>
-                              <!-- Approve Confirmation Modal -->
-                              <div class="modal fade " id="approveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Approve?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >Yes Approve</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <td><a href="#" class="topup-btn" data-toggle="modal" data-target="#rejectModal"><i class="fas fa-times"></i> reject</a></td>
-                              <!-- Reject Confirmation Modal -->
-                              <div class="modal fade " id="rejectModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="alert__card">
-                                      <div class="icon">
-                                        <ion-icon name="power-outline"></ion-icon>
-                                      </div>
-                                      <h4>Are u sure you want to Reject?</h4>
-                                      <a href="invest.html" class="cancle__btn"
-                                        >cancle</a
-                                      >
-                                      <a href="invest.html" class="invest__btn2"
-                                        >yes reject</a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <td><a href="#" class="download-btn">
-                                <span
-                                  class="spinner-border spinner-border-sm"
-                                  role="status"
-                                  aria-hidden="true"
-                                ></span>
-                                Pending...
-                              </a></td>
-                              
                             </tr>
                           </tbody>
                         </table>
