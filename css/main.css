@@ -20,6 +20,39 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.firstprofit {
+  text-align: center;
+  font-family: var(--ff-secondary);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  font-size: 5rem;
+  color: #8a8a8a;
+  z-index: -1;
+  position: fixed;
+  top: 15rem;
+  left: 15rem
+}
+.firstprofit h1{
+  line-height: 0.1
+}
+
+@media(max-width: 788px) {
+  .firstprofit {
+    text-align: center;
+    font-family: var(--ff-secondary);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-size: 2rem;
+    color: #8a8a8a;
+    z-index: -1;
+    position: fixed;
+    top: 20rem;
+    left: 1rem
+  }
+}
+
 .core-btn {
   border: none;
   text-decoration: none;
@@ -415,6 +448,7 @@ section {
    main {
      padding: 2rem 3rem;
      margin-top: 4rem;
+     position: relative;
    }
 
    /* Aside Nav */
@@ -486,6 +520,7 @@ section {
 
    main .main-body {
      width: 100%;
+     position: relative;
    }
 
    /* NOtice card */
@@ -2090,6 +2125,14 @@ section {
   position: relative;
 }
 
+@media(max-width: 768px) {
+  .search__issue {
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+}
+
 .search__display {
   padding: 10px;
   background: #fff;
@@ -2103,6 +2146,7 @@ section {
   width: 100%;
   z-index: 99;
 }
+
 
 .search__display span {
   font-weight: 900;
