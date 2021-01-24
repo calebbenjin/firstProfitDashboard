@@ -1434,6 +1434,10 @@ section {
     border-radius: 6px;
     text-decoration: none;
   }
+ 
+  .crypto {
+    margin-bottom: 2rem;
+  }
   
   .crypto .crypto_body {
     padding: 20px;
