@@ -1432,7 +1432,9 @@ section {
     background: var(--whiteColor);
     position: relative;
     border-radius: 6px;
+    text-decoration: none;
   }
+  
   .crypto .crypto_body {
     padding: 20px;
     text-align: center;
