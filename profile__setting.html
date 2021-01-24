@@ -219,8 +219,15 @@
                   <div class="user__card">
                     <h3 class="title"><i class="fas fa-user"></i> User profile</h3>
                     <div class="user__img">
-                      <img src="img/Max-R_Headshot (1).jpg" alt="" class="user-img">
+                      <form action="" class="img-upload">
+                        <label for="file-ip-1" class="file">
+                          <img id="file-ip-1-preview" src="img/Max-R_Headshot (1).jpg" alt="" class="user-img">
+                          <ion-icon name="camera-outline" id="file-ip-1-preview"></ion-icon>
+                        </label>
+                        <input type="file"  name="img_one" id="file-ip-1" accept="image/*" onchange="showPreviewOne(event);">
+                      </form>
                     </div>
+
                     <div class="profile__body">
                       <div class="user__details">
                         <h5 class="fullname">John Doe</h5>

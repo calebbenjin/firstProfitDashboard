@@ -837,7 +837,7 @@ section {
   /*  Investment */
   .invest__section .title, .yieldinvestment__section .title, .myinvestment__section .title {
     border-bottom: solid 1px #ccc;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: 1.2rem;
     padding: 10px;
   }
@@ -848,6 +848,11 @@ section {
     display: flex;
     align-items: center;
     /* border-bottom: solid 1px #ccc; */
+    padding: 10px;
+  }
+
+  .invest__nav .btn-tab {
+    border: solid 1px #ccc;
   }
 
   .btn-tab {
@@ -860,6 +865,7 @@ section {
     font-weight: 900;
     color: var(--secondaryColor);
     margin-top: 2rem;
+    margin-right: 10px;
   }
   .btn-tab:hover {
     text-decoration: none;
@@ -1247,7 +1253,23 @@ section {
     width: 100%;
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    position: relative;
+  }
+  .user__card .user__img input{
+    display: none;
+  }
+  .user__card .user__img ion-icon {
+    font-size: 2rem;
+    color: var(--secondaryColor);
+    cursor: pointer;
+    position: absolute;
+    top: 7rem;
+    left: 9rem;
+    background: #fff;
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: var(--dark-shadow);
   }
   .user__card .user-img {
     width: 150px;
@@ -2353,6 +2375,9 @@ section {
   }
 
   /* Invest Nav */
+  .invest__nav {
+    padding: 10px;
+  }
   .invest__nav .core-btn {
     font-size: 0.7rem;
     white-space: nowrap;
