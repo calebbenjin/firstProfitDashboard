@@ -98,8 +98,8 @@
 }
 
 .cancle__btn {
-  border: none;
-  background: #b3b3b3ee;
+  border: none!important;
+  background: #b3b3b3ee!important;
   border-radius: 6px;
   padding: 10px;
   margin-top: 1rem;
@@ -899,11 +899,11 @@ section {
 
   .operations__tab--active {
     /* transform: translateY(-66%); */
-    background: var(--secondaryColor);
-    color: #fff;
+    border: solid 1px var(--secondaryColor)!important;
+    color: var(--secondaryColor);
   }
   .operations__tab--active ion-icon {
-    color: #fff;
+    color: var(--secondaryColor);
   }
 
   .invest__nav a {
@@ -1060,6 +1060,22 @@ section {
     color: #333;
     
   }
+  .action__btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    background: var(--primaryColor)!important;
+    color: #fff!important;
+    border: none;
+    border-radius: 6px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: var(--transition);
+    border: solid 1px var(--primaryColor);
+    border: solid 1px var(--primaryColor)!important;
+  }
+
   .invest__btn {
     margin-top: 1rem;
     width: 100%;
@@ -1077,9 +1093,9 @@ section {
 
   .invest__btn:hover {
     box-shadow: var(--dark-shadow);
-    background: none;
-    color: var(--primaryColor);
-    border: solid 1px var(--primaryColor);
+    background: var(--primaryColor)!important;
+    color: #fff!important;
+    border: solid 1px var(--primaryColor)!important;
     text-decoration: none;
   }
   .invest__btn2 {
@@ -1892,6 +1908,50 @@ section {
   Bills Page
 ============================= */
 
+.modal-body .notice__head {
+  /* box-shadow: none; */
+}
+
+.modal-body .bills__form {
+  /* box-shadow: var(--dark-shadow); */
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.provider__nav button {
+  width: 25%;
+  white-space: nowrap;
+}
+
+.tv__form {
+  padding: 20px;
+  box-shadow: var(--dark-shadow);
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+.tv__form  h2 {
+  font-size: 1.3rem;
+  font-family: var(--ff-secondary);
+  text-align: left;
+}
+.tv-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tv-head h5 {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.tv-head h5 span {
+  font-family: var(--ff-secondary);
+}
+
+.tv__form form input {
+  border: solid 1px #ccc;
+  margin-top: 10px;
+}
+
 .notice__head {
   background: #fff;
   box-shadow: var(--dark-shadow);
@@ -1915,6 +1975,8 @@ section {
   color: var(--secondaryColor);
   padding-left: 10px;
 }
+
+
 
 .bills__card {
   margin-top: 3rem;
@@ -1948,12 +2010,12 @@ section {
   justify-content: center;
   box-shadow: var(--light-shadow);
 }
-.bill__card .icon ion-icon {
+.bill__card .icon ion-icon, .bill__card .icon i {
   font-size: 4rem;
   color: var(--primaryColor);
 }
 
-.bill__card:hover .icon, .bill__card:hover ion-icon {
+.bill__card:hover .icon, .bill__card:hover ion-icon,  {
   border-color: var(--secondaryColor);
   color: var(--secondaryColor);
 }
@@ -2183,6 +2245,14 @@ section {
 }
 .small__nav ul li button:hover {
   box-shadow: var(--dark-shadow);
+}
+@media(max-width: 768px) {
+  .small__nav ul li button{
+    line-height: 0.1;
+    margin: 0;
+    text-align: center;
+    border: solid 1px #ccc;
+  }
 }
 .content__area {
   background: var(--whiteColor);

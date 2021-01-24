@@ -231,7 +231,152 @@
                   <div class="icon">
                     <ion-icon name="desktop-outline"></ion-icon>
                   </div>
-                  <button type="button">pay tv sub</button>
+                  <button type="button" data-toggle="modal" data-target="#tvModal">pay tv sub</button>
+                   <!-- TV Subscribtion Modal -->
+                   <div class="modal fade " id="tvModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="bills__form">
+                            <div class="notice__head">
+                              <div class="slick__img">
+                                <img src="img/Max-R_Headshot (1).jpg" alt="">
+                              </div>
+                              <div class="text">
+                                <h5>Hello <span>John Doe,</span> please Select your service provider.</h5>
+                              </div>
+                            </div>
+                            <div class="provider__nav tabs__container">
+                              <button class="btn-tab operations_tab operations__tab--active" data-tab="1"><i class="fas fa-tv"></i> DStv</button>
+                              <button class="btn-tab operations_tab" data-tab="2"><i class="fas fa-tv"></i> GOtv</button>
+                              <button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-tv"></i> Startimes</button>
+                            </div>
+                            <div class="tv__form operation__content operations__content--1 operation__content--active" >
+                              <div class="tv-head">
+                                <h2 class=""><i class="fas fa-tv"></i> DStv</h2>
+                                <h5>FirstCoin: <span>0 FTC</span></h5>
+                                <h5>Naira: <span>₦ 0.00</span></h5>
+                              </div>
+                              <form action="">
+                                <select name="" id="" class="wide mt-2">
+                                  <option data-display="Select Subscribtion plan"></option>
+                                  <option value="dstv-padi">DStv Padi N1,850</option>
+                                  <option value="dstv-yanga">DStv Yanga N2,565</option>
+                                  <option value="dstv-confam">Dstv Confam N4,615</option>
+                                  <option value="dstv79">DStv  Compact N7900</option>
+                                  <option value="dstv3">DStv Premium N18,400</option>
+                                  <option value="dstv6">DStv Asia N6,200</option>
+                                  <option value="dstv7">DStv Compact Plus N12,400</option>
+                                  <option value="dstv9">DStv Premium-French N25,550</option>
+                                  <option value="dstv10">DStv Premium-Asia N20,500</option>
+                                  <option value="confam-extra">DStv Confam + ExtraView N7,115</option>
+                                  <option value="yanga-extra">DStv Yanga + ExtraView N5,065</option>
+                                  <option value="padi-extra">DStv Padi + ExtraView N4,350</option>
+                                  <option value="com-asia">DStv Compact + Asia N14,100</option>
+                                  <option value="dstv30">DStv Compact + Extra View N10,400</option>
+                                  <option value="com-frenchtouch">DStv Compact + French Touch N10,200</option>
+                                  <option value="dstv33">DStv Premium - Extra View N20,900</option>
+                                  <option value="dstv40">DStv Compact Plus - Asia N18,600</option>
+                                  <option value="com-frenchtouch-extra">DStv Compact + French Touch + ExtraView N12,700</option>
+                                  <option value="com-asia-extra">DStv Compact + Asia + ExtraView N16,600</option>
+                                  <option value="dstv43">DStv Compact Plus + French Plus N20,500</option>
+                                  <option value="complus-frenchtouch">DStv Compact Plus + French Touch N14,700</option>
+                                  <option value="dstv45">DStv Compact Plus - Extra View N14,900</option>
+                                  <option value="complus-french-extraview">DStv Compact Plus + FrenchPlus + Extra View N23,000</option>
+                                  <option value="dstv47">DStv Compact + French Plus N16,000</option>
+                                  <option value="dstv48">DStv Compact Plus + Asia + ExtraView N21,100</option>
+                                  <option value="dstv61">DStv Premium + Asia + Extra View N23,000</option>
+                                  <option value="dstv62">DStv Premium + French + Extra View N28,000</option>
+                                  <option value="hdpvr-access-service">DStv HDPVR Access Service N2,500</option>
+                                  <option value="frenchplus-addon">DStv French Plus Add-on N8,100</option>
+                                  <option value="asia-addon">DStv Asian Add-on N6,200</option>
+                                  <option value="frenchtouch-addon">DStv French Touch Add-on N2,300</option>
+                                  <option value="extraview-access">ExtraView Access N2,500</option>
+                                  <option value="french11">DStv French 11 N3,260</option>
+                                </select>
+                                <input type="text" placeholder="Enter Phone Number" />
+                                <input type="text" placeholder="Enter IUC Number" />
+                                <div class="modal-footer">
+                                  <button type="submit" data-dismiss="modal" aria-label="Close" class="cancle__btn">
+                                    Cancle
+                                  </button>
+                                  <button type="submit" class="action__btn">
+                                    <i class="fas fa-tv"></i> Pay DStv now
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="tv__form operation__content operations__content--2">
+                              <div class="tv-head">
+                                <h2 class=""><i class="fas fa-tv"></i> GOtv</h2>
+                                <h5>FirstCoin: <span>0 FTC</span></h5>
+                                <h5>Naira: <span>₦ 0.00</span></h5>
+                              </div>
+                              <form action="">
+                                <select name="" id="" class="wide mt-2">
+                                  <option data-display="Select Subscribtion plan"></option>
+                                  <option value="gotv-max">GOtv Max N3,600</option>
+                                  <option value="gotv-jolli">GOtv Jolli N2,460</option>
+                                  <option value="gotv-jinja">GOtv Jinja N1,640</option>
+                                  <option value="gotv-smallie">GOtv Smallie - monthly N800</option>
+                                  <option value="gotv-smallie-3months">GOtv Smallie - quarterly N2,100</option>
+                                  <option value="gotv-smallie-1year">GOtv Smallie - yearly N6,200</option>
+                                </select>
+                                <input type="text" placeholder="Enter Phone Number" />
+                                <input type="text" placeholder="Enter IUC Number" />
+                                <div class="modal-footer">
+                                  <button type="submit" data-dismiss="modal" aria-label="Close" class="cancle__btn">
+                                    Cancle
+                                  </button>
+                                  <button type="submit" class="action__btn">
+                                    <i class="fas fa-tv"></i> Pay GOtv now
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="tv__form operation__content operations__content--3">
+                              <div class="tv-head">
+                                <h2 class=""><i class="fas fa-tv"></i> Startimes</h2>
+                                <h5>FirstCoin: <span>0 FTC</span></h5>
+                                <h5>Naira: <span>₦ 0.00</span></h5>
+                              </div>
+                              <form action="">
+                                <select name="" id="" class="wide mt-2">
+                                  <option data-display="Select Subscribtion plan"></option>
+                                  <option value="nova">Nova - 900 Naira - 1 Month</option>
+                                  <option value="basic">Basic - 1,700 Naira - 1 Month</option>
+                                  <option value="smart">Smart - 2,200 Naira - 1 Month</option>
+                                  <option value="classic">Classic - 2,500 Naira - 1 Month</option>
+                                  <option value="super">Super - 4,200 Naira - 1 Month</option>
+                                  <option value="nova-weekly">Nova - 300 Naira - 1 Week</option>
+                                  <option value="basic-weekly">Basic - 600 Naira - 1 Week</option>
+                                  <option value="smart-weekly">Smart - 700 Naira - 1 Week</option>
+                                  <option value="classic-weekly">Classic - 1200 Naira - 1 Week </option>
+                                  <option value="super-weekly">Super - 1,500 Naira - 1 Week</option>
+                                  <option value="nova-daily">Nova - 90 Naira - 1 Day</option>
+                                  <option value="basic-daily">Basic - 160 Naira - 1 Day</option>
+                                  <option value="smart-daily">Smart - 200 Naira - 1 Day</option>
+                                  <option value="classic-daily">Classic - 320 Naira - 1 Day </option>
+                                  <option value="super-daily">Super - 400 Naira - 1 Day</option>
+                                  <option value="ewallet">ewallet Amount</option>
+                                </select>
+                                <input type="text" placeholder="Enter Phone Number" />
+                                <input type="text" placeholder="Enter IUC Number" />
+                                <div class="modal-footer">
+                                  <button type="submit" data-dismiss="modal" aria-label="Close" class="cancle__btn">
+                                    Cancle
+                                  </button>
+                                  <button type="submit" class="action__btn">
+                                    <i class="fas fa-tv"></i> Pay Startimes now
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 mx-auto">
@@ -240,16 +385,114 @@
                   <div class="icon">
                     <ion-icon name="call-outline"></ion-icon>
                   </div>
-                  <button type="button">buy airtime</button>
+                  <button type="button" data-toggle="modal" data-target="#artimeModal">buy airtime</button>
+                  <!-- Airtime Modal -->
+                  <div class="modal fade " id="artimeModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="bills__form">
+                            <div class="notice__head">
+                              <div class="slick__img">
+                                <img src="img/Max-R_Headshot (1).jpg" alt="">
+                              </div>
+                              <div class="text">
+                                <h5>Hello <span>John Doe,</span> please fill out the form to buy airtime.</h5>
+                              </div>
+                            </div>
+                            <div class="tv__form operation__content operations__content--1 operation__content--active" >
+                              <div class="tv-head">
+                                <h2 class=""><i class="fas fa-phone-volume"></i> Artime</h2>
+                                <h5>FirstCoin: <span>0 FTC</span></h5>
+                                <h5>Naira: <span>₦ 0.00</span></h5>
+                              </div>
+                              <form action="">
+                                <input type="text" placeholder="Enter amount" />
+                                <select name="" id="" class="wide mt-2">
+                                  <option data-display="Select your network provider"></option>
+                                  <option value="mtn">MTN</option>
+                                  <option value="glo">GLO</option>
+                                  <option value="airtel">AIRTEL</option>
+                                  <option value="9-mobile">9-MOBILE</option>
+                                </select>
+                                <input type="text" placeholder="Enter Phone Number" />
+                                <div class="modal-footer">
+                                  <button type="submit" data-dismiss="modal" aria-label="Close" class="cancle__btn">
+                                    Cancle
+                                  </button>
+                                  <button type="submit" class="action__btn">
+                                    <i class="fas fa-phone-volume"></i> Buy Airtime 
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 mx-auto">
                 <div class="bill__card">
                   <h3>Pay power bills</h3>
                   <div class="icon">
-                    <ion-icon name="flashlight-outline"></ion-icon>
+                    <i class="fas fa-lightbulb"></i>
                   </div>
-                  <button type="button">pay bills</button>
+                  <button type="button" data-toggle="modal" data-target="#powerModal">pay power bills</button>
+                  <!-- Power Modal -->
+                  <div class="modal fade " id="powerModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="bills__form">
+                            <div class="notice__head">
+                              <div class="slick__img">
+                                <img src="img/Max-R_Headshot (1).jpg" alt="">
+                              </div>
+                              <div class="text">
+                                <h5>Hello <span>John Doe,</span> please fill out the form to pay your power bills.</h5>
+                              </div>
+                            </div>
+                            <div class="tv__form operation__content operations__content--1 operation__content--active" >
+                              <div class="tv-head">
+                                <h2 class=""><i class="fas fa-lightbulb"></i> Power Bills</h2>
+                                <h5>FirstCoin: <span>0 FTC</span></h5>
+                                <h5>Naira: <span>₦ 0.00</span></h5>
+                              </div>
+                              <form action="">
+                                <input type="text" placeholder="Enter amount" />
+                                <select name="" id="" class="wide mt-2">
+                                  <option data-display="Select your power distributor"></option>
+                                  <option value="ikeja-electric">IKEDC-Ikeja Electricity</option>
+                                  <option value="eko-electric">EKEDC-Eko Electricity</option>
+                                  <option value="kano-electric">KADCO-Kano Electricity</option>
+                                  <option value="portharcourt-electric">PHED-PortHarcourt Electricity</option>
+                                  <option value="jos-electric">JED-Jos Electricity</option>
+                                  <option value="ibadan-electric">IBEDC-Ibadan Electricity</option>
+                                </select>
+                                <select name="" id="" class="wide mt-2">
+                                  <option data-display="Select Billing type here"></option>
+                                  <option value="prepaid">Prepaid</option>
+                                  <option value="postpaid">Postpaid</option>
+                                </select>
+                                <input type="text" placeholder="Meter amount" />
+                                <input type="text" placeholder="Enter Phone Number" />
+                                <div class="modal-footer">
+                                  <button type="submit" data-dismiss="modal" aria-label="Close" class="cancle__btn">
+                                    Cancle
+                                  </button>
+                                  <button type="submit" class="action__btn">
+                                    <i class="fas fa-lightbulb"></i> Pay power bill 
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
