@@ -210,86 +210,69 @@
       </div>
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
-          <h2 class="title"><i class="fas fa-headset"></i> Support center</h2>
-          <hr>
-
-          <div class="mailbox">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 mx-auto">
-                <div class="mail__nav">
-                  <a href="#" class="invest__btn2" data-toggle="modal" data-target="#composeModal"><ion-icon name="add-circle-outline"></ion-icon>Compoose</a>
-                  <!--Compose Message Modal -->
-                  <div class="modal fade" id="composeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="compose__title" id="exampleModalLabel"><ion-icon name="mail-unread-outline"></ion-icon> New Message</h5>
-                          <ion-icon name="close-circle-outline" class="compose__close" data-dismiss="modal" aria-label="Close"></ion-icon>
-                        </div>
-                        <div class="modal-body">
-                          <form action="">
-                            <input type="email" placeholder="To">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" placeholder="Type your message" cols="30" rows="10"></textarea>
-                            <button type="submit" class="invest__btn2">Send</button>
-                          </form>
-                        </div>
+          <div class="deposit__section">
+            <h2 class="title"><i class="fas fa-share-square"></i> Request Capital</h2>
+            <hr>
+            <div class="select__deposit">
+              <div class="deposit_card">
+                <div class="row">
+                  <div class="col-md-4 col-lg-4 mx-auto">
+                    <div class="crypto">
+                      <a href="#" class="title"><i class="fas fa-share-square"></i> Request Capital</a>
+                      <div class="reinvest__body">
+                        <h4 class="mb-4">Capital Amount <span>$50.00</span></h4>
+                        <h6>Use the same method you deposited with, If you deposited via Bitcoin select Bitcoin and so on</h6>
+                        <form action="">
+                          <div class="input-group">
+                            <select name="" id="" class="wide">
+                              <option data-display="Select your Withdrawal method"></option>
+                              <option value="deposit">Deposit balance</option>
+                              <option value="earning">Earning balance</option>
+                              <option value="firstcoin">FirstCoin balance</option>
+                            </select>
+                          </div>
+                          <div class="form-group mt-4">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                              <label class="form-check-label" for="invalidCheck3">
+                                Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                                You must agree before submitting.
+                              </div>
+                            </div>
+                          </div>
+                          <button class="invest__btn2">Request Capital</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <ul class="mail__ul tabs__container">
-                    <li>
-                      <a href="support.html">
-                        <button class="btn-tab operations_tab operations__tab--active" data-tab="1"><ion-icon name="mail-outline"></ion-icon> Opened ticket</button>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="support.html">
-                        <button class="btn-tab operations_tab" data-tab="2" ><ion-icon name="send-outline" class="sent"></ion-icon> Closed ticket</button>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-12 mx-auto">
-                
-                <div class="read__messages">
-                  <div class="ticket">
-                    <h4>Ticket ID: <span>23470984</span></h4>
-                    <h4><ion-icon name="calendar-outline"></ion-icon> Date: <span>Jan 4, 2021, 11:18 PM (4 days ago)</span></h4>
+                  <div class="col-md-8 col-lg-8 mx-auto">
+                    <div class="notice__card">
+                      <a href="" class="notice__title"><i class="fas fa-user-check"></i> What you should know</a>
+                     <div class="note">
+                       <p>Congratulation John Doe on a successful Investment cycle, you are on this page because you choose to make your capital <span>($50.00) available for your investment.</span></p>
+                       <h5 class="kind-notice">Kindly Note.</h5>
+                       
+                       <ul>
+                         <ol class="alert">1.) Capital Request is Processes in Thirty(30) Days from request date</ol>
+                         <ol>2.) You can cancel the request after initaiting it but note that if you cancel running request the capital will be moved to your deposit wallet and can only be re-invested afterwards.</ol>
+                         <ol class="bold">3.) Your request will be declined after 30 days if your request for your capital using a different method from the method you deposit with, if you deposit using bitcoin ur withdraw must be in bitcoin.</ol>
+                         <ol>3.)  click cancel process below if you are not sure. and make your choice.</ol>
+                       </ul>
+                       <button class="cancle__btn">Cancle Process</button>
+                     </div>
+                    </div>
                   </div>
-                  <h4 class="subject">Final reminder: Hiring application deadline</h4>
-                  <div class="initial__message">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel aliquam nemo tempora mollitia autem suscipit doloribus repellendus minus placeat tenetur similique cumque officia quas adipisci voluptates sunt, vitae tempore doloremque repudiandae, necessitatibus a eum quo. Placeat ipsam eius molestiae officiis minus recusandae tempora provident necessitatibus, porro expedita, repellat itaque.</p>
-                  </div>
-                  <ul class="chat__flow">
-                    <li class="chat">
-                      <div class="user-img">
-                        <img src="img/Max-R_Headshot (1).jpg" alt="">
-                        <span class="user__name">john doe</span>
-                        <span class="time">12:10am <ion-icon name="time-outline"></ion-icon></span>
-                      </div>
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius.</p>
-                    </li>
-                    <li class="reply__chat">
-                      <div class="user-img">
-                        <span class="user__name">john doe</span>
-                        <span class="time">12:10am <ion-icon name="time-outline"></ion-icon></span>
-                        <img src="img/Max-R_Headshot (1).jpg" alt="">
-                      </div>
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius.</p>
-                    </li>
-                    </li>
-                  </ul>
-                </div>
-                <div class="reply__message">
-                  <form action="">
-                    <textarea name="" placeholder="Replay message"></textarea>
-                  </form>
                 </div>
               </div>
             </div>
           </div>
+          <div class="firstprofit">
+            <h1>FirstProfit</h1>
+            <h4>Hope for the common man.</h4>
+          </div>
+        </section>
         </section>
       </div>
     </div>

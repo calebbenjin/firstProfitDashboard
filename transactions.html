@@ -220,19 +220,25 @@
                     <button class="btn-tab operations_tab operations__tab--active" data-tab="6"><i class="fas fa-history"></i> All Transactions</button>
                   </li>
                   <li>
-                    <button class="btn-tab operations_tab " data-tab="1"><ion-icon name="repeat-outline"></ion-icon> Send/Receive</button>
+                    <button class="btn-tab operations_tab " data-tab="1"><ion-icon name="repeat-outline"></ion-icon> Send history</button>
                   </li>
                   <li>
-                    <button class="btn-tab operations_tab" data-tab="2"><i class="fas fa-share-square"></i> Transfer</button>
+                    <button class="btn-tab operations_tab " data-tab="8"><ion-icon name="repeat-outline"></ion-icon> Receive history</button>
                   </li>
                   <li>
-                    <button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-file-invoice-dollar"></i> Bills</button>
+                    <button class="btn-tab operations_tab" data-tab="2"><i class="fas fa-share-square"></i> Transfer history</button>
                   </li>
                   <li>
-                    <button class="btn-tab operations_tab" data-tab="4"><i class="fas fa-hand-holding-usd"></i> Withdrawal</button>
+                    <button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-file-invoice-dollar"></i> Bills history</button>
                   </li>
                   <li>
-                    <button class="btn-tab operations_tab" data-tab="5"><ion-icon name="arrow-redo"></ion-icon> Deposit</button>
+                    <button class="btn-tab operations_tab" data-tab="4"><i class="fas fa-hand-holding-usd"></i> Withdrawal history</button>
+                  </li>
+                  <li>
+                    <button class="btn-tab operations_tab" data-tab="5"><ion-icon name="arrow-redo"></ion-icon> Deposit history</button>
+                  </li>
+                  <li>
+                    <button class="btn-tab operations_tab" data-tab="7"><ion-icon name="arrow-redo"></ion-icon> Capital Invest history</button>
                   </li>
                 </ul>
               </div>
@@ -286,9 +292,56 @@
                     </nav>
                   </div>
                 </section>
-                <!-- Send and Receive-->
+                <!-- Receive-->
+                <section class="transactions  invest__section operation__content operations__content--8 ">
+                  <h6 class="trans__title"><ion-icon name="repeat-outline"></ion-icon> Receive history</h6>
+                  <div class="tables">
+                    <table class="table table-borderless table-responsive">
+                      <thead>
+                        <tr>
+                          <th scope="row">Type</th>
+                          <th scope="col">name to</th>
+                          <th scope="col">date</th>
+                          <th scope="col">date</th>
+                          <th scope="col">time</th>
+                          <th scope="col">amount</th>
+                          <th scope="col">fee</th>
+                          <th scope="col">net amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>send to john@gmail.com</td>
+                          <td>head Administrator</td>
+                          <td>2021-01-11</td>
+                          <td>11:27:am</td>
+                          <td>11:27:am</td>
+                          <td class="amount">13.00%</td>
+                          <td class="fee">- $ 2500</td>
+                          <td class="net-amount">+ $ 2500</td>
+                        </tr>
+                      </tbody>
+                    </table>
+  
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                          <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
+                        </li>
+                        <li class="page-item"><button class="page-link" href="#">1</button></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </section>
+                <!-- Send-->
                 <section class="transactions  invest__section operation__content operations__content--1 ">
-                  <h6 class="trans__title"><ion-icon name="repeat-outline"></ion-icon> Send and Receive history</h6>
+                  <h6 class="trans__title"><ion-icon name="repeat-outline"></ion-icon> Send history</h6>
                   <div class="tables">
                     <table class="table table-borderless table-responsive">
                       <thead>
@@ -527,6 +580,87 @@
                           <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </section>
+                <!-- Deposit History -->
+                <section class="pending__withdraw operation__content operations__content--7">
+                  <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Capital Invest History</h3>
+
+                  <div class="tables">
+                    <table class="table table-borderless table-responsive">
+                      <thead>
+                        <tr>
+                          <th scope="row">Transaction ID</th>
+                          <th scope="col">Amount Requested</th>
+                          <th scope="col">Charge</th>
+                          <th scope="col">Amount to recieve</th>
+                          <th scope="col">Account</th>
+                          <th scope="col">Request date</th>
+                          <th scope="col">Due Date</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>jijw9uy8y0788037793</td>
+                          <td>$ 343.00</td>
+                          <td>$ 10.00</td>
+                          <td>$ 343.00</td>
+                          <td>0127528655nhudf9e7feyr9if93</td>
+                          <td>2021-01-22 6:44:am</td>
+                          <td>2021-01-22 6:44:am</td>
+                          <td><a href="#" class="download-btn">
+                            <span
+                              class="spinner-border spinner-border-sm"
+                              role="status"
+                              aria-hidden="true"
+                            ></span>
+                            Pending...
+                          </a></td>
+                          <td><a href="#" class="topup-btn" data-toggle="modal" data-target="#approveModal"><i class="fas fa-check"></i> Cancel Request</a></td>
+                          <!-- Approve Confirmation Modal -->
+                          <div class="modal fade " id="approveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="alert__card">
+                                  <div class="icon">
+                                    <ion-icon name="power-outline"></ion-icon>
+                                  </div>
+                                  <h4>Are u sure you want to Cancle your capital request of $50?</h4>
+                                  <p>Note that if you proceed with this action your capital will be transfered to your deposit wallet and can only be use for new investment.</p>
+                                  <p>Note that if you choose to proceed this action is not reversable.</p>
+                                  <a href="invest.html" class="cancle__btn"
+                                    >cancle</a
+                                  >
+                                  <a href="invest.html" class="invest__btn2"
+                                    >Yes Proceed</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+                          
+                        </tr>
+                      </tbody>
+                    </table>
+  
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                          <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
+                        </li>
+                        <li class="page-item"><button class="page-link" href="#">1</button></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">

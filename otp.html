@@ -106,6 +106,7 @@
     </div>
   </header>
   <!-- Mobile nav -->
+  <!-- Mobile nav -->
   <nav class="mobile-footer">
     <a href="index.html" class="home">
       <ion-icon name="home"></ion-icon>
@@ -210,86 +211,29 @@
       </div>
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
-          <h2 class="title"><i class="fas fa-headset"></i> Support center</h2>
-          <hr>
+          <div class="security__center">
+            <h2 class="title"><i class="fas fa-cog"></i> OTP</h2>
+            <hr>
 
-          <div class="mailbox">
             <div class="row">
-              <div class="col-lg-3 col-md-3 mx-auto">
-                <div class="mail__nav">
-                  <a href="#" class="invest__btn2" data-toggle="modal" data-target="#composeModal"><ion-icon name="add-circle-outline"></ion-icon>Compoose</a>
-                  <!--Compose Message Modal -->
-                  <div class="modal fade" id="composeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="compose__title" id="exampleModalLabel"><ion-icon name="mail-unread-outline"></ion-icon> New Message</h5>
-                          <ion-icon name="close-circle-outline" class="compose__close" data-dismiss="modal" aria-label="Close"></ion-icon>
-                        </div>
-                        <div class="modal-body">
-                          <form action="">
-                            <input type="email" placeholder="To">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" placeholder="Type your message" cols="30" rows="10"></textarea>
-                            <button type="submit" class="invest__btn2">Send</button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="mail__ul tabs__container">
-                    <li>
-                      <a href="support.html">
-                        <button class="btn-tab operations_tab operations__tab--active" data-tab="1"><ion-icon name="mail-outline"></ion-icon> Opened ticket</button>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="support.html">
-                        <button class="btn-tab operations_tab" data-tab="2" ><ion-icon name="send-outline" class="sent"></ion-icon> Closed ticket</button>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-12 mx-auto">
-                
-                <div class="read__messages">
-                  <div class="ticket">
-                    <h4>Ticket ID: <span>23470984</span></h4>
-                    <h4><ion-icon name="calendar-outline"></ion-icon> Date: <span>Jan 4, 2021, 11:18 PM (4 days ago)</span></h4>
-                  </div>
-                  <h4 class="subject">Final reminder: Hiring application deadline</h4>
-                  <div class="initial__message">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel aliquam nemo tempora mollitia autem suscipit doloribus repellendus minus placeat tenetur similique cumque officia quas adipisci voluptates sunt, vitae tempore doloremque repudiandae, necessitatibus a eum quo. Placeat ipsam eius molestiae officiis minus recusandae tempora provident necessitatibus, porro expedita, repellat itaque.</p>
-                  </div>
-                  <ul class="chat__flow">
-                    <li class="chat">
-                      <div class="user-img">
-                        <img src="img/Max-R_Headshot (1).jpg" alt="">
-                        <span class="user__name">john doe</span>
-                        <span class="time">12:10am <ion-icon name="time-outline"></ion-icon></span>
-                      </div>
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius.</p>
-                    </li>
-                    <li class="reply__chat">
-                      <div class="user-img">
-                        <span class="user__name">john doe</span>
-                        <span class="time">12:10am <ion-icon name="time-outline"></ion-icon></span>
-                        <img src="img/Max-R_Headshot (1).jpg" alt="">
-                      </div>
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci sed nostrum ipsa ullam, modi, amet totam sunt, eos velit aut omnis! Eius.</p>
-                    </li>
-                    </li>
-                  </ul>
-                </div>
-                <div class="reply__message">
+              <div class="col-lg-6 col-md-6 mx-auto">
+                <div class="security__form">
+                  <h3 class="title"><i class="fas fa-cog"></i> OTP</h3>
                   <form action="">
-                    <textarea name="" placeholder="Replay message"></textarea>
+                    <div class="input-group">
+                      <label class="mb-2" for="bvn">Enter the OTP sent to your mail below and click confirm withdraw button to verify code and excute withdrawal</label>
+                      <input type="text" placeholder="Enter OTP">
+                    </div>
+                    <div class="form__footer">
+                      <button class="cancle__btn">Cancle</button>
+                      <button class="invest__btn2">Verify BVN</button>
+                    </div>
                   </form>
                 </div>
               </div>
             </div>
           </div>
+          
         </section>
       </div>
     </div>
