@@ -210,164 +210,85 @@
       </div>
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
-          <div class="profile__settings">
-            <h2 class="title"><i class="fas fa-user-cog"></i> Issue Reporting</h2>
+          <div class="deposit__section">
+            <h2 class="title"><ion-icon name="arrow-redo"></ion-icon> Topup Fund</h2>
             <hr>
-            <div class="search__issue">
-              <form action="">
-                <div class="search__input">
-                  <input type="text" placeholder="Search for users by email">
-                </div>
-              </form>
-              <div class="search__display">
-                <ul>
-                  <li><span>John Ethagbhe</span> <span>johnikhane4@gmail.com</span> <a href="view__user.html" class="running-btn">View</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="issue__report">
-              
-              <div class="row">
-                <div class="col-md-3 col-lg-3 mx-auto">
-                  <div class="small__nav">
-                    <ul class="tabs__container">
-                      <li><button class="btn-tab operations_tab operations__tab--active" data-tab="1"><i class="fab fa-creative-commons-nc"></i> Active Issues</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="2"><i class="fab fa-creative-commons-nc"></i> Closed Issues</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-cogs"></i> Report Issues</button></li>
-                    </ul>
+            <div class="select__deposit">
+              <!-- <h2 class="title">Select payment method</h2> -->
+              <div class="deposit_card">
+                <div class="row">
+                  <div class="col-md-6 col-lg-5 mx-auto">
+                    <div class="crypto">
+                      <a href="#" class="title" aria-expanded="false" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample"><ion-icon name="business-outline"></ion-icon> </a>
+                      <div class="crypto_body collaps" id="collapseExample">
+                        <div class="withdraw__form">
+                          <h2 class="topup-title">Topup Amount</h2>
+                          <form action="#" class="needs-validation" novalidate>
+                            <div class="input-group">
+                              <input type="text" id="validationCustom03" placeholder="Subject" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid city.
+                              </div>
+                            </div>
+                            <div class="form-group mt-3 text-left">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  I Agree to the Top-up rules
+                                </label>
+                                <div class="invalid-feedback">
+                                  You must agree before submitting.
+                                </div>
+                              </div>
+                            </div>
+                            <button class="invest__btn2" type="submit">procced to topup</button>
+                            <button class="invest__btn">Select a different Investment</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-9 col-lg-9 mx-auto">
-                  <div class="content__area">
-                    <section class="pending__withdraw operation__content operations__content--1 operation__content--active">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Active Issues</h3>
+                  <div class="col-md-6 col-lg-6 mx-auto">
+                    <div class="crypto">
+                      <a href="" class="title" aria-expanded="false" data-toggle="collapse" data-target="#collapseCrypto" aria-controls="collapseCrypto"><ion-icon name="logo-bitcoin"></ion-icon> Wallet Summary</a>
+                      
+                      <div class="crypto_body collaps" id="collapseCrypto">
+                        <h3 class="topup-title">Topup Rule</h3>
+                        <h5 class="notice-meg"> Congratulation John Deo you are eligible to top-up your current Investment</h5>
+                        <span class="alert"> Kindly Note:</span>
+                        <h5 class="notice-meg">1. You are not allowed to top-up more than the maximum investment amount allowed on the test plan</h5>
+                        <h5 class="notice-meg">2. Your current investment amount $1000 if you exceed $1000 which is the maximum on the text plan you will be taken to the Next Plan. and you will Automatically get a different ROI & Plan</h5>
 
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">Details</th>
-                              <th scope="col">Status</th>
-                              <th scope="col">View user</th>
-                              <th scope="col">View Issue</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Active user testing</td>
-                              <td>Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>ESTHER Ndidi UMEH</td>
-                              <td><a href="#" class="download-btn">
-                                <span
-                                  class="spinner-border spinner-border-sm"
-                                  role="status"
-                                  aria-hidden="true"
-                                ></span>
-                                Pending...
-                              </a></td>
-                              <td><a href="view__issue.html" class="running-btn">View Issue</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
+                        <h4 class="topup-title">Products</h4>
+                        <ul>
+                          <li class="top-details">
+                            <small><b>Account Ballance</b></small>
+                            <small class="topup-amount"><b>$2300</b></small>
+                            <small><button><i class="fas fa-check"></i></button> </small>
+                          </li>
+                          <li class="top-details">
+                            <small><b>Current Investment</b></small>
+                            <small class="topup-amount"><b>$2300</b></small>
+                            <small><button><i class="fas fa-check"></i></button> </small>
+                          </li>
+                          <li class="top-details">
+                            <small><b>Current Profit</b></small>
+                            <small class="topup-amount"><b>$2300</b></small>
+                            <small><button><i class="fas fa-check"></i></button> </small>
+                          </li>
+                        </ul>
+                        <button class="invest__btn2">Cancel process</button>
                       </div>
-                    </section>
-                    <section class="pending__withdraw operation__content operations__content--2">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Closed Issues</h3>
-
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">Details</th>
-                              <th scope="col">Status</th>
-                              <th scope="col">View user</th>
-                              <th scope="col">View Issue</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Active user testing</td>
-                              <td>Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>ESTHER Ndidi UMEH</td>
-                              <td><a href="#" class="download-btn">
-                                <span
-                                  class="spinner-border spinner-border-sm"
-                                  role="status"
-                                  aria-hidden="true"
-                                ></span>
-                                Pending...
-                              </a></td>
-                              <td><a href="view__issue.html" class="running-btn">View Issue</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </section>
-                    <section class="report__issues operation__content operations__content--3">
-                      <h3 class="title"><i class="fas fa-clipboard-check"></i> Report Issues</button></h3>
-
-                      <form action="">
-                        <div class="form-group">
-                          <label for="subject">Subject</label>
-                          <input type="text" placeholder="What's the issue">
-                        </div>
-                        <div class="form-group">
-                          <label for="subject">Email of related user</label>
-                          <input type="email" placeholder="Enter the email of the user with the issue">
-                        </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">Example file input</label>
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                          </div>
-                        </div>
-                        <button class="invest__btn2">Send report</button>
-                      </form>
-                    </section>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+          <div class="firstprofit">
+            <h1>FirstProfit</h1>
+            <h4>Hope for the common man.</h4>
+          </div>
         </section>
       </div>
     </div>
@@ -433,19 +354,6 @@ nv.addGraph(function() {
 });
 
 </script>
-<!--Start of Tawk.to Script-->
-<!-- <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5893c78a22a7eb0a671e0c75/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script> -->
-<!--End of Tawk.to Script-->
 </body>
 
 </html>

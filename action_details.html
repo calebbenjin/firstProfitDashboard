@@ -211,39 +211,49 @@
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
           <div class="profile__settings">
-            <h2 class="title"><i class="fas fa-user-cog"></i> Customer support</h2>
+            <h2 class="title"><i class="fas fa-user-cog"></i> Profile Settings</h2>
             <hr>
-            <div class="search__issue">
-              <form action="">
-                <div class="search__input">
-                  <input type="text" placeholder="Search for users by email">
-                </div>
-              </form>
-              <div class="search__display">
-                <ul>
-                  <li><span>John Ethagbhe</span> <span>johnikhane4@gmail.com</span> <a href="action_details.html" class="running-btn">View</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="issue__report">
-              
+            <div class="user__profile">
               <div class="row">
-                <div class="col-md-3 col-lg-3 mx-auto">
-                  <div class="small__nav">
-                    <ul class="tabs__container">
-                      <li><button class="btn-tab operations_tab operations__tab--active" data-tab="1"><i class="fab fa-creative-commons-nc"></i> pending Withdrawals</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="2"><i class="fab fa-creative-commons-nc"></i> pending Deposit</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-cogs"></i> BVN/SSN Verification</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="4"><i class="fas fa-ticket-alt"></i> Active Ticket</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="5"><i class="fas fa-clipboard-check"></i> Closed Ticket</button></li>
-                    </ul>
+                <div class="col-md-4 col-lg-3 mx-auto">
+                  <div class="user__card mt-4">
+                    <h3 class="title"><i class="fas fa-user"></i> User Details</h3>
+                    <div class="profile__body p-4">
+                      <div class="user__details-1">
+                        <h5> <b><i class="fas fa-user"></i>Name:</b> John Doe mike</h5>
+                        <h5> <b><i class="fas fa-user-cog"></i> Username:</b> Geraldine ibenero</h5>
+                        <h5> <b><i class="fas fa-address-card"></i> Email:</b>  john@gmail.com</h5>
+                        <h5> <b><i class="fas fa-map-marked"></i> BVN Status:</b> Verified</h5>
+                        <h5> <b><i class="fas fa-user-tie"></i> Account Officer:</b> Geraldine</h5>
+                        <h5> <b><i class="fas fa-map-marked"></i> Status:</b> Active</h5>
+                        <button class="invest__btn2"> </i> View user details</button>
+                      </div>
+                      
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-9 col-lg-9 mx-auto">
-                  <div class="content__area">
-                    <section class="pending__withdraw operation__content operations__content--1 operation__content--active">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Pending Withdrawals</h3>
+                <div class="col-md-8 col-lg-9 mx-auto">
+                  <div class="user__card mt-4">
+                    <h3 class="title"><i class="fas fa-user"></i> User Information</h3>
+                    <div class="tables">
+                      <table class="table table-borderless table">
+                        <thead>
+                          <tr>
+                            <th scope="row">BVN</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Middle Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr></tr>
+                        </tbody>
+                      </table>
+                    </div>
 
+                    <div class="withdraw__request">
+                      <h3 class="title"><i class="fas fa-"></i> Withdrawal request</h3>
                       <div class="tables">
                         <table class="table table-borderless table-responsive">
                           <thead>
@@ -398,10 +408,9 @@
                           </ul>
                         </nav>
                       </div>
-                    </section>
-                    <section class="pending__withdraw operation__content operations__content--2">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Pending Deposit</h3>
-
+                    </div>
+                    <div class="withdraw__request">
+                      <h3 class="title"><i class="fas fa-"></i> Pending Deposit</h3>
                       <div class="tables">
                         <table class="table table-borderless table-responsive">
                           <thead>
@@ -417,6 +426,7 @@
                               <th scope="col">Approve</th>
                               <th scope="col">Reject & refund</th>
                               <th scope="col">Status</th>
+                              <th scope="col">prove of payment</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -477,7 +487,7 @@
                                 ></span>
                                 Pending...
                               </a></td>
-                              
+                              <td><a href="payment__verification.html"><img src="img/ads.jpg" alt="" class="prov-img"></a></td>
                             </tr>
                             <tr>
                               <td>Bank Deposit</td>
@@ -536,7 +546,7 @@
                                 ></span>
                                 Pending...
                               </a></td>
-                              
+                              <td><a href="payment__verification.html"><img src="img/ads.jpg" alt="" class="prov-img"></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -556,166 +566,7 @@
                           </ul>
                         </nav>
                       </div>
-                    </section>
-                    <section class="bvn__verification operation__content operations__content--3">
-                      <h3 class="title"><i class="fas fa-cogs"></i> BVN/SSN Verification</h3>
-
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive-sm">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">BVN</th>
-                              <th scope="col">First name</th>
-                              <th scope="col">middle name</th>
-                              <th scope="col">Last name</th>
-                              <th scope="col">status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">1</td>
-                              <td>22431295879</td>
-                              <td>SUNDAY</td>
-                              <td>Olaniyi</td>
-                              <td>FALOWO</td>
-                              <td>Verified</td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </section>
-                    <section class="active__ticket operation__content operations__content--4">
-                      <h3 class="title"><i class="fas fa-ticket-alt"></i> Active Ticket</button></h3>
-
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">Ticket number</th>
-                              <th scope="col">name</th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">View user</th>
-                              <th scope="col">view ticket</th>
-                              <th scope="col">date</th>
-                              <th scope="col">status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">1</td>
-                              <td>CExr6rAmSOle</td>
-                              <td>Sunday Joe Grey</td>
-                              <td>First coin</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="read.html" class="running-btn" ><i class="fas fa-eye"></i> view ticket</a></td>
-                              <td>2021-01-21 16:29:39</td>
-                              <td class="open__ticket">Opened ticket</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">2</td>
-                              <td>CExr6rAmSOle</td>
-                              <td>Sunday Joe Grey</td>
-                              <td>First coin</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="read.html" class="running-btn" ><i class="fas fa-eye"></i> view ticket</a></td>
-                              <td>2021-01-21 16:29:39</td>
-                              <td class="unread__ticket">Unread ticket</td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </section>
-                    <section class="active__ticket operation__content operations__content--5">
-                      <h3 class="title"><i class="fas fa-clipboard-check"></i> Closed Ticket</button></h3>
-
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">Ticket number</th>
-                              <th scope="col">name</th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">View user</th>
-                              <th scope="col">view ticket</th>
-                              <th scope="col">date</th>
-                              <th scope="col">status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">1</td>
-                              <td>CExr6rAmSOle</td>
-                              <td>Sunday Joe Grey</td>
-                              <td>First coin</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="read.html" class="running-btn" ><i class="fas fa-eye"></i> view ticket</a></td>
-                              <td>2021-01-21 16:29:39</td>
-                              <td class="open__ticket"><i class="fas fa-check"></i>Answered</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">2</td>
-                              <td>CExr6rAmSOle</td>
-                              <td>Sunday Joe Grey</td>
-                              <td>First coin</td>
-                              <td><a href="view__user.html" class="running-btn" ><i class="fas fa-user"></i> view user</a></td>
-                              <td><a href="read.html" class="running-btn" ><i class="fas fa-eye"></i> view ticket</a></td>
-                              <td>2021-01-21 16:29:39</td>
-                              <td class="open__ticket"><i class="fas fa-check"></i>Answered</td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-
-                     
-                    </section>
+                    </div>
                   </div>
                 </div>
               </div>

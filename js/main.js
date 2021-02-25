@@ -42,14 +42,10 @@ const transNext = document.querySelector('.trans-next')
 const formContent = document.querySelectorAll('.form__content')
 const nextBtn = document.querySelector('.next__btn')
 const formContainer = document.querySelector('.slide__form')
+const modalBg = document.querySelector('.modalBg')
+const closeModal = document.querySelector('.close-modal')
 
 
-// transNext.addEventListener('click', function() {
-//   console.log("Hello world")
-// })
-// convertNext.addEventListener('click', function() {
-//   console.log("Hello world")
-// })
 
 formContainer.addEventListener('click', (e) => {
   const cliks = e.target.closest('.next__btn')
@@ -76,3 +72,5 @@ function showPreviewOne(event){
 function myImgRemoveFunctionOne() {
   document.getElementById("file-ip-1-preview").src = "";
 }
+
+

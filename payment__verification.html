@@ -211,157 +211,80 @@
       <div class="col-lg-10 col-12 mx-auto">
         <section class="main-body container">
           <div class="profile__settings">
-            <h2 class="title"><i class="fas fa-user-cog"></i> Issue Reporting</h2>
+            <h2 class="title"><i class="fas fa-lock-open"></i> Payment Verification</h2>
             <hr>
-            <div class="search__issue">
-              <form action="">
-                <div class="search__input">
-                  <input type="text" placeholder="Search for users by email">
-                </div>
-              </form>
-              <div class="search__display">
-                <ul>
-                  <li><span>John Ethagbhe</span> <span>johnikhane4@gmail.com</span> <a href="view__user.html" class="running-btn">View</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="issue__report">
-              
+            <div class="user__profile">
               <div class="row">
                 <div class="col-md-3 col-lg-3 mx-auto">
-                  <div class="small__nav">
-                    <ul class="tabs__container">
-                      <li><button class="btn-tab operations_tab operations__tab--active" data-tab="1"><i class="fab fa-creative-commons-nc"></i> Active Issues</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="2"><i class="fab fa-creative-commons-nc"></i> Closed Issues</button></li>
-                      <li><button class="btn-tab operations_tab" data-tab="3"><i class="fas fa-cogs"></i> Report Issues</button></li>
-                    </ul>
+                  <div class="user__card">
+                    <h3 class="title"><i class="fas fa-user"></i> User profile</h3>
+                    <div class="user__img">
+                      <form action="" class="img-upload">
+                        <label for="file-ip-1" class="file">
+                          <img id="file-ip-1-preview" src="img/Max-R_Headshot (1).jpg" alt="" class="user-img">
+                        </label>
+                      </form>
+                    </div>
+
+                    <div class="profile__body">
+                      <div class="user__details">
+                        <h5 class="fullname">John Doe</h5>
+                        <h5 class="username"><ion-icon name="mail-outline"></ion-icon> Johndoe@gmail.com</h5>
+                        <h5 class="username"><ion-icon name="call-outline"></ion-icon> +234 9098 76625</h5>
+                        <h5 class="username"><ion-icon name="earth"></ion-icon> Nigeria</h5>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-9 col-lg-9 mx-auto">
-                  <div class="content__area">
-                    <section class="pending__withdraw operation__content operations__content--1 operation__content--active">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Active Issues</h3>
-
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">Details</th>
-                              <th scope="col">Status</th>
-                              <th scope="col">View user</th>
-                              <th scope="col">View Issue</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Active user testing</td>
-                              <td>Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>ESTHER Ndidi UMEH</td>
-                              <td><a href="#" class="download-btn">
-                                <span
-                                  class="spinner-border spinner-border-sm"
-                                  role="status"
-                                  aria-hidden="true"
-                                ></span>
-                                Pending...
-                              </a></td>
-                              <td><a href="view__issue.html" class="running-btn">View Issue</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
+                  <div class="profile__edit">
+                    <h3 class="title"><i class="fas fa-download"></i> Uploaded <span class="update">4 Days ago</span></h3>
+                    
+                    <div class="card-body">
+                      <div class="prove-img">
+                        <img src="img/scan.png" alt="">
                       </div>
-                    </section>
-                    <section class="pending__withdraw operation__content operations__content--2">
-                      <h3 class="title"><i class="fab fa-creative-commons-nc"></i> Closed Issues</h3>
-
-                      <div class="tables">
-                        <table class="table table-borderless table-responsive">
-                          <thead>
-                            <tr>
-                              <th scope="row">S/N</th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">Details</th>
-                              <th scope="col">Status</th>
-                              <th scope="col">View user</th>
-                              <th scope="col">View Issue</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Active user testing</td>
-                              <td>Ndidi Umeh ,Guaranty Trust Bank</td>
-                              <td>ESTHER Ndidi UMEH</td>
-                              <td><a href="#" class="download-btn">
-                                <span
-                                  class="spinner-border spinner-border-sm"
-                                  role="status"
-                                  aria-hidden="true"
-                                ></span>
-                                Pending...
-                              </a></td>
-                              <td><a href="view__issue.html" class="running-btn">View Issue</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-      
-                        <!-- Pagination -->
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                              <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
-                            </li>
-                            <li class="page-item"><button class="page-link" href="#">1</button></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </section>
-                    <section class="report__issues operation__content operations__content--3">
-                      <h3 class="title"><i class="fas fa-clipboard-check"></i> Report Issues</button></h3>
-
-                      <form action="">
-                        <div class="form-group">
-                          <label for="subject">Subject</label>
-                          <input type="text" placeholder="What's the issue">
-                        </div>
-                        <div class="form-group">
-                          <label for="subject">Email of related user</label>
-                          <input type="email" placeholder="Enter the email of the user with the issue">
-                        </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">Example file input</label>
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                      
+                      <div class="prov-btn">
+                        <button class="invest__btn" data-toggle="modal" data-target="#rejectModal">Reject upload</button>
+                        <!-- Approve Confirmation Modal -->
+                        <div class="modal fade " id="rejectModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="alert__card">
+                                <div class="icon">
+                                  <ion-icon name="power-outline"></ion-icon>
+                                </div>
+                                <h4>Are u sure you want to Reject Upload?</h4>
+                                <a href="#" class="cancle__btn"
+                                  >cancle</a>
+                                <a href="#" class="invest__btn"
+                                  >Yes Reject</a>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <button class="invest__btn2">Send report</button>
-                      </form>
-                    </section>
+                        <button class="invest__btn2" data-toggle="modal" data-target="#approveModal">Accept upload</button>
+                        <!-- Approve Confirmation Modal -->
+                        <div class="modal fade " id="approveModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="alert__card">
+                                <div class="icon">
+                                  <ion-icon name="power-outline"></ion-icon>
+                                </div>
+                                <h4>Are u sure you want to Accept Upload?</h4>
+                                <a href="#" class="cancle__btn"
+                                  >cancle</a>
+                                <a href="#" class="invest__btn2"
+                                  >Yes Accept</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
